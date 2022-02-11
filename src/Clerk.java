@@ -127,7 +127,7 @@ public class Clerk extends Employee{
         ArrayList<buyingCustomer> buyCustomers = generateBuyingCustomers();
         for(buyingCustomer buyer : buyCustomers){ //For each buying customer
             if(get_store().get_inventory().get_items_of_type(buyer.get_wanted_type()).isEmpty()){ //If there are no items of type that customer wants
-                System.out.println(get_name() + " tried to buy a " + buyer.get_wanted_type() + "but none were available");
+                System.out.println(buyer.get_name() + " tried to buy a " + buyer.get_wanted_type() + "but none were available");
                 continue;
             }
             attempt_sale(buyer,get_store().get_inventory().get_items_of_type(buyer.get_wanted_type()).get(0)); //Attempt to sell the first item of appropriate type
