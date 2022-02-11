@@ -1,4 +1,4 @@
-# project-2
+# project-3
 
 * Group Members: Sidhant Puntambekar, Brian Noble, Isaac Pyle
 

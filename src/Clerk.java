@@ -136,7 +136,6 @@ public class Clerk extends Employee{
         for(sellingCustomer seller : sellCustomers){
             attempt_purchase(seller, seller.get_item());
         }
-
     }
 
     private void attempt_sale(buyingCustomer buyer, Item toSellItem){
