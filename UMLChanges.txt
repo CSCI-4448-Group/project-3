@@ -1,0 +1,11 @@
+UML Changes Project 2
+
+1. Added buyingCustomer and sellingCustomer classes
+2. Updated increment functions for Calendar class
+3. Updated private and public Clerk class methods
+4. Created Condition class
+5. Created haggle_roll method for Customer class (in order to determine buy and sell price with the Clerk)
+6. Updated Employee class to remove all all methods to Clerk class and replace with increment_days_worked() function
+7. Created Inventory class to deal with the items in the store inventory as a hash map between ItemType -> List of items
+8. Updated Item class with generate_item method which generates a new random item followed by a private itemBuilder_ data type which is a mapping from (item type) -> lambda function building an item of that type with random attributes
+9. Updated store class with initialize methods for store attributes and add/remove functions

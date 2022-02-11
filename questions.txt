@@ -1,0 +1,22 @@
+Questions: 
+How should we model time passing/days between orders? Do we need a separate calendar interface or class to do this
+Store does no tknow what time it is, need another class, have some sort of big containing class that holds the calander, the store, possibly employees as well.
+Make assumptions that will make code function, and comment them. 
+Can also just be variable that counts days.
+Do we need a customer class?
+Ideally yes
+Do customers behave differently?
+Answer is yes
+Do we need to include constructors with every class we have in the UML diagram
+Yes
+Is there some way to reduce having to rewrite tostring() for each leaf class?
+Dont sweat it
+What kind of fields should instrument/clothing etc, have? Does it make sense to leave them empty and just be used for categorization?
+For now leave them empty, categorization
+Instead of StoreManagement interface, have big container to hold store/employees /calander to allow them to communicate
+No god class plz
+
+
+---------------------------------------------------------
+
+Should I have a generate item method in each second level abstract class (Music, instrument, etc) and then override it in each concrete class?
