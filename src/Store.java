@@ -208,7 +208,7 @@ public class Store {
         }
         if (clerk_available) {
             return current_clerk;
-        } 
+        }
 
         return null;
     }
