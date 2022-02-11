@@ -134,22 +134,37 @@ public class Clerk extends Employee{
 
         ArrayList<sellingCustomer> sellCustomers = generateSellingCustomers();
         for(sellingCustomer seller : sellCustomers){
-
+            attempt_purchase(seller, seller.get_item());
         }
+
     }
 
     private void attempt_sale(buyingCustomer buyer, Item toSellItem){
-
         if(buyer.haggle_roll(50)){ //If we roll 50% chance and win, sell full price
             sell_item(toSellItem, toSellItem.get_list_price());
-            System.out.println(get_name() + " sold a " + buyType + " to " + buyCustomers.get(i).get_name() + " for $" + toBuyItem.get_sale_price());
+            System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + toSellItem.get_sale_price());
         }
         else if(buyer.haggle_roll(75)){ //else if we roll 75% chance and win, sell 90% full price
             sell_item(toSellItem, toSellItem.get_list_price()*.9);
-            System.out.println(get_name() + " sold a " + buyType + " to " + buyCustomers.get(i).get_name() + " for $" + toBuyItem.get_sale_price() + " after a 10% discount.");
+            System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + toSellItem.get_sale_price() + " after a 10% discount.");
         }
         else{
-            System.out.println(get_name() + " tried selling a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " to " + buyCustomers.get(i).get_name() + " for $" + toBuyItem.get_list_price() + " but customer refused.");
+            System.out.println(get_name() + " tried selling a " + toSellItem.get_condition().get_condition() + " condition " + toSellItem.get_new_or_used() + " " + toSellItem.get_name() + " to " + toSellItem.get_name() + " for $" + toSellItem.get_list_price() + " but customer refused.");
+        }
+    }
+
+    private void attempt_purchase(sellingCustomer seller, Item toBuyItem){
+        double purchPrice = evaluate_item(toBuyItem);
+        if(seller.haggle_roll(50)){
+            purch_item(toBuyItem,purchPrice);
+            System.out.println(get_name() + " bought a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + purchPrice);
+        }
+        else if(seller.haggle_roll(75)){
+            purch_item(toBuyItem, purchPrice*1.1);
+            System.out.println(get_name() + " bought a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + purchPrice + " after a 10% offer increase.");
+        }
+        else{
+            System.out.println(get_name() + " tried buying a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + purchPrice + " but customer refused.");
         }
     }
 
@@ -162,46 +177,11 @@ public class Clerk extends Employee{
         soldItem.set_sale_price(soldPrice); //Set items sold price
     }
 
-    // Ran out of time on open_store, but this could be abstracted by creating a buying/selling behavior interface and removing
-    // the complicated for loops and if statements to not create excess programming logic levels.
-    public void open_store() throws Exception{
-        System.out.println(get_name() + " opened the FNMS for business.");
-
-        //Selling customer:
-        for (int i = 0; i < sellCustomers.size(); i++)
-        {
-            // Get the item from the selling customer
-            Item sellingItem = sellCustomers.get(i).get_item();
-
-            //have clerk observe item setting its condition and isNew. Return random purch price based on condition set
-            double purchPrice = evaluate_item(sellingItem);
-//            //Clerk offers customer determined purch price
-//            //Customer has 50% chance to sell
-//            //50% chance to sell at first price offered
-            Boolean sellAtFiftyPercent = sellCustomers.get(i).haggle_roll(50);
-//
-            if (sellAtFiftyPercent) {
-                reg.set_amount(reg.get_amount() - purchPrice); //Subtract amount from register
-                System.out.println(get_name() + " bought a " + sellingItem.get_condition().get_condition() + " condition " + sellingItem.get_new_or_used() + " " + sellingItem.get_name() + " from " + sellCustomers.get(i).get_name() + " for $" + purchPrice);
-                sellingItem.set_purch_price(purchPrice); //Set the purchase price of item
-                get_store().add_to_inventory(sellingItem); //Add to inventory
-            }
-            //If fails, offer 10% increase
-            else {
-                purchPrice *= 1.1;
-                //75% chance to accept
-                Boolean sellAtSeventyFivePercent = sellCustomers.get(i).haggle_roll(75);
-                if (sellAtSeventyFivePercent) {
-                    reg.set_amount(reg.get_amount() - purchPrice); //Subtract amt from register
-                    sellingItem.set_purch_price(purchPrice); //Set the purchase price of item
-                    System.out.println(get_name() + " bought a " + sellingItem.get_condition().get_condition() + " condition " + sellingItem.get_new_or_used() + " " + sellingItem.get_name() + " from " + sellCustomers.get(i).get_name() + " for $" + purchPrice + " after a 10% offer increase.");
-                    get_store().add_to_inventory(sellingItem); //Add new item to inventory
-                }
-                else {
-                    System.out.println(get_name() + " tried buying a " + sellingItem.get_condition().get_condition() + " condition " + sellingItem.get_new_or_used() + " " + sellingItem.get_name() + " from " + sellCustomers.get(i).get_name() + " for $" + purchPrice + " but customer refused.");
-                }
-            }
-        }
+    private void purch_item(Item purchItem, double purchPrice){
+        Store s = get_store();
+        s.add_to_inventory(purchItem);
+        purchItem.set_purch_price(purchPrice);
+        s.get_register().set_amount(s.get_register().get_amount() - purchPrice); //Set register amount
     }
 
     private double evaluate_item(Item item){
