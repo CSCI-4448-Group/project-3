@@ -81,6 +81,15 @@ abstract public class Item{
             return new PaperScore(name + " Paperscore",purchPrice,purchPrice*2,rand.nextBoolean(),
                     -1,new Condition("good"),0,name,albums[rand.nextInt(albums.length)]);
         });
+        put("cassette", () -> {
+            Random rand = new Random();
+            String[] brands = {"Led Zepplin", "Metallica", "Daft Punk", "AC/DC"};
+            String[] albums = {"Dark side of the flute", "Random Access Montgomery", "Its never cheesy enough", "SEG_FAULT: just kidding"};
+            String name = brands[rand.nextInt(brands.length)];
+            int purchPrice = rand.nextInt(50) + 1;
+            return new PaperScore(name + " Cassette",purchPrice,purchPrice*2,rand.nextBoolean(),
+                    -1,new Condition("good"),0,name,albums[rand.nextInt(albums.length)]);
+        });
         put("practice amp", () -> {
             Random rand = new Random();
             String[] brands = {"Roland", "Bugera", "Laney", "Line 6"};
@@ -106,13 +115,22 @@ abstract public class Item{
             return new Strings(name + " Strings",purchPrice,purchPrice*2,rand.nextBoolean(),
                     -1,new Condition("good"),0,name,types[rand.nextInt(types.length)]);
         });
+        put("gigbag", () -> {
+            Random rand = new Random();
+            String[] brands = {"Gibson", "Dunlop", "Elixir", "GHS"};
+            String[] types = {"Rock gigbag", "Jazz gigbag"};
+            String name = brands[rand.nextInt(brands.length)];
+            int purchPrice = rand.nextInt(50) + 1;
+            return new Strings(name + " Strings",purchPrice,purchPrice*2,rand.nextBoolean(),
+                    -1,new Condition("good"),0,name,types[rand.nextInt(types.length)]);
+        });
         put("cdplayer", () -> {
             Random rand = new Random();
             String[] brands = {"LG", "Dell", "Logitech", "Sony"};
             String name = brands[rand.nextInt(brands.length)];
             int purchPrice = rand.nextInt(50) + 1;
             return new CD_Player(name + " CDPlayer",purchPrice,purchPrice*2,rand.nextBoolean(),
-                    -1,new Condition("good"),0,name);
+                    -1,new Condition("good"),0,name, false);
         });
         put("recordplayer", () -> {
             Random rand = new Random();
@@ -120,7 +138,7 @@ abstract public class Item{
             String name = brands[rand.nextInt(brands.length)];
             int purchPrice = rand.nextInt(50) + 1;
             return new RecordPlayer(name + " RecordPlayer",purchPrice,purchPrice*2,rand.nextBoolean(),
-                    -1,new Condition("good"),0,name);
+                    -1,new Condition("good"),0,name, false);
         });
         put("mp3player", () -> {
             Random rand = new Random();
@@ -128,7 +146,15 @@ abstract public class Item{
             String name = brands[rand.nextInt(brands.length)];
             int purchPrice = rand.nextInt(50) + 1;
             return new MP3Player(name + " MP3Player",purchPrice,purchPrice*2,rand.nextBoolean(),
-                    -1,new Condition("good"),0,name);
+                    -1,new Condition("good"),0,name, false);
+        });
+        put("cassetteplayer", () -> {
+            Random rand = new Random();
+            String[] brands = {"LG", "Dell", "Logitech", "Sony"};
+            String name = brands[rand.nextInt(brands.length)];
+            int purchPrice = rand.nextInt(50) + 1;
+            return new MP3Player(name + " CassettePlayer",purchPrice,purchPrice*2,rand.nextBoolean(),
+                    -1,new Condition("good"),0,name, false);
         });
         put("hat", () -> {
             Random rand = new Random();
@@ -160,7 +186,7 @@ abstract public class Item{
             String name = brands[rand.nextInt(brands.length)];
             int purchPrice = rand.nextInt(50) + 1;
             return new Guitar(name + " Guitar",purchPrice,purchPrice*2,rand.nextBoolean(),
-                    -1,new Condition("good"),0,name, rand.nextBoolean());
+                    -1,new Condition("good"),0,name, rand.nextBoolean(), false);
         });
         put("bass", () -> {
             Random rand = new Random();
@@ -168,7 +194,7 @@ abstract public class Item{
             String name = brands[rand.nextInt(brands.length)];
             int purchPrice = rand.nextInt(50) + 1;
             return new Bass(name + " Bass",purchPrice,purchPrice*2,rand.nextBoolean(),
-                    -1,new Condition("good"),0,name, rand.nextBoolean());
+                    -1,new Condition("good"),0,name, rand.nextBoolean(), false);
         });
         put("mandolin", () -> {
             Random rand = new Random();
@@ -176,7 +202,7 @@ abstract public class Item{
             String name = brands[rand.nextInt(brands.length)];
             int purchPrice = rand.nextInt(50) + 1;
             return new Mandolin(name + " Mandolin",purchPrice,purchPrice*2,rand.nextBoolean(),
-                    -1,new Condition("good"),0,name, rand.nextBoolean());
+                    -1,new Condition("good"),0,name, rand.nextBoolean(), false);
         });
         put("flute", () -> {
             Random rand = new Random();
@@ -185,7 +211,7 @@ abstract public class Item{
             String name = brands[rand.nextInt(brands.length)];
             int purchPrice = rand.nextInt(50) + 1;
             return new Flute(name + " Guitar",purchPrice,purchPrice*2,rand.nextBoolean(),
-                    -1,new Condition("good"),0,name, types[rand.nextInt(types.length)]);
+                    -1,new Condition("good"),0,name, types[rand.nextInt(types.length)], false);
         });
         put("harmonica", () -> {
             Random rand = new Random();
@@ -194,7 +220,16 @@ abstract public class Item{
             String name = brands[rand.nextInt(brands.length)];
             int purchPrice = rand.nextInt(50) + 1;
             return new Harmonica(name + " Guitar",purchPrice,purchPrice*2,rand.nextBoolean(),
-                    -1,new Condition("good"),0,name, keys[rand.nextInt(keys.length)]);
+                    -1,new Condition("good"),0,name, keys[rand.nextInt(keys.length)], false);
+        });
+        put("Saxophone", () -> {
+            Random rand = new Random();
+            String[] brands = {"Gibson", "Fender", "PRS", "G&L"};
+            String[] types = {"Alto", "Tenor", "Soprano", "Bass"};
+            String name = brands[rand.nextInt(brands.length)];
+            int purchPrice = rand.nextInt(50) + 1;
+            return new Saxophone(name + " Guitar",purchPrice,purchPrice*2,rand.nextBoolean(),
+                    -1,new Condition("good"),0,name, types[rand.nextInt(types.length)], false);
         });
 
         // All of the above are potential random items to generate from

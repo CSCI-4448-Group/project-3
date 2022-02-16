@@ -49,3 +49,12 @@ class PaperScore extends Music {
         return "PaperScore: " + get_band() + " " + get_album();
     }
 }
+
+class Cassette extends Music {
+    Cassette(String name, double purchPrice, double listPrice, boolean isNew, int dayArriv, Condition condition, double salePrice, String band, String album) {
+        super(name, purchPrice, listPrice, isNew, dayArriv, condition, salePrice, band, album);
+    }
+    public String toString() {
+        return "Cassette: " + get_band() + " " + get_album();
+    }
+}
