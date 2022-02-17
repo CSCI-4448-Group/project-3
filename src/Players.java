@@ -11,8 +11,9 @@ public abstract class Players extends Item {
 
     // Getters and setters
     public String get_brand() {return brand_;}
-
     public void set_brand(String newBrand) {brand_ = newBrand;}
+    public boolean get_equalized(){return equalized_;}
+    public void set_equalized(boolean equalized){equalized_ = equalized;}
 }
 
 // CD_Player, RecordPlayer, MP3Player extend Players
