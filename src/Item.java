@@ -40,6 +40,7 @@ abstract public class Item{
     public Condition get_condition(){return condition_;}
     public double get_sale_price(){return salePrice_;}
     public int get_day_sold(){return daySold_;}
+    public String get_item_type(){return toString().split(":")[0];}
     public String get_new_or_used() {if (new_ == true) {return "new";} else {return "used";}}
 
     //Builds an item of type passed if there is template available in itemBuilder, throws exception if invalid type
