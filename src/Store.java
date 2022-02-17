@@ -90,11 +90,12 @@ public class Store {
         System.out.println("");
     }
 
-    // init employees with Shaggy and Velma
+    // init employees with Shaggy Velma Daphne
     public void initializeEmployees() {
         employees_ = new ArrayList<Employee>();
         employees_.add(new Clerk("Shaggy",this));
         employees_.add(new Clerk("Velma", this));
+        employees_.add(new Clerk("Daphne", this));
     }
 
     // Init calendar object
@@ -189,34 +190,61 @@ public class Store {
 
     public Clerk get_clerk_of_the_day() {
         Random rand = new Random();
-        int rand_num = rand.nextInt(2);
+        int rand_num = rand.nextInt(3);
 
         boolean clerk_available = true;
 
         Clerk current_clerk = new Clerk("", this);
         Clerk clerk1 = get_clerks().get(0);
         Clerk clerk2 = get_clerks().get(1);
+        Clerk clerk3 = get_clerks().get(2);
 
         if (rand_num == 0) {
             if (clerk1.get_days_worked() < 3) {
                 current_clerk = clerk1;
                 clerk2.set_days_worked(0);
+                clerk3.set_days_worked(0);
             } else if (clerk2.get_days_worked() < 3) {
                 current_clerk = clerk2; 
                 clerk1.set_days_worked(0);
-            } else {
-                clerk_available = false;
-            }
-        } else {
-            if (clerk2.get_days_worked() < 3) {
-                current_clerk = clerk2;
+                clerk3.set_days_worked(0);
+            } else if (clerk3.get_days_worked() < 3) {
+                current_clerk = clerk3;
                 clerk1.set_days_worked(0);
-            } else if (clerk1.get_days_worked() < 3) {
-                current_clerk = clerk1;
                 clerk2.set_days_worked(0);
             } else {
                 clerk_available = false;
             }
+        } else if (rand_num == 1) {
+            if (clerk2.get_days_worked() < 3) {
+                current_clerk = clerk2;
+                clerk1.set_days_worked(0);
+                clerk3.set_days_worked(0);
+            } else if (clerk1.get_days_worked() < 3) {
+                current_clerk = clerk1;
+                clerk2.set_days_worked(0);
+                clerk3.set_days_worked(0);
+            } else if (clerk3.get_days_worked() < 3) {
+                current_clerk = clerk3;
+                clerk1.set_days_worked(0);
+                clerk2.set_days_worked(0);
+            }
+        } else if (rand_num == 2) {
+            if (clerk3.get_days_worked() < 3) {
+                current_clerk = clerk3;
+                clerk1.set_days_worked(0);
+                clerk2.set_days_worked(0);
+            } else if (clerk2.get_days_worked() < 3) {
+                current_clerk = clerk2;
+                clerk1.set_days_worked(0);
+                clerk3.set_days_worked(0);
+            } else if (clerk1.get_days_worked() < 3) {
+                current_clerk = clerk1;
+                clerk1.set_days_worked(0);
+                clerk3.set_days_worked(0);
+            }
+        } else {
+                clerk_available = false;
         }
         if (clerk_available) {
             return current_clerk;

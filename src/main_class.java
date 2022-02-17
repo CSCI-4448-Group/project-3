@@ -68,7 +68,7 @@ class main_class {
          System.out.println("\n");
 
          // The final count of money in the cash register
-         // get_register returns a register object, get_ammount returns the amount as a double that's currently in the register
+         // get_register returns a register object, get_amount returns the amount as a double that's currently in the register
          System.out.println("The final amount of money in the cash register is: ");
          System.out.println("$" + Double.toString(fnms.get_register().get_amount()));
          System.out.println("\n");
@@ -80,7 +80,7 @@ class main_class {
          System.out.println("\n");
      }
 
-    public static void runFnmsSimulation(Store FNMS, Clerk clerk1, Clerk clerk2) throws Exception {
+    public static void runFnmsSimulation(Store FNMS, Clerk clerk1, Clerk clerk2, Clerk clerk3) throws Exception {
         // Main program loop
         // Run loop for 30 days, calling begin_day each time, and print out a delineator between each day.
 
@@ -101,6 +101,7 @@ class main_class {
             if ((i+1) % 7 == 0) {
                 clerk1.set_days_worked(0);
                 clerk2.set_days_worked(0);
+                clerk3.set_days_worked(0);
             }
             
             System.out.println("===========================================");
@@ -113,9 +114,9 @@ class main_class {
         Store FNMS = new Store();
         Clerk Shaggy = new Clerk("Shaggy", FNMS);
         Clerk Velma = new Clerk("Velma", FNMS);
-
+        Clerk Daphne = new Clerk("Daphne", FNMS);
         // Run the store simulation
-        runFnmsSimulation(FNMS, Shaggy, Velma);
+        runFnmsSimulation(FNMS, Shaggy, Velma, Daphne);
 
         // Prints the summary / final messages
         print_final_messages(FNMS);

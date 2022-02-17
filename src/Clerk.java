@@ -214,7 +214,17 @@ public class Clerk extends Employee{
         Random rand = new Random();
         String name = get_name();
         Inventory inv = get_store().get_inventory();
-        double damage_chance = (name == "Shaggy") ? 20 : 5; //If its shaggy, its 20% damage chance, else 5% for velma (friggin shaggy)
+        double damage_chance = 0;
+        //If its shaggy, its 20% damage chance, else 5% for velma (friggin shaggy), else 80% for Daphne
+        if (name == "Shaggy") {
+            damage_chance = 20;
+        }
+        else if (name == "Velma") {
+            damage_chance = 5;
+        }
+        else {
+            damage_chance = 50;
+        }
          //Increment calendar day
 
         //If the roll for a damaging an item fails, finish cleaning the store and return from fxn

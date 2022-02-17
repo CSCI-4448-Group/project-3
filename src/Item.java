@@ -115,10 +115,10 @@ abstract public class Item{
             return new Strings(name + " Strings",purchPrice,purchPrice*2,rand.nextBoolean(),
                     -1,new Condition("good"),0,name,types[rand.nextInt(types.length)]);
         });
-        put("gigbag", () -> {
+        put("gig bag", () -> {
             Random rand = new Random();
             String[] brands = {"Gibson", "Dunlop", "Elixir", "GHS"};
-            String[] types = {"Rock gigbag", "Jazz gigbag"};
+            String[] types = {"Rock gig bag", "Jazz gig bag"};
             String name = brands[rand.nextInt(brands.length)];
             int purchPrice = rand.nextInt(50) + 1;
             return new Strings(name + " Strings",purchPrice,purchPrice*2,rand.nextBoolean(),
@@ -222,7 +222,7 @@ abstract public class Item{
             return new Harmonica(name + " Guitar",purchPrice,purchPrice*2,rand.nextBoolean(),
                     -1,new Condition("good"),0,name, keys[rand.nextInt(keys.length)], false);
         });
-        put("Saxophone", () -> {
+        put("saxophone", () -> {
             Random rand = new Random();
             String[] brands = {"Gibson", "Fender", "PRS", "G&L"};
             String[] types = {"Alto", "Tenor", "Soprano", "Bass"};

@@ -3,13 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="fb68d6cc-b827-4a85-bba5-f57c95b2a067" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Accessories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Accessories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Clerk.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Clerk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Item$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Item$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main_class.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main_class.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Clerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Clerk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Music.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stringed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stringed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_class.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +22,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
