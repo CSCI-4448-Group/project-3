@@ -88,9 +88,9 @@ class main_class {
 
         for (int i = 0; i < 30; i ++)
         {
-            Clerk current_clerk = FNMS.get_clerk_of_the_day();
 
             System.out.println("===========================================");
+            Clerk current_clerk = FNMS.get_clerk_of_the_day();
             if (current_clerk != null && ((i + 1) % 7 != 0)) {
                 begin_day(FNMS, current_clerk);
             } else {
