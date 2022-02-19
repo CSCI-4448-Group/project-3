@@ -1,0 +1,885 @@
+Adding item to inventory CD: Led Zepplin Led Zepplin 4
+Adding item to inventory CD: Post Malone Stoney
+Adding item to inventory CD: Metallica Ride the Lightning
+Adding item to inventory Vinyl: Judas Priest British Steel
+Adding item to inventory Vinyl: Eminem Marshal Mathers LP
+Adding item to inventory Vinyl: Daft Punk Random Access Memories
+Adding item to inventory PaperScore: Beethoven Piano Sanata 14
+Adding item to inventory PaperScore: Bach Oratorio
+Adding item to inventory PaperScore: Beethoven Bagatelle 25
+Adding item to inventory CDPlayer: Sony
+Adding item to inventory CDPlayer: LG
+Adding item to inventory CDPlayer: Logitech
+Adding item to inventory RecordPlayer: Logitech
+Adding item to inventory RecordPlayer: LG
+Adding item to inventory RecordPlayer: Sony
+Adding item to inventory MP3Player: Logitech
+Adding item to inventory MP3Player: LG
+Adding item to inventory MP3Player: Sony
+Adding item to inventory CassettePlayer: Logitech
+Adding item to inventory CassettePlayer: LG
+Adding item to inventory CassettePlayer: Sony
+Adding item to inventory Guitar: Gibson
+Adding item to inventory Guitar: Fender
+Adding item to inventory Guitar: Ibanez
+Adding item to inventory Bass: Fender
+Adding item to inventory Bass: Gibson
+Adding item to inventory Bass: Modulus
+Adding item to inventory Mandolin: Kentucky
+Adding item to inventory Mandolin: Gibson
+Adding item to inventory Mandolin: Goldtone
+Adding item to inventory Flute: Etude
+Adding item to inventory Flute: Yamaha
+Adding item to inventory Flute: Azume
+Adding item to inventory Harmonica: Hohner
+Adding item to inventory Harmonica: Lee Oskar
+Adding item to inventory Harmonica: SEYDEL
+Adding item to inventory Saxophone: Etude
+Adding item to inventory Saxophone: Yamaha
+Adding item to inventory Saxophone: Azume
+Adding item to inventory Hat: Gucci
+Adding item to inventory Hat: Slash
+Adding item to inventory Hat: Carhartt
+Adding item to inventory Bandana: Bexar Goods
+Adding item to inventory Bandana: Topo Designs
+Adding item to inventory Bandana: Buck Mason
+Adding item to inventory Shirt: Carhartt
+Adding item to inventory Shirt: Gildan
+Adding item to inventory Shirt: Hanes
+Adding item to inventory Practice Amp: Marshall
+Adding item to inventory Practice Amp: Mesa
+Adding item to inventory Practice Amp: Rogue
+Adding item to inventory Cable: Rogue
+Adding item to inventory Cable: Marshall
+Adding item to inventory Cable: Gibson
+Adding item to inventory Strings: Ernie Ball
+Adding item to inventory Strings: Dunlop
+Adding item to inventory Strings: Elixir
+Adding item to inventory GigBag: Ernie Ball
+Adding item to inventory GigBag: Dunlop
+Adding item to inventory GigBag: Elixir
+
+===========================================
+Daphne arrives at the store on Day 1
+Daphne is checking the register and there is 0.0
+Daphne withdrew 1000 dollars from the bank and the new balance in the register is 1000.0 dollars
+The sum of todays inventory is 2312.0
+Daphne sold a Gibson SG Guitar to Buying Customer 1 for $81.0 after a 10% discount.
+Daphne sold a Logitech MP3Player to Buying Customer 2 for $40.0
+Daphne sold a Fender Precision Bass to Buying Customer 3 for $63.0 after a 10% discount.
+Daphne sold a Ernie Ball GigBag to Buying Customer 4 for $20.0
+Daphne sold a Carhartt Shirt to Buying Customer 5 for $27.0 after a 10% discount.
+Daphne sold a Etude Saxophone to Buying Customer 6 for $36.0 after a 10% discount.
+Daphne sold a Marshall DSL PracticeAmp to Buying Customer 7 for $90.0 after a 10% discount.
+Daphne sold a LG MP3Player to Buying Customer 8 for $40.0
+Adding item to inventory MP3Player: Logitech
+Daphne bought a very good condition new Logitech CassettePlayer from Selling Customer 1 for $34.0
+Adding item to inventory CD: AC/DC Its never cheesy enough
+Daphne bought a poor condition used AC/DC CD from Selling Customer 2 for $6.0
+Adding item to inventory MP3Player: Sony
+Daphne bought a fair condition new Sony CassettePlayer from Selling Customer 3 for $16.0 after a 10% offer increase.
+Daphne finished cleaning the store.
+Daphne locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Velma arrives at the store on Day 2
+Velma is checking the register and there is 1339.4
+The sum of todays inventory is 2052.0
+Velma sold a Hohner Harmonica to Buying Customer 1 for $20.0
+Velma sold a Judas Priest Vinyl to Buying Customer 2 for $14.4 after a 10% discount.
+Velma sold a Gibson Thunderbird Bass to Buying Customer 3 for $60.0
+Velma sold a Dunlop GigBag to Buying Customer 4 for $18.0 after a 10% discount.
+Velma sold a Eminem Vinyl to Buying Customer 5 for $10.0
+Velma sold a Elixir GigBag to Buying Customer 6 for $18.0 after a 10% discount.
+Velma sold a Moonlight Sonata PaperScore to Buying Customer 7 for $2.0
+Velma sold a Logitech RecordPlayer to Buying Customer 8 for $40.0
+Adding item to inventory Strings: Gibson
+Velma bought a poor condition new Gibson Strings from Selling Customer 1 for $1.0
+Adding item to inventory CD: AC/DC Its never cheesy enough
+Velma bought a poor condition new AC/DC CD from Selling Customer 2 for $3.0 after a 10% offer increase.
+Velma finished cleaning the store.
+Velma locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Daphne arrives at the store on Day 3
+Daphne is checking the register and there is 1517.5000000000002
+Daphne spent $65.0 to place an order for 3 GigBag, arriving on day 4.
+The sum of todays inventory is 1940.0
+Buying Customer 1 tried to buy a GigBagbut none were available
+Daphne sold a Fender Stratocaster Guitar to Buying Customer 2 for $80.0
+Daphne sold a Yamaha Saxophone to Buying Customer 3 for $40.0
+Daphne sold a LG RecordPlayer to Buying Customer 4 for $36.0 after a 10% discount.
+Daphne sold a Red Bandana to Buying Customer 5 for $7.2 after a 10% discount.
+Daphne sold a Ibanez Guitar to Buying Customer 6 for $80.0
+Daphne sold a Etude Flute to Buying Customer 7 for $40.0
+Adding item to inventory Cable: Dunlop
+Daphne bought a very good condition new Dunlop Strings from Selling Customer 1 for $35.0 after a 10% offer increase.
+Adding item to inventory Hat: Bailey
+Daphne bought a poor condition new Bailey Hat from Selling Customer 2 for $5.0 after a 10% offer increase.
+Daphne finished cleaning the store.
+Daphne locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Shaggy arrives at the store on Day 4
+Adding item to inventory Strings: Dunlop
+Adding item to inventory Strings: Gibson
+Adding item to inventory Strings: Elixir
+Shaggy is checking the register and there is 1691.7000000000003
+Shaggy spent $98.0 to place an order for 3 Guitar, arriving on day 8.
+The sum of todays inventory is 1884.0
+Shaggy sold a Sony CDPlayer to Buying Customer 1 for $60.0
+Shaggy sold a Post Malone Hat to Buying Customer 2 for $45.0 after a 10% discount.
+Shaggy sold a Kentucky Mandolin to Buying Customer 3 for $45.0 after a 10% discount.
+Shaggy sold a Sony MP3Player to Buying Customer 4 for $40.0
+Buying Customer 5 tried to buy a Guitarbut none were available
+Shaggy sold a Mesa California Tweed PracticeAmp to Buying Customer 6 for $100.0
+Shaggy sold a Gildan Shirt to Buying Customer 7 for $30.0
+Shaggy sold a Hanes Shirt to Buying Customer 8 for $30.0
+Shaggy sold a Led Zepplin CD to Buying Customer 9 for $9.0 after a 10% discount.
+Shaggy sold a Slash's Top Hat to Buying Customer 10 for $90.0 after a 10% discount.
+Adding item to inventory Hat: Hanes
+Shaggy bought a excellent condition new Hanes Hat from Selling Customer 1 for $47.0
+Shaggy tried buying a fair condition new Dell CDPlayer from Selling Customer 2 for $11.0 but customer refused.
+Adding item to inventory Mandolin: Fender
+Shaggy bought a very good condition used Fender Mandolin from Selling Customer 3 for $36.0
+Shaggy finished cleaning the store.
+Shaggy locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Shaggy arrives at the store on Day 5
+Shaggy is checking the register and there is 1959.7000000000003
+The sum of todays inventory is 1542.0
+Shaggy sold a Modulus Bass to Buying Customer 1 for $80.0
+Shaggy sold a Carhartt Hat to Buying Customer 2 for $18.0 after a 10% discount.
+Shaggy sold a Logitech CassettePlayer to Buying Customer 3 for $40.0
+Shaggy sold a Blue Bandana to Buying Customer 4 for $7.2 after a 10% discount.
+Shaggy sold a Gibson Mandolin to Buying Customer 5 for $50.0
+Shaggy sold a Daft Punk Vinyl to Buying Customer 6 for $27.0 after a 10% discount.
+Buying Customer 7 tried to buy a Shirtbut none were available
+Adding item to inventory Mandolin: Fender
+Shaggy bought a excellent condition new Fender Mandolin from Selling Customer 1 for $48.0
+Adding item to inventory Harmonica: PRS
+Shaggy bought a fair condition new PRS Guitar from Selling Customer 2 for $13.0 after a 10% offer increase.
+Shaggy finished cleaning the store.
+Shaggy locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Velma arrives at the store on Day 6
+Velma is checking the register and there is 2119.6
+The sum of todays inventory is 1418.0
+Velma sold a Goldtone Mandolin to Buying Customer 1 for $45.0 after a 10% discount.
+Velma sold a White Bandana to Buying Customer 2 for $8.0
+Velma tried selling a very good condition used Lee Oskar Harmonica to Lee Oskar Harmonica for $20.0 but customer refused.
+Velma sold a Yamaha Flute to Buying Customer 4 for $36.0 after a 10% discount.
+Velma sold a Christmas Oratorio PaperScore to Buying Customer 5 for $1.8 after a 10% discount.
+Velma sold a LG CDPlayer to Buying Customer 6 for $60.0
+Velma tried selling a fair condition new LG CassettePlayer to LG CassettePlayer for $40.0 but customer refused.
+Velma sold a Rogue Cable to Buying Customer 8 for $20.0
+Velma tried selling a poor condition used Post Malone CD to Post Malone CD for $6.0 but customer refused.
+Adding item to inventory Strings: Dunlop
+Velma bought a very good condition used Dunlop Strings from Selling Customer 1 for $32.0
+Adding item to inventory Strings: Elixir
+Velma bought a good condition used Elixir Strings from Selling Customer 2 for $29.0
+Adding item to inventory CDPlayer: LG
+Velma bought a poor condition used LG CDPlayer from Selling Customer 3 for $2.0
+Adding item to inventory MP3Player: LG
+Velma bought a good condition new LG CassettePlayer from Selling Customer 4 for $24.0 after a 10% offer increase.
+Velma finished cleaning the store.
+Velma locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Day 7 is a Sunday, so the store did not open.
+===========================================
+
+
+===========================================
+Shaggy arrives at the store on Day 8
+Adding item to inventory Guitar: PRS
+Adding item to inventory Guitar: PRS
+Adding item to inventory Guitar: G&L
+Shaggy is checking the register and there is 2201.0
+Shaggy spent $50.0 to place an order for 3 Bass, arriving on day 9.
+The sum of todays inventory is 1576.0
+Buying Customer 1 tried to buy a Shirtbut none were available
+Shaggy sold a Bailey Hat to Buying Customer 2 for $14.4 after a 10% discount.
+Shaggy sold a Marshall Cable to Buying Customer 3 for $20.0
+Shaggy sold a Sony RecordPlayer to Buying Customer 4 for $36.0 after a 10% discount.
+Buying Customer 5 tried to buy a GigBagbut none were available
+Shaggy sold a LG CassettePlayer to Buying Customer 6 for $40.0
+Buying Customer 7 tried to buy a GigBagbut none were available
+Buying Customer 8 tried to buy a RecordPlayerbut none were available
+Adding item to inventory Cable: Dunlop
+Shaggy bought a excellent condition used Dunlop Strings from Selling Customer 1 for $45.0 after a 10% offer increase.
+Adding item to inventory Hat: Hanes
+Shaggy bought a excellent condition used Hanes Hat from Selling Customer 2 for $49.0
+Adding item to inventory Harmonica: Gibson
+Shaggy bought a very good condition new Gibson Guitar from Selling Customer 3 for $37.0 after a 10% offer increase.
+Adding item to inventory CDPlayer: Dell
+Shaggy bought a fair condition used Dell CDPlayer from Selling Customer 4 for $15.0
+Shaggy finished cleaning the store.
+Shaggy locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Shaggy arrives at the store on Day 9
+Adding item to inventory Bass: PRS
+Adding item to inventory Bass: Gibson
+Adding item to inventory Bass: Fender
+Shaggy is checking the register and there is 2107.2000000000003
+Shaggy spent $60.0 to place an order for 3 Bandana, arriving on day 10.
+The sum of todays inventory is 1756.0
+Buying Customer 1 tried to buy a Shirtbut none were available
+Shaggy sold a Lee Oskar Harmonica to Buying Customer 2 for $18.0 after a 10% discount.
+Buying Customer 3 tried to buy a Shirtbut none were available
+Shaggy sold a Logitech CDPlayer to Buying Customer 4 for $60.0
+Adding item to inventory MP3Player: Sony
+Shaggy bought a poor condition new Sony MP3Player from Selling Customer 1 for $1.0 after a 10% offer increase.
+Adding item to inventory Strings: Gibson
+Shaggy bought a excellent condition new Gibson Strings from Selling Customer 2 for $49.0
+Adding item to inventory Strings: Gibson
+Shaggy bought a good condition new Gibson Strings from Selling Customer 3 for $29.0 after a 10% offer increase.
+Shaggy finished cleaning the store.
+Shaggy locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Daphne arrives at the store on Day 10
+Adding item to inventory Bandana: Hanes
+Adding item to inventory Bandana: New Era
+Adding item to inventory Bandana: Bailey
+Daphne is checking the register and there is 2043.2000000000003
+Daphne spent $106.0 to place an order for 3 Vinyl, arriving on day 12.
+The sum of todays inventory is 2000.0
+Daphne sold a Rogue G10 PracticeAmp to Buying Customer 1 for $90.0 after a 10% discount.
+Daphne sold a Fur Elise PaperScore to Buying Customer 2 for $1.8 after a 10% discount.
+Daphne sold a Ernie Ball Strings to Buying Customer 3 for $20.0
+Daphne sold a Azumi Flute to Buying Customer 4 for $40.0
+Daphne sold a Post Malone CD to Buying Customer 5 for $5.4 after a 10% discount.
+Daphne sold a LG CDPlayer to Buying Customer 6 for $7.2 after a 10% discount.
+Buying Customer 7 tried to buy a Flutebut none were available
+Adding item to inventory Bass: PRS
+Daphne bought a excellent condition new PRS Bass from Selling Customer 1 for $41.0
+Adding item to inventory CDPlayer: Sony
+Daphne bought a fair condition used Sony CDPlayer from Selling Customer 2 for $10.0 after a 10% offer increase.
+Daphne damaged MP3Player: Sony and broke it.
+Daphne finished cleaning the store.
+Daphne locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Velma arrives at the store on Day 11
+Velma is checking the register and there is 2049.6
+The sum of todays inventory is 1862.0
+Buying Customer 1 tried to buy a Vinylbut none were available
+Velma sold a PRS Bass to Buying Customer 2 for $2.0
+Velma sold a Gibson Cable to Buying Customer 3 for $20.0
+Buying Customer 4 tried to buy a PaperScorebut none were available
+Adding item to inventory PaperScore: Led Zepplin Random Access Montgomery
+Velma bought a excellent condition used Led Zepplin Paperscore from Selling Customer 1 for $49.0
+Adding item to inventory PaperScore: Metallica Random Access Montgomery
+Velma bought a fair condition used Metallica Paperscore from Selling Customer 2 for $12.0 after a 10% offer increase.
+Velma finished cleaning the store.
+Velma locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Daphne arrives at the store on Day 12
+Adding item to inventory Vinyl: Metallica SEG_FAULT: just kidding
+Adding item to inventory Vinyl: Daft Punk SEG_FAULT: just kidding
+Adding item to inventory Vinyl: Daft Punk SEG_FAULT: just kidding
+Daphne is checking the register and there is 2009.3999999999999
+Daphne spent $78.0 to place an order for 3 Flute, arriving on day 13.
+The sum of todays inventory is 2152.0
+Buying Customer 1 tried to buy a GigBagbut none were available
+Daphne sold a Gibson Bass to Buying Customer 2 for $12.0
+Daphne sold a Dunlop Strings to Buying Customer 3 for $77.4 after a 10% discount.
+Daphne sold a Led Zepplin Paperscore to Buying Customer 4 for $39.6 after a 10% discount.
+Daphne sold a PRS Guitar to Buying Customer 5 for $46.0
+Daphne sold a Azumi Saxophone to Buying Customer 6 for $36.0 after a 10% discount.
+Buying Customer 7 tried to buy a Saxophonebut none were available
+Daphne sold a SEYDEL Blues Harmonica to Buying Customer 8 for $18.0 after a 10% discount.
+Adding item to inventory Saxophone: PRS
+Daphne bought a very good condition new PRS Guitar from Selling Customer 1 for $40.0
+Adding item to inventory Strings: Dunlop
+Daphne bought a excellent condition used Dunlop Strings from Selling Customer 2 for $41.0 after a 10% offer increase.
+Daphne damaged CD: AC/DC Its never cheesy enough and broke it.
+Daphne finished cleaning the store.
+Daphne locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Velma arrives at the store on Day 13
+Adding item to inventory Flute: Fender
+Adding item to inventory Flute: Fender
+Adding item to inventory Flute: PRS
+Velma is checking the register and there is 2075.3
+Velma spent $44.0 to place an order for 3 Shirt, arriving on day 15.
+The sum of todays inventory is 2174.0
+Buying Customer 1 tried to buy a Shirtbut none were available
+Velma sold a Metallica Paperscore to Buying Customer 2 for $50.4 after a 10% discount.
+Velma sold a Metallica CD to Buying Customer 3 for $18.0 after a 10% discount.
+Velma sold a Dunlop Strings to Buying Customer 4 for $20.0
+Velma sold a Sony CassettePlayer to Buying Customer 5 for $36.0 after a 10% discount.
+Velma tried selling a fair condition used Dell CDPlayer to Dell CDPlayer for $68.0 but customer refused.
+Buying Customer 7 tried to buy a RecordPlayerbut none were available
+Velma sold a Fender Mandolin to Buying Customer 8 for $50.0
+Adding item to inventory Strings: GHS
+Velma bought a good condition new GHS Strings from Selling Customer 1 for $27.0
+Velma tried buying a good condition new Sony RecordPlayer from Selling Customer 2 for $20.0 but customer refused.
+Velma finished cleaning the store.
+Velma locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Day 14 is a Sunday, so the store did not open.
+===========================================
+
+
+===========================================
+Velma arrives at the store on Day 15
+Adding item to inventory Shirt: Logitech
+Adding item to inventory Shirt: Sony
+Adding item to inventory Shirt: Sony
+Velma is checking the register and there is 2178.7000000000003
+Velma spent $81.0 to place an order for 3 PaperScore, arriving on day 16.
+The sum of todays inventory is 2084.0
+Velma sold a Dunlop Strings to Buying Customer 1 for $18.0
+Velma sold a Logitech Shirt to Buying Customer 2 for $32.0
+Velma sold a Fender Bass to Buying Customer 3 for $77.4 after a 10% discount.
+Velma sold a PRS Bass to Buying Customer 4 for $90.0
+Velma sold a Metallica Vinyl to Buying Customer 5 for $100.0
+Buying Customer 6 tried to buy a CassettePlayerbut none were available
+Buying Customer 7 tried to buy a PaperScorebut none were available
+Buying Customer 8 tried to buy a Cablebut none were available
+Velma sold a Fender Guitar to Buying Customer 9 for $52.2 after a 10% discount.
+Velma sold a Sony Shirt to Buying Customer 10 for $41.4 after a 10% discount.
+Adding item to inventory Bass: G&L
+Velma bought a poor condition used G&L Bass from Selling Customer 1 for $7.0
+Adding item to inventory Bandana: Goorin
+Velma bought a excellent condition used Goorin Bandana from Selling Customer 2 for $41.0 after a 10% offer increase.
+Velma finished cleaning the store.
+Velma locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Daphne arrives at the store on Day 16
+Adding item to inventory PaperScore: Daft Punk SEG_FAULT: just kidding
+Adding item to inventory PaperScore: AC/DC Dark side of the flute
+Adding item to inventory PaperScore: Metallica Random Access Montgomery
+Daphne is checking the register and there is 2456.6000000000004
+Daphne spent $80.0 to place an order for 3 Cable, arriving on day 18.
+The sum of todays inventory is 1920.0
+Daphne sold a Daft Punk Vinyl to Buying Customer 1 for $26.0
+Buying Customer 2 tried to buy a RecordPlayerbut none were available
+Buying Customer 3 tried to buy a Cablebut none were available
+Buying Customer 4 tried to buy a GigBagbut none were available
+Buying Customer 5 tried to buy a Practice Ampbut none were available
+Daphne sold a Daft Punk Paperscore to Buying Customer 6 for $63.0 after a 10% discount.
+Buying Customer 7 tried to buy a GigBagbut none were available
+Daphne sold a Hanes Hat to Buying Customer 8 for $70.2 after a 10% discount.
+Daphne tried buying a fair condition used Gibson Strings from Selling Customer 1 for $14.0 but customer refused.
+Daphne tried buying a poor condition new Sony CassettePlayer from Selling Customer 2 for $6.0 but customer refused.
+Daphne finished cleaning the store.
+Daphne locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Daphne arrives at the store on Day 17
+Daphne is checking the register and there is 2535.8
+The sum of todays inventory is 1746.0
+Buying Customer 1 tried to buy a CassettePlayerbut none were available
+Buying Customer 2 tried to buy a GigBagbut none were available
+Buying Customer 3 tried to buy a Practice Ampbut none were available
+Daphne sold a G&L Bass to Buying Customer 4 for $68.4 after a 10% discount.
+Adding item to inventory CD: Daft Punk Its never cheesy enough
+Daphne bought a excellent condition new Daft Punk CD from Selling Customer 1 for $41.0
+Adding item to inventory Flute: G&L
+Daphne bought a fair condition new G&L Guitar from Selling Customer 2 for $17.0 after a 10% offer increase.
+Adding item to inventory RecordPlayer: Logitech
+Daphne bought a poor condition new Logitech RecordPlayer from Selling Customer 3 for $9.0 after a 10% offer increase.
+Adding item to inventory Mandolin: Fender
+Daphne bought a excellent condition used Fender Mandolin from Selling Customer 4 for $47.0
+Daphne damaged Strings: Gibson and its condition is now very good
+The price of the item will be reduced from 26.0 to 20.8
+The new price of the item is: 20.8
+Daphne finished cleaning the store.
+Daphne locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Daphne arrives at the store on Day 18
+Adding item to inventory Cable: GHS
+Adding item to inventory Cable: Elixir
+Adding item to inventory Cable: Dunlop
+Daphne is checking the register and there is 2487.6000000000004
+Daphne spent $117.0 to place an order for 3 Bass, arriving on day 22.
+The sum of todays inventory is 2040.8
+Daphne tried selling a fair condition new PRS Guitar to PRS Guitar for $12.0 but customer refused.
+Daphne sold a Daft Punk Vinyl to Buying Customer 2 for $86.0
+Buying Customer 3 tried to buy a Practice Ampbut none were available
+Daphne tried selling a poor condition used AC/DC CD to AC/DC CD for $6.0 but customer refused.
+Daphne sold a Fender Mandolin to Buying Customer 5 for $92.0
+Daphne sold a AC/DC Paperscore to Buying Customer 6 for $18.0 after a 10% discount.
+Daphne sold a PRS Guitar to Buying Customer 7 for $12.0
+Daphne sold a Elixir Strings to Buying Customer 8 for $20.0
+Buying Customer 9 tried to buy a CassettePlayerbut none were available
+Adding item to inventory Bandana: Bailey
+Daphne bought a poor condition used Bailey Bandana from Selling Customer 1 for $1.0 after a 10% offer increase.
+Daphne damaged Bandana: Bailey and its condition is now fair
+The price of the item will be reduced from 26.0 to 20.8
+The new price of the item is: 20.8
+Daphne finished cleaning the store.
+Daphne locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Velma arrives at the store on Day 19
+Velma is checking the register and there is 2597.5000000000005
+The sum of todays inventory is 1857.6
+Velma sold a PRS Guitar to Buying Customer 1 for $78.0
+Velma sold a Hanes Hat to Buying Customer 2 for $73.8 after a 10% discount.
+Velma sold a Sony Shirt to Buying Customer 3 for $10.0
+Buying Customer 4 tried to buy a CassettePlayerbut none were available
+Velma tried selling a good condition new GHS Strings to GHS Strings for $58.0 but customer refused.
+Buying Customer 6 tried to buy a Bassbut none were available
+Adding item to inventory Practice Amp: Roland
+Velma bought a very good condition used Roland PracticeAmp from Selling Customer 1 for $34.0
+Adding item to inventory PaperScore: Led Zepplin Its never cheesy enough
+Velma bought a fair condition used Led Zepplin Paperscore from Selling Customer 2 for $18.0 after a 10% offer increase.
+Adding item to inventory MP3Player: Sony
+Velma bought a excellent condition used Sony MP3Player from Selling Customer 3 for $49.0
+Adding item to inventory Saxophone: PRS
+Velma bought a excellent condition new PRS Guitar from Selling Customer 4 for $42.0 after a 10% offer increase.
+Velma finished cleaning the store.
+Velma locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Shaggy arrives at the store on Day 20
+Shaggy is checking the register and there is 2610.3000000000006
+The sum of todays inventory is 1909.6
+Buying Customer 1 tried to buy a Vinylbut none were available
+Shaggy sold a Gibson Strings to Buying Customer 2 for $28.0
+Buying Customer 3 tried to buy a GigBagbut none were available
+Shaggy tried selling a very good condition used Roland PracticeAmp to Roland PracticeAmp for $78.0 but customer refused.
+Adding item to inventory Cable: Elixir
+Shaggy bought a fair condition used Elixir Strings from Selling Customer 1 for $12.0 after a 10% offer increase.
+Adding item to inventory Strings: Elixir
+Shaggy bought a poor condition new Elixir Strings from Selling Customer 2 for $1.0 after a 10% offer increase.
+Adding item to inventory Guitar: Gibson
+Shaggy bought a poor condition used Gibson Guitar from Selling Customer 3 for $5.0 after a 10% offer increase.
+Adding item to inventory Strings: GHS
+Shaggy bought a poor condition used GHS Strings from Selling Customer 4 for $5.0
+Shaggy finished cleaning the store.
+Shaggy locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Day 21 is a Sunday, so the store did not open.
+===========================================
+
+
+===========================================
+Daphne arrives at the store on Day 22
+Adding item to inventory Bass: Fender
+Adding item to inventory Bass: PRS
+Adding item to inventory Bass: Fender
+Daphne is checking the register and there is 2613.500000000001
+Daphne spent $53.0 to place an order for 3 Vinyl, arriving on day 23.
+The sum of todays inventory is 2331.6
+Buying Customer 1 tried to buy a GigBagbut none were available
+Buying Customer 2 tried to buy a Vinylbut none were available
+Daphne sold a PRS Guitar to Buying Customer 3 for $46.800000000000004 after a 10% discount.
+Daphne sold a AC/DC CD to Buying Customer 4 for $6.0
+Buying Customer 5 tried to buy a GigBagbut none were available
+Daphne tried selling a good condition new Metallica Paperscore to Metallica Paperscore for $72.0 but customer refused.
+Buying Customer 7 tried to buy a Shirtbut none were available
+Daphne sold a Dunlop Strings to Buying Customer 8 for $72.0
+Daphne sold a GHS Strings to Buying Customer 9 for $58.0
+Adding item to inventory Shirt: Dell
+Daphne bought a very good condition new Dell Shirt from Selling Customer 1 for $34.0 after a 10% offer increase.
+Adding item to inventory Bandana: Hanes
+Daphne bought a good condition used Hanes Bandana from Selling Customer 2 for $20.0 after a 10% offer increase.
+Daphne finished cleaning the store.
+Daphne locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Daphne arrives at the store on Day 23
+Adding item to inventory Vinyl: Daft Punk Random Access Montgomery
+Adding item to inventory Vinyl: Led Zepplin SEG_FAULT: just kidding
+Adding item to inventory Vinyl: AC/DC Dark side of the flute
+Daphne is checking the register and there is 2683.900000000001
+Daphne spent $56.0 to place an order for 3 CassettePlayer, arriving on day 25.
+The sum of todays inventory is 2339.6
+Daphne sold a Fender Guitar to Buying Customer 1 for $82.0
+Buying Customer 2 tried to buy a Saxophonebut none were available
+Buying Customer 3 tried to buy a CassettePlayerbut none were available
+Buying Customer 4 tried to buy a Saxophonebut none were available
+Daphne sold a Dell CDPlayer to Buying Customer 5 for $68.0
+Daphne sold a Metallica Paperscore to Buying Customer 6 for $64.8 after a 10% discount.
+Adding item to inventory Hat: Hanes
+Daphne bought a very good condition used Hanes Hat from Selling Customer 1 for $30.0 after a 10% offer increase.
+Daphne finished cleaning the store.
+Daphne locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Shaggy arrives at the store on Day 24
+Shaggy is checking the register and there is 2809.700000000001
+The sum of todays inventory is 2133.6
+Shaggy sold a Daft Punk CD to Buying Customer 1 for $26.0
+Shaggy sold a Roland PracticeAmp to Buying Customer 2 for $70.2 after a 10% discount.
+Shaggy sold a PRS Guitar to Buying Customer 3 for $60.0
+Shaggy tried selling a good condition used Elixir Strings to Elixir Strings for $70.0 but customer refused.
+Shaggy tried buying a excellent condition new Roland PracticeAmp from Selling Customer 1 for $46.0 but customer refused.
+Adding item to inventory Bass: G&L
+Shaggy bought a poor condition used G&L Bass from Selling Customer 2 for $3.0
+Shaggy tried buying a excellent condition new Dell CassettePlayer from Selling Customer 3 for $41.0 but customer refused.
+Adding item to inventory MP3Player: Logitech
+Shaggy bought a poor condition new Logitech CassettePlayer from Selling Customer 4 for $7.0
+Shaggy damaged Guitar: Gibson and broke it.
+Shaggy finished cleaning the store.
+Shaggy locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Shaggy arrives at the store on Day 25
+Adding item to inventory MP3Player: Dell
+Adding item to inventory MP3Player: LG
+Adding item to inventory MP3Player: Dell
+Shaggy is checking the register and there is 2955.900000000001
+Shaggy spent $78.0 to place an order for 3 CD, arriving on day 26.
+The sum of todays inventory is 2115.6
+Shaggy sold a Gibson Strings to Buying Customer 1 for $30.0
+Shaggy sold a Sony CDPlayer to Buying Customer 2 for $36.0
+Buying Customer 3 tried to buy a Practice Ampbut none were available
+Shaggy sold a Hanes Hat to Buying Customer 4 for $14.4 after a 10% discount.
+Adding item to inventory Strings: Gibson
+Shaggy bought a very good condition new Gibson Strings from Selling Customer 1 for $39.0
+Adding item to inventory Vinyl: Led Zepplin Random Access Montgomery
+Shaggy bought a good condition used Led Zepplin Vinyl from Selling Customer 2 for $26.0
+Shaggy finished cleaning the store.
+Shaggy locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Shaggy arrives at the store on Day 26
+Adding item to inventory CD: Daft Punk Random Access Montgomery
+Adding item to inventory CD: Metallica Its never cheesy enough
+Adding item to inventory CD: Metallica Its never cheesy enough
+Shaggy is checking the register and there is 2893.300000000001
+Shaggy spent $86.0 to place an order for 3 CassettePlayer, arriving on day 29.
+The sum of todays inventory is 2313.6
+Shaggy tried selling a good condition used Daft Punk CD to Daft Punk CD for $52.0 but customer refused.
+Buying Customer 2 tried to buy a Saxophonebut none were available
+Shaggy tried selling a poor condition new Logitech RecordPlayer to Logitech RecordPlayer for $76.0 but customer refused.
+Shaggy sold a Fender Mandolin to Buying Customer 4 for $12.6 after a 10% discount.
+Buying Customer 5 tried to buy a Mandolinbut none were available
+Buying Customer 6 tried to buy a GigBagbut none were available
+Shaggy sold a Logitech CassettePlayer to Buying Customer 7 for $74.0
+Shaggy tried selling a good condition used Daft Punk Vinyl to Daft Punk Vinyl for $64.0 but customer refused.
+Adding item to inventory Strings: Gibson
+Shaggy bought a very good condition used Gibson Strings from Selling Customer 1 for $38.0 after a 10% offer increase.
+Shaggy tried buying a poor condition used Dell CDPlayer from Selling Customer 2 for $2.0 but customer refused.
+Shaggy tried buying a good condition used Fender Guitar from Selling Customer 3 for $28.0 but customer refused.
+Shaggy finished cleaning the store.
+Shaggy locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Daphne arrives at the store on Day 27
+Daphne is checking the register and there is 2852.100000000001
+The sum of todays inventory is 2293.6
+Buying Customer 1 tried to buy a GigBagbut none were available
+Daphne sold a Daft Punk Vinyl to Buying Customer 2 for $57.6 after a 10% discount.
+Daphne sold a G&L Guitar to Buying Customer 3 for $90.0
+Buying Customer 4 tried to buy a GigBagbut none were available
+Daphne sold a Led Zepplin Vinyl to Buying Customer 5 for $30.6 after a 10% discount.
+Daphne sold a Gibson Guitar to Buying Customer 6 for $28.0
+Buying Customer 7 tried to buy a Guitarbut none were available
+Buying Customer 8 tried to buy a Guitarbut none were available
+Buying Customer 9 tried to buy a CDPlayerbut none were available
+Adding item to inventory CD: Metallica SEG_FAULT: just kidding
+Daphne bought a very good condition used Metallica CD from Selling Customer 1 for $38.0 after a 10% offer increase.
+Adding item to inventory MP3Player: Sony
+Daphne bought a very good condition used Sony CassettePlayer from Selling Customer 2 for $37.0 after a 10% offer increase.
+Adding item to inventory Strings: Elixir
+Daphne bought a fair condition new Elixir Strings from Selling Customer 3 for $14.0
+Adding item to inventory CDPlayer: Logitech
+Daphne bought a excellent condition used Logitech CDPlayer from Selling Customer 4 for $44.0
+Daphne finished cleaning the store.
+Daphne locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Day 28 is a Sunday, so the store did not open.
+===========================================
+
+
+===========================================
+Shaggy arrives at the store on Day 29
+Adding item to inventory MP3Player: Dell
+Adding item to inventory MP3Player: LG
+Adding item to inventory MP3Player: LG
+Shaggy is checking the register and there is 2917.8000000000006
+Shaggy spent $73.0 to place an order for 3 Guitar, arriving on day 30.
+The sum of todays inventory is 2539.6
+Buying Customer 1 tried to buy a CassettePlayerbut none were available
+Shaggy tried selling a poor condition new Logitech RecordPlayer to Logitech RecordPlayer for $76.0 but customer refused.
+Shaggy sold a AC/DC Vinyl to Buying Customer 3 for $8.0
+Buying Customer 4 tried to buy a CassettePlayerbut none were available
+Buying Customer 5 tried to buy a Guitarbut none were available
+Shaggy sold a Logitech CDPlayer to Buying Customer 6 for $42.0
+Shaggy sold a Led Zepplin Vinyl to Buying Customer 7 for $73.8 after a 10% discount.
+Buying Customer 8 tried to buy a GigBagbut none were available
+Shaggy tried selling a very good condition new Dell Shirt to Dell Shirt for $84.0 but customer refused.
+Adding item to inventory Hat: Goorin
+Shaggy bought a excellent condition used Goorin Hat from Selling Customer 1 for $44.0
+Shaggy finished cleaning the store.
+Shaggy locked up the store and went home for the day
+===========================================
+
+
+===========================================
+Daphne arrives at the store on Day 30
+Adding item to inventory Guitar: Fender
+Adding item to inventory Guitar: PRS
+Adding item to inventory Guitar: PRS
+Daphne is checking the register and there is 2924.600000000001
+Daphne spent $53.0 to place an order for 3 Vinyl, arriving on day 33.
+The sum of todays inventory is 2565.6
+Daphne sold a Fender Bass to Buying Customer 1 for $94.0
+Daphne sold a Dell Shirt to Buying Customer 2 for $84.0
+Daphne sold a Led Zepplin Paperscore to Buying Customer 3 for $2.0
+Daphne sold a PRS Bass to Buying Customer 4 for $50.0
+Daphne sold a Sony CassettePlayer to Buying Customer 5 for $81.0 after a 10% discount.
+Daphne sold a Logitech RecordPlayer to Buying Customer 6 for $76.0
+Adding item to inventory Bandana: Goorin
+Daphne bought a good condition new Goorin Bandana from Selling Customer 1 for $24.0 after a 10% offer increase.
+Adding item to inventory RecordPlayer: Dell
+Daphne bought a excellent condition new Dell RecordPlayer from Selling Customer 2 for $50.0
+Adding item to inventory PaperScore: Metallica Random Access Montgomery
+Daphne bought a poor condition used Metallica Paperscore from Selling Customer 3 for $6.0
+Daphne tried buying a very good condition new G&L Guitar from Selling Customer 4 for $34.0 but customer refused.
+Daphne finished cleaning the store.
+Daphne locked up the store and went home for the day
+===========================================
+
+
+Following a 30 day simulation, the following summary of the store's activities is printed below: 
+
+Inventory still in store and value: 
+Fender Guitar
+PRS Guitar
+PRS Guitar
+Fender Bass
+G&L Bass
+Elixir Strings
+Dunlop Strings
+Elixir Strings
+Daft Punk CD
+Metallica CD
+Metallica CD
+Metallica CD
+Hanes Bandana
+New Era Bandana
+Bailey Bandana
+Goorin Bandana
+Bailey Bandana
+Hanes Bandana
+Goorin Bandana
+Metallica Paperscore
+LG CassettePlayer
+Sony MP3Player
+Logitech CassettePlayer
+Dell CassettePlayer
+LG CassettePlayer
+Dell CassettePlayer
+Sony CassettePlayer
+Dell CassettePlayer
+LG CassettePlayer
+LG CassettePlayer
+PRS Guitar
+G&L Guitar
+Elixir Strings
+Dunlop Strings
+Elixir Strings
+Gibson Strings
+Gibson Strings
+Dunlop Strings
+GHS Strings
+Elixir Strings
+GHS Strings
+Gibson Strings
+Gibson Strings
+Elixir Strings
+Goorin Hat
+Dell RecordPlayer
+
+
+The total value of inventory still in the store is: 2289.6
+
+
+Sold items from the store: 
+
+
+Gibson SG Guitar was sold on day 1 for 81.0
+Logitech MP3Player was sold on day 1 for 40.0
+Fender Precision Bass was sold on day 1 for 63.0
+Ernie Ball GigBag was sold on day 1 for 20.0
+Carhartt Shirt was sold on day 1 for 27.0
+Etude Saxophone was sold on day 1 for 36.0
+Marshall DSL PracticeAmp was sold on day 1 for 90.0
+LG MP3Player was sold on day 1 for 40.0
+Hohner Harmonica was sold on day 2 for 20.0
+Judas Priest Vinyl was sold on day 2 for 14.4
+Gibson Thunderbird Bass was sold on day 2 for 60.0
+Dunlop GigBag was sold on day 2 for 18.0
+Eminem Vinyl was sold on day 2 for 10.0
+Elixir GigBag was sold on day 2 for 18.0
+Moonlight Sonata PaperScore was sold on day 2 for 2.0
+Logitech RecordPlayer was sold on day 2 for 40.0
+Fender Stratocaster Guitar was sold on day 3 for 80.0
+Yamaha Saxophone was sold on day 3 for 40.0
+LG RecordPlayer was sold on day 3 for 36.0
+Red Bandana was sold on day 3 for 7.2
+Ibanez Guitar was sold on day 3 for 80.0
+Etude Flute was sold on day 3 for 40.0
+Sony CDPlayer was sold on day 4 for 60.0
+Post Malone Hat was sold on day 4 for 45.0
+Kentucky Mandolin was sold on day 4 for 45.0
+Sony MP3Player was sold on day 4 for 40.0
+Mesa California Tweed PracticeAmp was sold on day 4 for 100.0
+Gildan Shirt was sold on day 4 for 30.0
+Hanes Shirt was sold on day 4 for 30.0
+Led Zepplin CD was sold on day 4 for 9.0
+Slash's Top Hat was sold on day 4 for 90.0
+Modulus Bass was sold on day 5 for 80.0
+Carhartt Hat was sold on day 5 for 18.0
+Logitech CassettePlayer was sold on day 5 for 40.0
+Blue Bandana was sold on day 5 for 7.2
+Gibson Mandolin was sold on day 5 for 50.0
+Daft Punk Vinyl was sold on day 5 for 27.0
+Goldtone Mandolin was sold on day 6 for 45.0
+White Bandana was sold on day 6 for 8.0
+Yamaha Flute was sold on day 6 for 36.0
+Christmas Oratorio PaperScore was sold on day 6 for 1.8
+LG CDPlayer was sold on day 6 for 60.0
+Rogue Cable was sold on day 6 for 20.0
+Bailey Hat was sold on day 8 for 14.4
+Marshall Cable was sold on day 8 for 20.0
+Sony RecordPlayer was sold on day 8 for 36.0
+LG CassettePlayer was sold on day 8 for 40.0
+Lee Oskar Harmonica was sold on day 9 for 18.0
+Logitech CDPlayer was sold on day 9 for 60.0
+Rogue G10 PracticeAmp was sold on day 10 for 90.0
+Fur Elise PaperScore was sold on day 10 for 1.8
+Ernie Ball Strings was sold on day 10 for 20.0
+Azumi Flute was sold on day 10 for 40.0
+Post Malone CD was sold on day 10 for 5.4
+LG CDPlayer was sold on day 10 for 7.2
+PRS Bass was sold on day 11 for 2.0
+Gibson Cable was sold on day 11 for 20.0
+Gibson Bass was sold on day 12 for 12.0
+Dunlop Strings was sold on day 12 for 77.4
+Led Zepplin Paperscore was sold on day 12 for 39.6
+PRS Guitar was sold on day 12 for 46.0
+Azumi Saxophone was sold on day 12 for 36.0
+SEYDEL Blues Harmonica was sold on day 12 for 18.0
+Metallica Paperscore was sold on day 13 for 50.4
+Metallica CD was sold on day 13 for 18.0
+Dunlop Strings was sold on day 13 for 20.0
+Sony CassettePlayer was sold on day 13 for 36.0
+Fender Mandolin was sold on day 13 for 50.0
+Dunlop Strings was sold on day 15 for 18.0
+Logitech Shirt was sold on day 15 for 32.0
+Fender Bass was sold on day 15 for 77.4
+PRS Bass was sold on day 15 for 90.0
+Metallica Vinyl was sold on day 15 for 100.0
+Fender Guitar was sold on day 15 for 52.2
+Sony Shirt was sold on day 15 for 41.4
+Daft Punk Vinyl was sold on day 16 for 26.0
+Daft Punk Paperscore was sold on day 16 for 63.0
+Hanes Hat was sold on day 16 for 70.2
+G&L Bass was sold on day 17 for 68.4
+Daft Punk Vinyl was sold on day 18 for 86.0
+Fender Mandolin was sold on day 18 for 92.0
+AC/DC Paperscore was sold on day 18 for 18.0
+PRS Guitar was sold on day 18 for 12.0
+Elixir Strings was sold on day 18 for 20.0
+PRS Guitar was sold on day 19 for 78.0
+Hanes Hat was sold on day 19 for 73.8
+Sony Shirt was sold on day 19 for 10.0
+Gibson Strings was sold on day 20 for 28.0
+PRS Guitar was sold on day 22 for 46.800000000000004
+AC/DC CD was sold on day 22 for 6.0
+Dunlop Strings was sold on day 22 for 72.0
+GHS Strings was sold on day 22 for 58.0
+Fender Guitar was sold on day 23 for 82.0
+Dell CDPlayer was sold on day 23 for 68.0
+Metallica Paperscore was sold on day 23 for 64.8
+Daft Punk CD was sold on day 24 for 26.0
+Roland PracticeAmp was sold on day 24 for 70.2
+PRS Guitar was sold on day 24 for 60.0
+Gibson Strings was sold on day 25 for 30.0
+Sony CDPlayer was sold on day 25 for 36.0
+Hanes Hat was sold on day 25 for 14.4
+Fender Mandolin was sold on day 26 for 12.6
+Logitech CassettePlayer was sold on day 26 for 74.0
+Daft Punk Vinyl was sold on day 27 for 57.6
+G&L Guitar was sold on day 27 for 90.0
+Led Zepplin Vinyl was sold on day 27 for 30.6
+Gibson Guitar was sold on day 27 for 28.0
+AC/DC Vinyl was sold on day 29 for 8.0
+Logitech CDPlayer was sold on day 29 for 42.0
+Led Zepplin Vinyl was sold on day 29 for 73.8
+Fender Bass was sold on day 30 for 94.0
+Dell Shirt was sold on day 30 for 84.0
+Led Zepplin Paperscore was sold on day 30 for 2.0
+PRS Bass was sold on day 30 for 50.0
+Sony CassettePlayer was sold on day 30 for 81.0
+Logitech RecordPlayer was sold on day 30 for 76.0
+
+
+The total value of items sold is: 4977.000000000001
+
+
+The final amount of money in the cash register is: 
+$3176.2000000000007
+
+
+The amount of money added to the register form the GoToBank action was: 
+$1000.0
+
+
