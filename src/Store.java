@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
@@ -87,7 +88,7 @@ public class Store {
         System.out.println("");
     }
 
-    // init employees with Shaggy and Velma
+    // init employees with Shaggy, Velma, and Daphne
     public void initializeEmployees() {
         employees_ = new ArrayList<Employee>();
         employees_.add(new Clerk("Shaggy",this, new HaphazardTune()));
@@ -189,56 +190,33 @@ public class Store {
         Random rand = new Random();
         int rand_num = rand.nextInt(get_clerks().size());
 
-        Clerk current_clerk = null;
-        Clerk clerk1 = get_clerks().get(0);
-        Clerk clerk2 = get_clerks().get(1);
-        Clerk clerk3 = get_clerks().get(2);
+        // Modified from Bruce Montgomery's 'Spring22OOADProj2' example code in class.
+        ArrayList<Clerk> clerks = get_clerks();
+        Clerk clerk = clerks.get(rand_num);
+        int sick_chance = rand.nextInt(100);
 
-        if (rand_num == 0) {
-            if (clerk1.get_days_worked() < 3) {
-                current_clerk = clerk1;
-                clerk2.set_days_worked(0);
-                clerk3.set_days_worked(0);
-            } else if (clerk2.get_days_worked() < 3) {
-                current_clerk = clerk2;
-                clerk1.set_days_worked(0);
-                clerk3.set_days_worked(0);
-            } else if (clerk3.get_days_worked() < 3) {
-                current_clerk = clerk3;
-                clerk1.set_days_worked(0);
-                clerk2.set_days_worked(0);
-            }
-        } else if (rand_num == 1) {
-            if (clerk2.get_days_worked() < 3) {
-                current_clerk = clerk2;
-                clerk1.set_days_worked(0);
-                clerk3.set_days_worked(0);
-            } else if (clerk1.get_days_worked() < 3) {
-                current_clerk = clerk1;
-                clerk2.set_days_worked(0);
-                clerk3.set_days_worked(0);
-            } else if (clerk3.get_days_worked() < 3) {
-                current_clerk = clerk3;
-                clerk1.set_days_worked(0);
-                clerk2.set_days_worked(0);
-            }
-        } else if (rand_num == 2) {
-            if (clerk3.get_days_worked() < 3) {
-                current_clerk = clerk3;
-                clerk1.set_days_worked(0);
-                clerk2.set_days_worked(0);
-            } else if (clerk2.get_days_worked() < 3) {
-                current_clerk = clerk2;
-                clerk1.set_days_worked(0);
-                clerk3.set_days_worked(0);
-            } else if (clerk1.get_days_worked() < 3) {
-                current_clerk = clerk1;
-                clerk1.set_days_worked(0);
-                clerk3.set_days_worked(0);
+        // if they are ok to work, set days worked on other clerks to 0
+        if (clerk.get_days_worked() < 3 && sick_chance >= 10) {
+            clerk.set_days_worked(clerk.get_days_worked() + 1);
+            for (Clerk other : clerks) {
+                if (other != clerk) other.set_days_worked(0); // they had a day off, so clear their counter
             }
         }
-
-        return current_clerk;
+        // if they are not ok to work, set their days worked to 0 and get another clerk
+        else {
+            clerk.set_days_worked(0);   // they can't work, get another clerk
+            Clerk old_clerk = clerk;
+            for (Clerk other : clerks) {
+                if (other != clerk) {
+                    clerk = other;
+                    break;
+                }
+            }
+            if (sick_chance < 10) {
+                System.out.println(old_clerk.get_name() + " was sick, so " + clerk.get_name() + " covered for them.");
+            }
+        }
+        return clerk;
     }
 
     public CashRegister get_register() {
