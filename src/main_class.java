@@ -91,7 +91,7 @@ class main_class {
 
             System.out.println("===========================================");
             
-            if ((i + 1) % 7 != 0) {
+            if ((i + 1) % 7 == 0) {
                 System.out.println("Day " + Integer.toString(i + 1) + " is a Sunday, so the store did not open.");
                 FNMS.get_calendar().incr_current_day();
             } else {
