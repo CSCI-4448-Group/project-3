@@ -62,7 +62,7 @@ public class Clerk extends Employee{
         Store s = get_store();
         Inventory inv = s.get_inventory();
         for(Map.Entry<String, ArrayList<Item>> entry : inv.get_mapping().entrySet()) { //For each entry in our inventory map
-            if (entry.getValue().isEmpty() && !s.search_ordered_item_type(entry.getKey())) { //If we have 0 count of any items in our current inventory && they have not already been ordered
+            if (entry.getValue().isEmpty() && !s.search_ordered_item_type(entry.getKey()) && !s.is_discontinued(entry.getKey())) { //If we have 0 count of any items in our current inventory && they have not already been ordered
                 place_order(entry.getKey()); //Order that item
             }
         }
@@ -163,6 +163,10 @@ public class Clerk extends Employee{
 
     private void attempt_purchase(sellingCustomer seller, Item toBuyItem){
         double purchPrice = evaluate_item(toBuyItem);
+        if(get_store().is_discontinued(toBuyItem.get_item_type())){
+            System.out.println(seller.get_name() + " tried to sell a " + toBuyItem.get_name() + " but the store no longer purchases these");
+            return;
+        }
         if(seller.haggle_roll(50)){
             purch_item(toBuyItem,purchPrice);
             System.out.println(get_name() + " bought a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + purchPrice);

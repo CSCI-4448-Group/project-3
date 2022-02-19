@@ -238,4 +238,10 @@ public class Store {
         }
         return false;
     }
+
+    public boolean is_discontinued(String type){ //check if the item type is discontinued
+        type = type.toLowerCase();
+        //System.out.println("ABC123: comparing: " + type + (type.equals("hat") || type.equals("shirt") || type.equals("bandana")));
+        return (type.equals("hat") || type.equals("shirt") || type.equals("bandana"));
+    }
 }
