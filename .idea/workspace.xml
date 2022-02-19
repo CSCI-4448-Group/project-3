@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb68d6cc-b827-4a85-bba5-f57c95b2a067" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Clerk.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Clerk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Item$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Item$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main_class.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main_class.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Clerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Clerk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SidhantPuntambekarBrianNobleIssacPyleProject3Part1UMLDiagram.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
