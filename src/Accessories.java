@@ -68,3 +68,22 @@ class Strings extends Accessories
         return "Strings: " + get_brand();
     }
 }
+
+class GigBag extends Accessories
+{
+    private String type_;
+
+    GigBag(String name, double purchPrice, double listPrice, boolean isNew, int dayArriv, Condition condition, double salePrice, String brand, String type)
+    {
+        super(name, purchPrice, listPrice, isNew, dayArriv, condition, salePrice, brand);
+        type_ = type;
+    }
+
+    public String get_type() {return type_;}
+
+    public void set_type(String newType) {type_ = newType;}
+
+    public String toString(){
+        return "GigBag: " + get_brand();
+    }
+}

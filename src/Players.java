@@ -49,3 +49,14 @@ class MP3Player extends Players
         return "MP3Player: " + get_brand();
     }
 }
+
+class CassettePlayer extends Players
+{
+    CassettePlayer(String name, double purchPrice, double listPrice, boolean isNew, int dayArriv, Condition condition, double salePrice, String brand)
+    {
+        super(name, purchPrice, listPrice, isNew, dayArriv, condition, salePrice, brand);
+    }
+    public String toString(){
+        return "CassettePlayer: " + get_brand();
+    }
+}

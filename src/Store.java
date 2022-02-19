@@ -42,6 +42,9 @@ public class Store {
         inventory_.put_item((new MP3Player("Logitech MP3Player", 20, 40, true, 0, new Condition("very good"), 0, "Logitech")));
         inventory_.put_item((new MP3Player("LG MP3Player", 20, 40, true, 0, new Condition("fair"), 0, "LG")));
         inventory_.put_item((new MP3Player("Sony MP3Player", 20, 40, true, 0, new Condition("good"), 0, "Sony")));
+        inventory_.put_item((new CassettePlayer("Logitech CassettePlayer", 20, 40, true, 0, new Condition("very good"), 0, "Logitech")));
+        inventory_.put_item((new CassettePlayer("LG CassettePlayer", 20, 40, true, 0, new Condition("fair"), 0, "LG")));
+        inventory_.put_item((new CassettePlayer("Sony CassettePlayer", 20, 40, true, 0, new Condition("good"), 0, "Sony")));
         inventory_.put_item((new Guitar("Gibson SG Guitar", 45, 90, true, 0, new Condition("excellent"), 0, "Gibson", true)));
         inventory_.put_item((new Guitar("Fender Stratocaster Guitar", 40, 80, false, 0, new Condition("good"), 0, "Fender", true)));
         inventory_.put_item((new Guitar("Ibanez Guitar", 40, 80, true, 0, new Condition("very good"), 0, "Ibanez", true)));
@@ -57,6 +60,9 @@ public class Store {
         inventory_.put_item((new Harmonica("Hohner Harmonica", 10, 20, false, 0, new Condition("very good"), 0, "Hohner", "C")));
         inventory_.put_item((new Harmonica("Lee Oskar Harmonica", 10, 20, false, 0, new Condition("very good"), 0, "Lee Oskar", "C")));
         inventory_.put_item((new Harmonica("SEYDEL Blues Harmonica", 10, 20, false, 0, new Condition("very good"), 0, "SEYDEL", "C")));
+        inventory_.put_item((new Saxophone("Etude Saxophone", 20, 40, true, 0, new Condition("good"), 0, "Etude", "Alto")));
+        inventory_.put_item((new Saxophone("Yamaha Saxophone", 20, 40, true, 0, new Condition("good"), 0, "Yamaha", "Tenor")));
+        inventory_.put_item((new Saxophone("Azumi Saxophone", 20, 40, false, 0, new Condition("good"), 0, "Azume", "Soprano")));
         inventory_.put_item((new Hat("Post Malone Hat", 25, 50, true, 0, new Condition("good"), 0, "Gucci", 3)));
         inventory_.put_item((new Hat("Slash's Top Hat", 50, 100, true, 0, new Condition("good"), 0, "Slash", 7)));
         inventory_.put_item((new Hat("Carhartt Hat", 10, 20, true, 0, new Condition("good"), 0, "Carhartt", 5)));
@@ -75,6 +81,9 @@ public class Store {
         inventory_.put_item((new Strings("Ernie Ball Strings", 10, 20, true, 0, new Condition("excellent"), 0, "Ernie Ball", "9 gauge")));
         inventory_.put_item((new Strings("Dunlop Strings", 10, 20, true, 0, new Condition("excellent"), 0, "Dunlop", "10 gauge")));
         inventory_.put_item((new Strings("Elixir Strings", 10, 20, true, 0, new Condition("excellent"), 0, "Elixir", "11 gauge")));
+        inventory_.put_item((new GigBag("Ernie Ball GigBag", 10, 20, true, 0, new Condition("excellent"), 0, "Ernie Ball", "Rock GigBag")));
+        inventory_.put_item((new GigBag("Dunlop GigBag", 10, 20, true, 0, new Condition("excellent"), 0, "Dunlop", "Rock GigBag")));
+        inventory_.put_item((new GigBag("Elixir GigBag", 10, 20, true, 0, new Condition("excellent"), 0, "Elixir", "Rock GigBag")));
         System.out.println("");
     }
 
@@ -83,6 +92,7 @@ public class Store {
         employees_ = new ArrayList<Employee>();
         employees_.add(new Clerk("Shaggy",this, new HaphazardTune()));
         employees_.add(new Clerk("Velma", this, new ManualTune()));
+        employees_.add(new Clerk("Daphne", this, new ElectronicTune()));
     }
 
     // Init calendar object
@@ -177,40 +187,58 @@ public class Store {
 
     public Clerk get_clerk_of_the_day() {
         Random rand = new Random();
-        int rand_num = rand.nextInt(2);
+        int rand_num = rand.nextInt(get_clerks().size());
 
-        boolean clerk_available = true;
-
-        Clerk current_clerk = new Clerk("", this, null);
+        Clerk current_clerk = null;
         Clerk clerk1 = get_clerks().get(0);
         Clerk clerk2 = get_clerks().get(1);
+        Clerk clerk3 = get_clerks().get(2);
 
         if (rand_num == 0) {
             if (clerk1.get_days_worked() < 3) {
                 current_clerk = clerk1;
                 clerk2.set_days_worked(0);
+                clerk3.set_days_worked(0);
             } else if (clerk2.get_days_worked() < 3) {
-                current_clerk = clerk2; 
+                current_clerk = clerk2;
                 clerk1.set_days_worked(0);
-            } else {
-                clerk_available = false;
+                clerk3.set_days_worked(0);
+            } else if (clerk3.get_days_worked() < 3) {
+                current_clerk = clerk3;
+                clerk1.set_days_worked(0);
+                clerk2.set_days_worked(0);
             }
-        } else {
+        } else if (rand_num == 1) {
             if (clerk2.get_days_worked() < 3) {
                 current_clerk = clerk2;
                 clerk1.set_days_worked(0);
+                clerk3.set_days_worked(0);
             } else if (clerk1.get_days_worked() < 3) {
                 current_clerk = clerk1;
                 clerk2.set_days_worked(0);
-            } else {
-                clerk_available = false;
+                clerk3.set_days_worked(0);
+            } else if (clerk3.get_days_worked() < 3) {
+                current_clerk = clerk3;
+                clerk1.set_days_worked(0);
+                clerk2.set_days_worked(0);
+            }
+        } else if (rand_num == 2) {
+            if (clerk3.get_days_worked() < 3) {
+                current_clerk = clerk3;
+                clerk1.set_days_worked(0);
+                clerk2.set_days_worked(0);
+            } else if (clerk2.get_days_worked() < 3) {
+                current_clerk = clerk2;
+                clerk1.set_days_worked(0);
+                clerk3.set_days_worked(0);
+            } else if (clerk1.get_days_worked() < 3) {
+                current_clerk = clerk1;
+                clerk1.set_days_worked(0);
+                clerk3.set_days_worked(0);
             }
         }
-        if (clerk_available) {
-            return current_clerk;
-        }
 
-        return null;
+        return current_clerk;
     }
 
     public CashRegister get_register() {

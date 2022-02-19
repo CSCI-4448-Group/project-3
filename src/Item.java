@@ -49,8 +49,7 @@ abstract public class Item{
         if (itemBuilder_.containsKey(type)) { //If the itemBuilder_ has a template for the desired item
             return itemBuilder_.get(type).call(); //Generate that item and return it
         }
-        System.out.println("Item type:" + type);
-        throw new IllegalArgumentException("generate_item attempted to generate invalid item");
+        throw new IllegalArgumentException("generate_item attempted to generate invalid item " + type);
     }
 
     //Mapping from (item type) -> lambda function building an item of that type with random attributes
@@ -107,6 +106,15 @@ abstract public class Item{
             return new Strings(name + " Strings",purchPrice,purchPrice*2,rand.nextBoolean(),
                     -1,new Condition("good"),0,name,types[rand.nextInt(types.length)]);
         });
+        put("gigbag", () -> {
+            Random rand = new Random();
+            String[] brands = {"Gibson", "Dunlop", "Elixir", "GHS"};
+            String[] types = {"Rock gigbag", "Jazz gigbag"};
+            String name = brands[rand.nextInt(brands.length)];
+            int purchPrice = rand.nextInt(50) + 1;
+            return new Strings(name + " Strings",purchPrice,purchPrice*2,rand.nextBoolean(),
+                    -1,new Condition("good"),0,name,types[rand.nextInt(types.length)]);
+        });
         put("cdplayer", () -> {
             Random rand = new Random();
             String[] brands = {"LG", "Dell", "Logitech", "Sony"};
@@ -129,6 +137,14 @@ abstract public class Item{
             String name = brands[rand.nextInt(brands.length)];
             int purchPrice = rand.nextInt(50) + 1;
             return new MP3Player(name + " MP3Player",purchPrice,purchPrice*2,rand.nextBoolean(),
+                    -1,new Condition("good"),0,name);
+        });
+        put("cassetteplayer", () -> {
+            Random rand = new Random();
+            String[] brands = {"LG", "Dell", "Logitech", "Sony"};
+            String name = brands[rand.nextInt(brands.length)];
+            int purchPrice = rand.nextInt(50) + 1;
+            return new MP3Player(name + " CassettePlayer",purchPrice,purchPrice*2,rand.nextBoolean(),
                     -1,new Condition("good"),0,name);
         });
         put("hat", () -> {
@@ -197,7 +213,15 @@ abstract public class Item{
             return new Harmonica(name + " Guitar",purchPrice,purchPrice*2,rand.nextBoolean(),
                     -1,new Condition("good"),0,name, keys[rand.nextInt(keys.length)]);
         });
-
+        put("saxophone", () -> {
+            Random rand = new Random();
+            String[] brands = {"Gibson", "Fender", "PRS", "G&L"};
+            String[] types = {"Alto", "Tenor", "Soprano", "Bass"};
+            String name = brands[rand.nextInt(brands.length)];
+            int purchPrice = rand.nextInt(50) + 1;
+            return new Saxophone(name + " Guitar",purchPrice,purchPrice*2,rand.nextBoolean(),
+                    -1,new Condition("good"),0,name, types[rand.nextInt(types.length)]);
+        });
         // All of the above are potential random items to generate from
 
 
