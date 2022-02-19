@@ -225,7 +225,7 @@ public class Store {
         for(HashMap.Entry<Integer, ArrayList<Item>> entry : orderedItems_.entrySet()){ //For each entry in the orderedList_ map
             for(Item foundItem : entry.getValue()){
                 String foundType = foundItem.toString().split(":")[0]; //Get the type of the item bunch in that entr
-                if(foundType.equals(foundType)) { //If the found type matches the passed type, the item is already ordered
+                if(foundType.equals(orderType)) { //If the found type matches the passed type, the item is already ordered
                     return true;
                 }
             }
