@@ -1,20 +1,19 @@
 public class HaphazardTune implements TuneBehavior{
-    public void tune(Item item){
-        if(rand_.nextInt(100) >= 50){
-            return;
+    public void tuneStringed(Stringed item) {
+        if (rand_.nextInt(100) < 50) {
+            item.set_tuned(!item.get_tuned());
         }
+    }
 
-        if(item instanceof Stringed){
-            Stringed stringItem = (Stringed)item; //cast it to a stringed item
-            stringItem.set_tuned(!stringItem.get_tuned()); //invert the boolean
+    public void tuneWind(Wind item){
+        if(rand_.nextInt(100)<50){
+            item.set_adjusted(!item.get_adjusted());
         }
-        else if(item instanceof Wind){
-            Wind windItem = (Wind)item;
-            windItem.set_adjusted(!windItem.get_adjusted());
-        }
-        else{
-            Players playerItem = (Players)item;
-            playerItem.set_equalized(!playerItem.get_equalized());
+    }
+
+    public void tunePlayers(Players item){
+        if(rand_.nextInt(100)<50){
+            item.set_equalized(!item.get_equalized());
         }
     }
 }
