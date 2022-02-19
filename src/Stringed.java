@@ -1,11 +1,7 @@
 public abstract class Stringed extends Instrument
 {
     private boolean electric_;
-<<<<<<< HEAD
     private boolean tuned_;
-=======
-    private boolean tuned_ = false;
->>>>>>> 3d1aba0722b90fa8b264f991d6feec07488543ed
 
     Stringed(String name, double purchPrice, double listPrice, boolean isNew, int dayArriv, Condition condition, double salePrice, String brand, boolean electric, boolean tuned)
     {
