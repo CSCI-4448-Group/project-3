@@ -94,7 +94,7 @@ abstract public class Item{
             String[] brands = {"Gibson", "Dunlop", "Elixir", "GHS"};
             String name = brands[rand.nextInt(brands.length)];
             int purchPrice = rand.nextInt(50) + 1;
-            return new Cable(name + " Strings",purchPrice,purchPrice*2,rand.nextBoolean(),
+            return new Cable(name + " Cable",purchPrice,purchPrice*2,rand.nextBoolean(),
                     -1,new Condition("good"),0,name,rand.nextInt(500));
         });
         put("strings", () -> {
@@ -112,7 +112,7 @@ abstract public class Item{
             String[] types = {"Rock gigbag", "Jazz gigbag"};
             String name = brands[rand.nextInt(brands.length)];
             int purchPrice = rand.nextInt(50) + 1;
-            return new Strings(name + " Strings",purchPrice,purchPrice*2,rand.nextBoolean(),
+            return new GigBag(name + " GigBag",purchPrice,purchPrice*2,rand.nextBoolean(),
                     -1,new Condition("good"),0,name,types[rand.nextInt(types.length)]);
         });
         put("cdplayer", () -> {
@@ -144,7 +144,7 @@ abstract public class Item{
             String[] brands = {"LG", "Dell", "Logitech", "Sony"};
             String name = brands[rand.nextInt(brands.length)];
             int purchPrice = rand.nextInt(50) + 1;
-            return new MP3Player(name + " CassettePlayer",purchPrice,purchPrice*2,rand.nextBoolean(),
+            return new CassettePlayer(name + " CassettePlayer",purchPrice,purchPrice*2,rand.nextBoolean(),
                     -1,new Condition("good"),0,name);
         });
         put("hat", () -> {
