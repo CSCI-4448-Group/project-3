@@ -98,6 +98,12 @@ class main_class {
                 FNMS.get_calendar().incr_current_day();
             }
 
+            if ((i+1) % 7 == 0) {
+                for(Clerk clerk : FNMS.get_clerks()){
+                    clerk.set_days_worked(0);
+                }
+            }
+
             System.out.println("===========================================");
             System.out.println("\n");
         }
