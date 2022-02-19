@@ -1,9 +1,13 @@
 public abstract class Wind extends Instrument
 {
+    private boolean adjusted_ = false;
     Wind(String name, double purchPrice, double listPrice, boolean isNew, int dayArriv, Condition condition, double salePrice, String brand)
     {
         super(name, purchPrice, listPrice, isNew, dayArriv, condition, salePrice, brand);
     }
+
+    public boolean get_adjusted(){return adjusted_;}
+    public void set_adjusted(boolean adjusted){adjusted_ = adjusted;}
 }
 
 class Flute extends Wind

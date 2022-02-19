@@ -2,7 +2,7 @@ public abstract class Players extends Item {
     // Players are a subclass of item
 
     private String brand_; // Each player has a brand
-
+    private boolean equalized_ = false;
     Players(String name, double purchPrice, double listPrice, boolean isNew, int dayArriv, Condition condition, double salePrice, String brand)
     {
         super(name, purchPrice, listPrice, isNew, dayArriv, condition, salePrice);
@@ -11,8 +11,9 @@ public abstract class Players extends Item {
 
     // Getters and setters
     public String get_brand() {return brand_;}
-
     public void set_brand(String newBrand) {brand_ = newBrand;}
+    public boolean get_equalized(){return equalized_;}
+    public void set_equalized(boolean equalized){equalized_ = equalized;}
 }
 
 // CD_Player, RecordPlayer, MP3Player extend Players
