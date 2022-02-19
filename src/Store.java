@@ -81,8 +81,8 @@ public class Store {
     // init employees with Shaggy and Velma
     public void initializeEmployees() {
         employees_ = new ArrayList<Employee>();
-        employees_.add(new Clerk("Shaggy",this));
-        employees_.add(new Clerk("Velma", this));
+        employees_.add(new Clerk("Shaggy",this, new HaphazardTune()));
+        employees_.add(new Clerk("Velma", this, new ManualTune()));
     }
 
     // Init calendar object
@@ -181,7 +181,7 @@ public class Store {
 
         boolean clerk_available = true;
 
-        Clerk current_clerk = new Clerk("", this);
+        Clerk current_clerk = new Clerk("", this, null);
         Clerk clerk1 = get_clerks().get(0);
         Clerk clerk2 = get_clerks().get(1);
 

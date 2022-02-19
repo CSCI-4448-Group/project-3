@@ -3,15 +3,24 @@ import java.util.Random;
 import java.util.Map;
 public class Clerk extends Employee{
 
-    public Clerk(String name, Store s) {
-        super(name,s);
-    }
+    private TuneBehavior tuneBehavior_;
 
+    public Clerk(String name, Store s, TuneBehavior tuneBehavior) {
+        super(name,s);
+        tuneBehavior_ = tuneBehavior;
+    }
     public int getRandomNumber(int min, int max) //https://www.baeldung.com/java-generating-random-numbers-in-range
     {
         return (int) ((Math.random() * (max - min)) + min);
     }
 
+    public void set_tune_behvaior(TuneBehavior tuneBehavior){
+        tuneBehavior_ = tuneBehavior;
+    }
+
+    public void perform_tune(Item item){
+        tuneBehavior_.tune(item);
+    }
     //Set all items arriving today to have currDay arrival date, add all items to inventory
     private void process_incoming_items(int currDay){
         Store s = get_store();

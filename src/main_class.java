@@ -80,7 +80,7 @@ class main_class {
          System.out.println("\n");
      }
 
-    public static void runFnmsSimulation(Store FNMS, Clerk clerk1, Clerk clerk2) throws Exception {
+    public static void runFnmsSimulation(Store FNMS) throws Exception {
         // Main program loop
         // Run loop for 30 days, calling begin_day each time, and print out a delineator between each day.
 
@@ -99,10 +99,11 @@ class main_class {
             }
 
             if ((i+1) % 7 == 0) {
-                clerk1.set_days_worked(0);
-                clerk2.set_days_worked(0);
+                for(Clerk clerk : FNMS.get_clerks()){
+                    clerk.set_days_worked(0);
+                }
             }
-            
+
             System.out.println("===========================================");
             System.out.println("\n");
         }
@@ -111,11 +112,10 @@ class main_class {
     public static void main(String[] args) throws Exception {
         // Initialize store and two clerk objects
         Store FNMS = new Store();
-        Clerk Shaggy = new Clerk("Shaggy", FNMS);
-        Clerk Velma = new Clerk("Velma", FNMS);
+
 
         // Run the store simulation
-        runFnmsSimulation(FNMS, Shaggy, Velma);
+        runFnmsSimulation(FNMS);
 
         // Prints the summary / final messages
         print_final_messages(FNMS);
