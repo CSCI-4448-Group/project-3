@@ -67,7 +67,6 @@ public class Clerk extends Employee{
             }
         }
         System.out.println("The sum of todays inventory is " + inv.get_list_price_sum()); //Display the list price sum of all items in inventory
-        System.out.println(inv.get_mapping());
     }
 
     //Adds 3 items of type passed to orderedItems_ map in form of <Day Arriving, List Of Items>
