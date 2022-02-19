@@ -47,3 +47,22 @@ class Harmonica extends Wind
         return "Harmonica: " + get_brand();
     }
 }
+
+class Saxophone extends Wind
+{
+    private String type_;
+
+    Saxophone(String name, double purchPrice, double listPrice, boolean isNew, int dayArriv, Condition condition, double salePrice, String brand, String type)
+    {
+        super(name, purchPrice, listPrice, isNew, dayArriv, condition, salePrice, brand);
+        type_ = type;
+    }
+
+    public String get_type() {return type_;}
+
+    public void set_type(String newType) {type_ = newType;}
+
+    public String toString(){
+        return "Saxophone: " + get_brand();
+    }
+}
