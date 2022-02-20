@@ -122,7 +122,7 @@ public class Clerk extends Employee{
     private ArrayList<buyingCustomer> generateBuyingCustomers(){
         ArrayList<buyingCustomer> buyCustomers = new ArrayList<buyingCustomer>();
 
-        // getRandomNumber is exclusive to the maximum so this returns a number between [4, 10] inclusive.
+        // getPoisson returns buying customers from a poisson distribution centered at mean 3
         int randBuyers = 2 + getPoissonRandom(3);
         System.out.println("The number of random buyers (from a Poisson Distribution is): " + randBuyers);
 
