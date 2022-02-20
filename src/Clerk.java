@@ -104,11 +104,27 @@ public class Clerk extends Employee{
         return items;
     }
 
+    // https://stackoverflow.com/questions/9832919/generate-poisson-arrival-in-java
+    private static int getPoissonRandom(double mean)
+    {
+        Random r = new Random();
+        double L = Math.exp(-mean);
+        int k = 0;
+        double p = 1.0;
+        do
+        {
+            p = p * r.nextDouble();
+            k++;
+        } while (p > L);
+        return k - 1;
+    }
+
     private ArrayList<buyingCustomer> generateBuyingCustomers(){
         ArrayList<buyingCustomer> buyCustomers = new ArrayList<buyingCustomer>();
 
-        // getRandomNumber is exclusive to the maximum so this returns a number between [4, 10] inclusive.
-        int randBuyers = getRandomNumber(4, 11); 
+        // getPoisson returns buying customers from a poisson distribution centered at mean 3
+        int randBuyers = 2 + getPoissonRandom(3);
+        System.out.println("The number of random buyers (from a Poisson Distribution is): " + randBuyers);
 
         for (int i = 1; i < randBuyers + 1; i++)
         {
@@ -250,7 +266,7 @@ public class Clerk extends Employee{
             System.out.println(name + " damaged " + damagedItem.toString() + " and broke it.");
             inv.remove_item(damagedItem);
         }
-        else{ //Reducde the items condition by one level, reduce the items listPrice by 20%
+        else{ //Reduce the items condition by one level, reduce the items listPrice by 20%
             damagedItem.get_condition().decreaseCondition(); //Decrease the items condition
             System.out.println(name + " damaged " + damagedItem.toString() + " and its condition is now " + damagedItem.get_condition().get_condition());
             System.out.println("The price of the item will be reduced from " + damagedItem.get_list_price() + " to " + damagedItem.get_list_price() * .8);
