@@ -90,12 +90,13 @@ class main_class {
         {
 
             System.out.println("===========================================");
-            Clerk current_clerk = FNMS.get_clerk_of_the_day();
-            if (current_clerk != null && ((i + 1) % 7 != 0)) {
-                begin_day(FNMS, current_clerk);
-            } else {
+            
+            if ((i + 1) % 7 == 0) {
                 System.out.println("Day " + Integer.toString(i + 1) + " is a Sunday, so the store did not open.");
                 FNMS.get_calendar().incr_current_day();
+            } else {
+                Clerk current_clerk = FNMS.get_clerk_of_the_day();
+                begin_day(FNMS, current_clerk);
             }
 
             if ((i+1) % 7 == 0) {
