@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f765cd4-fc02-4032-9bec-1fe204966877" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Clerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Clerk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_class.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

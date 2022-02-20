@@ -1,20 +1,37 @@
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.Map;
-public class Clerk extends Employee{
+import java.util.*;
+
+public class Clerk extends Employee implements Subject {
 
     private TuneBehavior tuneBehavior_;
+    private ArrayList<Observer> observersList_ = new ArrayList<Observer>();
+    public String announcement_;
 
     public Clerk(String name, Store s, TuneBehavior tuneBehavior) {
         super(name,s);
         tuneBehavior_ = tuneBehavior;
     }
+
+    @Override
+    public void registerObserver(Observer o) {
+        observersList_.add(o);
+    }
+
+    @Override
+    public void removeObserver() {
+        observersList_.clear();
+    }
+
+    @Override
+    public void notifyObservers(String announcement) {
+        observersList_.forEach(o -> o.update(announcement));
+    }
+
     public int getRandomNumber(int min, int max) //https://www.baeldung.com/java-generating-random-numbers-in-range
     {
         return (int) ((Math.random() * (max - min)) + min);
     }
 
-    public void set_tune_behvaior(TuneBehavior tuneBehavior){
+    public void set_tune_behavior(TuneBehavior tuneBehavior){
         tuneBehavior_ = tuneBehavior;
     }
 
@@ -22,10 +39,14 @@ public class Clerk extends Employee{
         tuneBehavior_.tune(item);
     }
     //Set all items arriving today to have currDay arrival date, add all items to inventory
-    private void process_incoming_items(int currDay){
+    private void process_incoming_items(int currDay) {
         Store s = get_store();
         ArrayList<Item> incoming = s.get_ordered().get(currDay); //Get all the items from the map
         incoming.forEach((item)->item.set_day_arrived(currDay));  //Set all their arrival dates to current day
+
+        announcement_ = incoming.size() + " number of items arrived at the store on Day " + currDay;
+        notifyObservers(announcement_);
+
         s.get_inventory().put_items(incoming); //Add all the items to the inventory
         s.get_ordered().remove(currDay); //Remove items from orderedItems_
     }
@@ -34,6 +55,9 @@ public class Clerk extends Employee{
     public void arrive_at_store(){
         int currDay = get_store().get_calendar().get_current_day();
         System.out.println(get_name() + " arrives at the store on Day " + currDay);
+        announcement_ = get_name() + " arrives at the store on Day " + currDay;
+        notifyObservers(announcement_);
+
         if(get_store().get_ordered().containsKey(currDay)){ //If there are ordered items that arrive today
             process_incoming_items(currDay);
         }
@@ -44,6 +68,9 @@ public class Clerk extends Employee{
     public void check_register(){
         double currentAmount = get_store().get_register().get_amount();
         System.out.println(get_name() + " is checking the register and there is " + currentAmount);
+        announcement_ = get_name() + " is checking the register and there is " + currentAmount;
+        notifyObservers(announcement_);
+
         if(currentAmount < 75) {
             go_to_bank();
         }
@@ -55,6 +82,8 @@ public class Clerk extends Employee{
         reg.set_amount(reg.get_amount() + 1000);
         reg.set_bank_withdrawal(reg.get_bank_withdrawals() + 1000);
         System.out.println(get_name() + " withdrew 1000 dollars from the bank and the new balance in the register is " + reg.get_amount() + " dollars");
+        announcement_ = get_name() + " withdrew 1000 dollars from the bank and the new balance in the register is " + reg.get_amount() + " dollars";
+        notifyObservers(announcement_);
     }
 
     //Scan the current inventory, if we have 0 count of any type of item, order 3 of them
@@ -66,7 +95,14 @@ public class Clerk extends Employee{
                 place_order(entry.getKey()); //Order that item
             }
         }
-        System.out.println("The sum of todays inventory is " + inv.get_list_price_sum()); //Display the list price sum of all items in inventory
+        System.out.println("The sum of today's inventory is " + inv.get_purch_price_sum()); //Display the list price sum of all items in inventory
+
+        announcement_ = "The total number of items in the inventory is " + inv.flatten_inventory().size();
+        notifyObservers(announcement_);
+        announcement_ = "The sum of today's inventory is " + inv.get_purch_price_sum();
+        notifyObservers(announcement_);
+        announcement_ = "The total number of items damaged in tuning is " + inv.flatten_inventory().size(); // THIS NEEDS TO BE FIXED BY BRIAN WHEN HE ADDS TUNING BEHAVIOR TO CLERKS WHO RUN DO INVENTORY!!!!!!!!!!!!
+        notifyObservers(announcement_);
     }
 
     //Adds 3 items of type passed to orderedItems_ map in form of <Day Arriving, List Of Items>
@@ -76,6 +112,10 @@ public class Clerk extends Employee{
         CashRegister reg = s.get_register();
         double total_spent_on_order = 0;
         ArrayList<Item> items = generate_items(type.toLowerCase(), 3); //Generate 3 of the type of items asked for
+
+        announcement_ = "The total number of items ordered is " + items.size();
+        notifyObservers(announcement_);
+
         // Updates the register with the 
         for (Item item : items) {
             reg.set_amount(reg.get_amount() - item.get_purch_price());
@@ -243,6 +283,8 @@ public class Clerk extends Employee{
         String name = get_name();
         Inventory inv = get_store().get_inventory();
         double damage_chance;
+        int damagedCounter = 0;
+
         if (name == "Shaggy") {
             damage_chance = 20;
         }
@@ -251,7 +293,7 @@ public class Clerk extends Employee{
         }
         else {
             damage_chance = 50;
-        }
+        } // Daphne has 50% damage chance
          //Increment calendar day
 
         //If the roll for a damaging an item fails, finish cleaning the store and return from fxn
@@ -262,6 +304,7 @@ public class Clerk extends Employee{
 
         //Otherwise proceed with damaging an item
         Item damagedItem = inv.flatten_inventory().get(rand.nextInt(inv.flatten_inventory().size()));//Flatten the inventory into a list of items and pick a random item to damage
+        damagedCounter += 1;
         if(damagedItem.get_condition().get_condition() == "poor"){ //If the item breaks
             System.out.println(name + " damaged " + damagedItem.toString() + " and broke it.");
             inv.remove_item(damagedItem);
@@ -274,6 +317,9 @@ public class Clerk extends Employee{
             System.out.println("The new price of the item is: " + damagedItem.get_list_price());
         }
         System.out.println(name + " finished cleaning the store.");
+
+        announcement_ = "The total number of items damaged in cleaning is " + damagedCounter;
+        notifyObservers(announcement_);
     }
 
     // Pack up the store for the day. Increase days worked and increment current day. Announce that the store is closed
@@ -281,5 +327,7 @@ public class Clerk extends Employee{
         get_store().get_calendar().incr_current_day();
         incr_days_worked();
         System.out.println(get_name() + " locked up the store and went home for the day");
+        announcement_ = get_name() + " locked up the store and went home for the day";
+        notifyObservers(announcement_);
     }
 }

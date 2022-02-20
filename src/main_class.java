@@ -4,7 +4,9 @@ class main_class {
 
     public static void begin_day(Store fnms, Clerk current_clerk) throws Exception
     {
-        
+        Logger loggerGuy = new Logger("Logger Guy", fnms, current_clerk);
+        loggerGuy.arrive(fnms.get_calendar().get_current_day());
+
         // Clerk arrives at store
         current_clerk.arrive_at_store();
 
@@ -22,6 +24,9 @@ class main_class {
 
         // Clerk announces he leaves the store
         current_clerk.leave_store();
+
+        // Logger leaves for the day
+        loggerGuy.close();
     }
 
     // Possible way to handle announcements, may make it easier?
