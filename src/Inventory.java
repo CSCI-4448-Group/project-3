@@ -19,7 +19,7 @@ public class Inventory{
 
     //Return the count of item type in inventory
     public int get_count(String type){
-        if(inventory_.containsValue(type)){
+        if(inventory_.containsKey(type)){
             return inventory_.get(type).size();
         }
         return 0;

@@ -214,7 +214,7 @@ public class Clerk extends Employee implements Subject {
         ArrayList<buyingCustomer> buyCustomers = generateBuyingCustomers();
         for(buyingCustomer buyer : buyCustomers){ //For each buying customer
             if(get_store().get_inventory().get_items_of_type(buyer.get_wanted_type()).isEmpty()){ //If there are no items of type that customer wants
-                System.out.println(buyer.get_name() + " tried to buy a " + buyer.get_wanted_type() + "but none were available");
+                System.out.println(buyer.get_name() + " tried to buy a " + buyer.get_wanted_type() + " but none were available");
                 continue;
             }
             boolean didSell = attempt_sale(buyer,get_store().get_inventory().get_items_of_type(buyer.get_wanted_type()).get(0)); //Attempt to sell the first item of appropriate type
@@ -249,11 +249,21 @@ public class Clerk extends Employee implements Subject {
         if (buyer.haggle_roll(50)){ //If we roll 50% chance and win, sell full price
             sell_item(toSellItem, toSellItem.get_list_price());
             System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + toSellItem.get_sale_price());
+
+            // If the item is a subclass of 'Stringed' we want to decorate it with addons
+            if (Stringed.class.isAssignableFrom(toSellItem.getClass())) {
+                toSellItem = decorate_sale(toSellItem);
+            }
             return true;
         }
         else if(buyer.haggle_roll(75)){ //else if we roll 75% chance and win, sell 90% full price
             sell_item(toSellItem, toSellItem.get_list_price()*.9);
             System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + toSellItem.get_sale_price() + " after a 10% discount.");
+                        
+            // If the item is a subclass of 'Stringed' we want to decorate it with addons
+            if (Stringed.class.isAssignableFrom(toSellItem.getClass())) {
+                toSellItem = decorate_sale(toSellItem);
+            }
             return true;
         }
         else{
@@ -284,7 +294,18 @@ public class Clerk extends Employee implements Subject {
         }
     }
 
-    private void sell_item(Item soldItem, double soldPrice){
+    // Only applies to stringed items right now, but can be modified later to others. 
+    // Sells addon items depending on random chances, using decorator pattern
+    private Item decorate_sale(Item soldItem) {
+        Store s = get_store();
+        if (Stringed.class.isAssignableFrom(soldItem.getClass())) {
+            Decorator dec = new Decorator();
+            soldItem = dec.run((Stringed)soldItem, s, this);
+        }
+        return soldItem;
+    }
+
+    protected void sell_item(Item soldItem, double soldPrice){
         Store s = get_store();
         s.add_to_sold(soldItem);
         s.remove_from_inventory(soldItem);
