@@ -9,6 +9,11 @@ public class Logger extends Employee implements Observer {
     private String numItemsSold_;
     private String numItemsPurchased_;
     private String numItemsDamaged_;
+    private String name = "Logger";
+
+    public String get_name() {
+        return name;
+    }
 
     public Logger(String name, Store s, Subject clerk)
     {

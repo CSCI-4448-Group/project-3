@@ -27,6 +27,9 @@ public class Clerk extends Employee implements Subject {
 
     @Override
     public void notifyObservers(String announcement) {
+        for (Observer o : observersList_) {
+            System.out.println(o);
+        }
         observersList_.forEach(o -> o.update(announcement));
     }
 

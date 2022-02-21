@@ -13,10 +13,18 @@ public class Tracker extends Employee implements Observer {
     private String numItemsDamaged_;
     private String nameOfEmployee_;
     private String announcement_;
+    private String name = "Tracker";
 
-    public Tracker(String name, Store s, Subject clerk)
+    public String get_name() {
+        return name;
+    }
+
+    public Tracker(String name, Store s)
     {
         super(name, s);
+    }
+
+    public void registerClerk(Subject clerk) {
         clerk.registerObserver(this);
     }
 
