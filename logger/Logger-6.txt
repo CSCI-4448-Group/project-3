@@ -1,1 +1,23 @@
-Logger wrote: The total number of items damaged in cleaning is 1
+Logger wrote: Daphne locked up the store and went home for the day
+Logger wrote: Daphne locked up the store and went home for the day
+Logger wrote: Shaggy arrives at the store on Day 6
+Logger wrote: Shaggy arrives at the store on Day 6
+Logger wrote: Shaggy arrives at the store on Day 6
+Logger wrote: 3 number of items arrived at the store on Day 6
+Logger wrote: 3 number of items arrived at the store on Day 6
+Logger wrote: 3 number of items arrived at the store on Day 6
+Logger wrote: Shaggy is checking the register and there is 1808.3000000000002
+Logger wrote: Shaggy is checking the register and there is 1808.3000000000002
+Logger wrote: Shaggy is checking the register and there is 1808.3000000000002
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 39
+Logger wrote: The total number of items in the inventory is 39
+Logger wrote: The total number of items in the inventory is 39
+Logger wrote: The sum of today's inventory is 883.5
+Logger wrote: The sum of today's inventory is 883.5
+Logger wrote: The sum of today's inventory is 883.5
+Logger wrote: The total number of items damaged in tuning is 39
+Logger wrote: The total number of items damaged in tuning is 39
+Logger wrote: The total number of items damaged in tuning is 39

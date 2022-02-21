@@ -1,1 +1,21 @@
-Logger wrote: The total number of items damaged in tuning is 56
+Logger wrote: Velma arrives at the store on Day 15
+Logger wrote: Velma arrives at the store on Day 15
+Logger wrote: Velma arrives at the store on Day 15
+Logger wrote: 6 number of items arrived at the store on Day 15
+Logger wrote: 6 number of items arrived at the store on Day 15
+Logger wrote: 6 number of items arrived at the store on Day 15
+Logger wrote: Velma is checking the register and there is 2255.4
+Logger wrote: Velma is checking the register and there is 2255.4
+Logger wrote: Velma is checking the register and there is 2255.4
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 42
+Logger wrote: The total number of items in the inventory is 42
+Logger wrote: The total number of items in the inventory is 42
+Logger wrote: The sum of today's inventory is 1033.0
+Logger wrote: The sum of today's inventory is 1033.0
+Logger wrote: The sum of today's inventory is 1033.0
+Logger wrote: The total number of items damaged in tuning is 42
+Logger wrote: The total number of items damaged in tuning is 42
+Logger wrote: The total number of items damaged in tuning is 42

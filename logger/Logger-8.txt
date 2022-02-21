@@ -1,1 +1,20 @@
-Logger wrote: The total number of items damaged in tuning is 54
+Logger wrote: Shaggy arrives at the store on Day 8
+Logger wrote: Shaggy arrives at the store on Day 8
+Logger wrote: Shaggy arrives at the store on Day 8
+Logger wrote: Shaggy arrives at the store on Day 8
+Logger wrote: Shaggy is checking the register and there is 1678.5000000000002
+Logger wrote: Shaggy is checking the register and there is 1678.5000000000002
+Logger wrote: Shaggy is checking the register and there is 1678.5000000000002
+Logger wrote: Shaggy is checking the register and there is 1678.5000000000002
+Logger wrote: The total number of items in the inventory is 38
+Logger wrote: The total number of items in the inventory is 38
+Logger wrote: The total number of items in the inventory is 38
+Logger wrote: The total number of items in the inventory is 38
+Logger wrote: The sum of today's inventory is 933.3
+Logger wrote: The sum of today's inventory is 933.3
+Logger wrote: The sum of today's inventory is 933.3
+Logger wrote: The sum of today's inventory is 933.3
+Logger wrote: The total number of items damaged in tuning is 38
+Logger wrote: The total number of items damaged in tuning is 38
+Logger wrote: The total number of items damaged in tuning is 38
+Logger wrote: The total number of items damaged in tuning is 38

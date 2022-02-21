@@ -1,1 +1,33 @@
-Logger wrote: The total number of items damaged in cleaning is 1
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Daphne arrives at the store on Day 16
+Logger wrote: Daphne arrives at the store on Day 16
+Logger wrote: Daphne arrives at the store on Day 16
+Logger wrote: Daphne arrives at the store on Day 16
+Logger wrote: Daphne arrives at the store on Day 16
+Logger wrote: 3 number of items arrived at the store on Day 16
+Logger wrote: 3 number of items arrived at the store on Day 16
+Logger wrote: 3 number of items arrived at the store on Day 16
+Logger wrote: 3 number of items arrived at the store on Day 16
+Logger wrote: 3 number of items arrived at the store on Day 16
+Logger wrote: Daphne is checking the register and there is 2355.8800000000006
+Logger wrote: Daphne is checking the register and there is 2355.8800000000006
+Logger wrote: Daphne is checking the register and there is 2355.8800000000006
+Logger wrote: Daphne is checking the register and there is 2355.8800000000006
+Logger wrote: Daphne is checking the register and there is 2355.8800000000006
+Logger wrote: The total number of items in the inventory is 43
+Logger wrote: The total number of items in the inventory is 43
+Logger wrote: The total number of items in the inventory is 43
+Logger wrote: The total number of items in the inventory is 43
+Logger wrote: The total number of items in the inventory is 43
+Logger wrote: The sum of today's inventory is 1025.6000000000001
+Logger wrote: The sum of today's inventory is 1025.6000000000001
+Logger wrote: The sum of today's inventory is 1025.6000000000001
+Logger wrote: The sum of today's inventory is 1025.6000000000001
+Logger wrote: The sum of today's inventory is 1025.6000000000001
+Logger wrote: The total number of items damaged in tuning is 43
+Logger wrote: The total number of items damaged in tuning is 43
+Logger wrote: The total number of items damaged in tuning is 43
+Logger wrote: The total number of items damaged in tuning is 43
+Logger wrote: The total number of items damaged in tuning is 43

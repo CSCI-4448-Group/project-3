@@ -1,1 +1,53 @@
-Logger wrote: The total number of items damaged in tuning is 49
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Daphne arrives at the store on Day 20
+Logger wrote: Daphne arrives at the store on Day 20
+Logger wrote: Daphne arrives at the store on Day 20
+Logger wrote: Daphne arrives at the store on Day 20
+Logger wrote: Daphne arrives at the store on Day 20
+Logger wrote: Daphne arrives at the store on Day 20
+Logger wrote: 6 number of items arrived at the store on Day 20
+Logger wrote: 6 number of items arrived at the store on Day 20
+Logger wrote: 6 number of items arrived at the store on Day 20
+Logger wrote: 6 number of items arrived at the store on Day 20
+Logger wrote: 6 number of items arrived at the store on Day 20
+Logger wrote: 6 number of items arrived at the store on Day 20
+Logger wrote: Daphne is checking the register and there is 2668.48
+Logger wrote: Daphne is checking the register and there is 2668.48
+Logger wrote: Daphne is checking the register and there is 2668.48
+Logger wrote: Daphne is checking the register and there is 2668.48
+Logger wrote: Daphne is checking the register and there is 2668.48
+Logger wrote: Daphne is checking the register and there is 2668.48
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 43
+Logger wrote: The total number of items in the inventory is 43
+Logger wrote: The total number of items in the inventory is 43
+Logger wrote: The total number of items in the inventory is 43
+Logger wrote: The total number of items in the inventory is 43
+Logger wrote: The total number of items in the inventory is 43
+Logger wrote: The sum of today's inventory is 941.0000000000001
+Logger wrote: The sum of today's inventory is 941.0000000000001
+Logger wrote: The sum of today's inventory is 941.0000000000001
+Logger wrote: The sum of today's inventory is 941.0000000000001
+Logger wrote: The sum of today's inventory is 941.0000000000001
+Logger wrote: The sum of today's inventory is 941.0000000000001
+Logger wrote: The total number of items damaged in tuning is 43
+Logger wrote: The total number of items damaged in tuning is 43
+Logger wrote: The total number of items damaged in tuning is 43
+Logger wrote: The total number of items damaged in tuning is 43
+Logger wrote: The total number of items damaged in tuning is 43
+Logger wrote: The total number of items damaged in tuning is 43
+Logger wrote: The total number of items damaged in cleaning is 1
+Logger wrote: The total number of items damaged in cleaning is 1
+Logger wrote: The total number of items damaged in cleaning is 1
+Logger wrote: The total number of items damaged in cleaning is 1
+Logger wrote: The total number of items damaged in cleaning is 1
+Logger wrote: The total number of items damaged in cleaning is 1

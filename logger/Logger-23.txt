@@ -1,1 +1,38 @@
-Logger wrote: The total number of items damaged in cleaning is 1
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 23
+Logger wrote: Velma arrives at the store on Day 23
+Logger wrote: Velma arrives at the store on Day 23
+Logger wrote: Velma arrives at the store on Day 23
+Logger wrote: Velma arrives at the store on Day 23
+Logger wrote: Velma arrives at the store on Day 23
+Logger wrote: Velma is checking the register and there is 2822.0200000000004
+Logger wrote: Velma is checking the register and there is 2822.0200000000004
+Logger wrote: Velma is checking the register and there is 2822.0200000000004
+Logger wrote: Velma is checking the register and there is 2822.0200000000004
+Logger wrote: Velma is checking the register and there is 2822.0200000000004
+Logger wrote: Velma is checking the register and there is 2822.0200000000004
+Logger wrote: The total number of items in the inventory is 41
+Logger wrote: The total number of items in the inventory is 41
+Logger wrote: The total number of items in the inventory is 41
+Logger wrote: The total number of items in the inventory is 41
+Logger wrote: The total number of items in the inventory is 41
+Logger wrote: The total number of items in the inventory is 41
+Logger wrote: The sum of today's inventory is 915.7000000000002
+Logger wrote: The sum of today's inventory is 915.7000000000002
+Logger wrote: The sum of today's inventory is 915.7000000000002
+Logger wrote: The sum of today's inventory is 915.7000000000002
+Logger wrote: The sum of today's inventory is 915.7000000000002
+Logger wrote: The sum of today's inventory is 915.7000000000002
+Logger wrote: The total number of items damaged in tuning is 41
+Logger wrote: The total number of items damaged in tuning is 41
+Logger wrote: The total number of items damaged in tuning is 41
+Logger wrote: The total number of items damaged in tuning is 41
+Logger wrote: The total number of items damaged in tuning is 41
+Logger wrote: The total number of items damaged in tuning is 41
