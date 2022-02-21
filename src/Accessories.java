@@ -89,18 +89,3 @@ class GigBag extends Accessories
         return "GigBag: " + get_brand();
     }
 }
-
-class Practice_amp_addon extends StringedDecorator {
-    Practice_amp_addon() { super(); }
-    Practice_amp_addon(Stringed component) {
-        this.component = component;
-        name = component.get_name() + " and Practice Amp";    }
-}
-
-class Cable_addon extends StringedDecorator {
-    Cable_addon() { super(); }
-    Cable_addon(Stringed component) {
-        this.component = component;
-        name = component.get_name() + " and 1 Cable";
-    }
-}
