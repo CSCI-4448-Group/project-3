@@ -21,8 +21,6 @@ abstract public class Item{
         salePrice=salePrice_;
     }
 
-    Item() {}
-
 ////// Encapsulation: Here we see that the attributes of an Item are private, and we have public ways of accessing and modifiying that data. //////
 
     public void set_name(String name){name_ = name;}

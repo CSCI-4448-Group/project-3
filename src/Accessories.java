@@ -7,7 +7,6 @@ public abstract class Accessories extends Item
         super(name, purchPrice, listPrice, isNew, dayArriv, condition, salePrice);
         brand_ = brand;
     }
-    Accessories() {super();}
 
     public String get_brand() {return brand_;}
 
@@ -24,7 +23,6 @@ class PracticeAmp extends Accessories
         super(name, purchPrice, listPrice, isNew, dayArriv, condition, salePrice, brand);
         wattage_ = wattage;
     }
-    PracticeAmp() {super();}
 
     public int get_wattage() {return wattage_;}
 

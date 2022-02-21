@@ -8,7 +8,6 @@ public abstract class Stringed extends Instrument
         super(name, purchPrice, listPrice, isNew, dayArriv, condition, salePrice, brand);
         electric_ = electric;
     }
-    Stringed() {super();}
 
     boolean get_tuned(){return tuned_;}
     void set_tuned(boolean tuned){tuned_ = tuned;}
