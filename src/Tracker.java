@@ -6,12 +6,24 @@
 //import java.util.HashMap;
 //
 //public class Tracker extends Employee implements Observer {
-//    private HashMap<String, ArrayList<Int>> trackerMap_;
+//    private String employeeName_;
+//    private HashMap<String, ArrayList<Integer>> trackerMap_;
+//    private String announcement_;
 //
-//    public Tracker(String name, Store s, Subject clerk)
+//    public Tracker(String name, Store s, ArrayList<Subject> clerks)
 //    {
 //        super(name, s);
-//        clerk.registerObserver(this);
+//        employeeName_ = get_name();
+//        for (Subject c : clerks){
+//            c.registerObserver(this);
+//            trackerMap_.put()
+//        }
+//    }
+//
+//    public void track(int day) {
+//        System.out.println("Tracker: Day " + day);
+//        System.out.println("==============================");
+//
 //    }
 //
 //    @Override
@@ -19,4 +31,8 @@
 //        this.announcement_ = announcement;
 //        track(get_store().get_calendar().get_current_day());
 //    }
+//
+//    public HashMap<String, ArrayList<Integer>> getTrackerMap_() {return trackerMap_;}
+//
+//    public void setTrackerMap_(String name, ArrayList<Integer> newClerkList) {trackerMap_.put(name, newClerkList);}
 //}

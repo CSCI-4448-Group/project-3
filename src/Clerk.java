@@ -198,51 +198,73 @@ public class Clerk extends Employee implements Subject {
 
 
     public void open_store() throws Exception{
+        int soldItemsCounter = 0;
+        int boughtItemsCounter = 0;
+
         ArrayList<buyingCustomer> buyCustomers = generateBuyingCustomers();
         for(buyingCustomer buyer : buyCustomers){ //For each buying customer
             if(get_store().get_inventory().get_items_of_type(buyer.get_wanted_type()).isEmpty()){ //If there are no items of type that customer wants
                 System.out.println(buyer.get_name() + " tried to buy a " + buyer.get_wanted_type() + "but none were available");
                 continue;
             }
-            attempt_sale(buyer,get_store().get_inventory().get_items_of_type(buyer.get_wanted_type()).get(0)); //Attempt to sell the first item of appropriate type
+            boolean didSell = attempt_sale(buyer,get_store().get_inventory().get_items_of_type(buyer.get_wanted_type()).get(0)); //Attempt to sell the first item of appropriate type
+            if (didSell) {
+                soldItemsCounter += 1;
+            }
         }
 
         ArrayList<sellingCustomer> sellCustomers = generateSellingCustomers();
         for(sellingCustomer seller : sellCustomers){ //For each selling customer
-            attempt_purchase(seller, seller.get_item()); //Attempt to buy their item
+            boolean didBuy = attempt_purchase(seller, seller.get_item()); //Attempt to buy their item
+            if (didBuy) {
+                boughtItemsCounter += 1;
+            }
         }
+        announcement_ = "The total number of items sold by " + get_name() + " on day " + get_store().get_calendar().get_current_day() + " is " + soldItemsCounter;
+        notifyObservers(announcement_);
+        announcement_ = "";
+
+        announcement_ = "The total number of items bought by "+ get_name() + " on day " + get_store().get_calendar().get_current_day() + " is " + boughtItemsCounter;
+        notifyObservers(announcement_);
+        announcement_ = "";
     }
 
-    private void attempt_sale(buyingCustomer buyer, Item toSellItem){
-        if(buyer.haggle_roll(50)){ //If we roll 50% chance and win, sell full price
+    private boolean attempt_sale(buyingCustomer buyer, Item toSellItem){
+        if (buyer.haggle_roll(50)){ //If we roll 50% chance and win, sell full price
             sell_item(toSellItem, toSellItem.get_list_price());
             System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + toSellItem.get_sale_price());
+            return true;
         }
         else if(buyer.haggle_roll(75)){ //else if we roll 75% chance and win, sell 90% full price
             sell_item(toSellItem, toSellItem.get_list_price()*.9);
             System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + toSellItem.get_sale_price() + " after a 10% discount.");
+            return true;
         }
         else{
             System.out.println(get_name() + " tried selling a " + toSellItem.get_condition().get_condition() + " condition " + toSellItem.get_new_or_used() + " " + toSellItem.get_name() + " to " + toSellItem.get_name() + " for $" + toSellItem.get_list_price() + " but customer refused.");
+            return false;
         }
     }
 
-    private void attempt_purchase(sellingCustomer seller, Item toBuyItem){
+    private boolean attempt_purchase(sellingCustomer seller, Item toBuyItem) {
         double purchPrice = evaluate_item(toBuyItem);
         if(get_store().is_discontinued(toBuyItem.get_item_type())){
             System.out.println(seller.get_name() + " tried to sell a " + toBuyItem.get_name() + " but the store no longer purchases these");
-            return;
+            return false;
         }
         if(seller.haggle_roll(50)){
             purch_item(toBuyItem,purchPrice);
             System.out.println(get_name() + " bought a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + purchPrice);
+            return true;
         }
         else if(seller.haggle_roll(75)){
             purch_item(toBuyItem, purchPrice*1.1);
             System.out.println(get_name() + " bought a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + purchPrice + " after a 10% offer increase.");
+            return true;
         }
         else{
             System.out.println(get_name() + " tried buying a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + purchPrice + " but customer refused.");
+            return false;
         }
     }
 
@@ -338,6 +360,7 @@ public class Clerk extends Employee implements Subject {
         get_store().get_calendar().incr_current_day();
         incr_days_worked();
         System.out.println(get_name() + " locked up the store and went home for the day");
+
         announcement_ = get_name() + " locked up the store and went home for the day";
         notifyObservers(announcement_);
         announcement_ = "";

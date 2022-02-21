@@ -4,3 +4,5 @@ Logger wrote: Velma withdrew 1000 dollars from the bank and the new balance in t
 Logger wrote: The total number of items in the inventory is 60
 Logger wrote: The sum of today's inventory is 1156.0
 Logger wrote: The total number of items damaged in tuning is 60
+Logger wrote: The total number of items sold by Velma on day 1 is 6
+Logger wrote: The total number of items bought by Velma on day 1 is 1

@@ -1,6 +1,8 @@
 Logger wrote: Velma arrives at the store on Day 22
-Logger wrote: 6 number of items arrived at the store on Day 22
-Logger wrote: Velma is checking the register and there is 2504.7999999999997
-Logger wrote: The total number of items in the inventory is 47
-Logger wrote: The sum of today's inventory is 1133.4
-Logger wrote: The total number of items damaged in tuning is 47
+Logger wrote: Velma is checking the register and there is 2189.3000000000006
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 46
+Logger wrote: The sum of today's inventory is 1042.6999999999998
+Logger wrote: The total number of items damaged in tuning is 46
+Logger wrote: The total number of items sold by Velma on day 22 is 2
+Logger wrote: The total number of items bought by Velma on day 22 is 3

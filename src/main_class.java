@@ -119,7 +119,7 @@ class main_class {
         // Initialize store and two clerk objects
         Store FNMS = new Store();
 
-
+        //Tracker trackerGuy = new Tracker("Tracker Guy", FNMS, FNMS.get_clerks());
         // Run the store simulation
         runFnmsSimulation(FNMS);
 

@@ -1,8 +1,9 @@
-Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Daphne locked up the store and went home for the day
 Logger wrote: Velma arrives at the store on Day 25
 Logger wrote: 3 number of items arrived at the store on Day 25
-Logger wrote: Velma is checking the register and there is 2795.9
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items in the inventory is 44
-Logger wrote: The sum of today's inventory is 1083.4
-Logger wrote: The total number of items damaged in tuning is 44
+Logger wrote: Velma is checking the register and there is 2284.000000000001
+Logger wrote: The total number of items in the inventory is 46
+Logger wrote: The sum of today's inventory is 1055.0
+Logger wrote: The total number of items damaged in tuning is 46
+Logger wrote: The total number of items sold by Velma on day 25 is 5
+Logger wrote: The total number of items bought by Velma on day 25 is 1

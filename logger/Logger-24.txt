@@ -1,8 +1,9 @@
-Logger wrote: Shaggy locked up the store and went home for the day
-Logger wrote: Shaggy arrives at the store on Day 24
-Logger wrote: Shaggy is checking the register and there is 2755.5
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items in the inventory is 43
-Logger wrote: The sum of today's inventory is 1053.4
-Logger wrote: The total number of items damaged in tuning is 43
+Logger wrote: Daphne locked up the store and went home for the day
+Logger wrote: Daphne arrives at the store on Day 24
+Logger wrote: Daphne is checking the register and there is 2169.2000000000007
+Logger wrote: The total number of items in the inventory is 46
+Logger wrote: The sum of today's inventory is 1039.8
+Logger wrote: The total number of items damaged in tuning is 46
+Logger wrote: The total number of items sold by Daphne on day 24 is 4
+Logger wrote: The total number of items bought by Daphne on day 24 is 1
+Logger wrote: The total number of items damaged in cleaning is 1
