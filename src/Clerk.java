@@ -177,7 +177,6 @@ public class Clerk extends Employee{
             if (Stringed.class.isAssignableFrom(toSellItem.getClass())) {
                 toSellItem = decorate_sale(toSellItem);
             }
-            
         }
         else{
             System.out.println(get_name() + " tried selling a " + toSellItem.get_condition().get_condition() + " condition " + toSellItem.get_new_or_used() + " " + toSellItem.get_name() + " to " + toSellItem.get_name() + " for $" + toSellItem.get_list_price() + " but customer refused.");

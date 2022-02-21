@@ -60,7 +60,7 @@ class GigBag_addon extends StringedDecorator {
     GigBag_addon(Stringed component, Clerk clerk) {
         super(component);
 
-        Item item = clerk.get_store().get_inventory().get_items_of_type("Gigbag").get(0);
+        Item item = clerk.get_store().get_inventory().get_items_of_type("GigBag").get(0);
         clerk.sell_item(item, item.get_list_price());
     }
 }
