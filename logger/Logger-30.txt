@@ -6,3 +6,22 @@ Logger wrote: The sum of today's inventory is 998.4000000000001
 Logger wrote: The total number of items damaged in tuning is 45
 Logger wrote: The total number of items sold by Shaggy on day 30 is 3
 Logger wrote: The total number of items bought by Shaggy on day 30 is 1
+Logger wrote: Daphne locked up the store and went home for the day
+Logger wrote: Shaggy arrives at the store on Day 30
+Logger wrote: Shaggy is checking the register and there is 3083.4599999999996
+Logger wrote: The total number of items in the inventory is 42
+Logger wrote: The sum of today's inventory is 1182.7000000000003
+Logger wrote: The total number of items damaged in tuning is 42
+Logger wrote: The total number of items sold by Shaggy on day 30 is 3
+Logger wrote: The total number of items bought by Shaggy on day 30 is 2
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Daphne arrives at the store on Day 30
+Logger wrote: Daphne
+Logger wrote: Daphne is checking the register and there is 2841.240000000001
+Logger wrote: The total number of items in the inventory is 42
+Logger wrote: The sum of today's inventory is 957.2
+Logger wrote: The total number of items damaged in tuning is 42
+Logger wrote: The total number of items sold by Daphne on day 30 is 5
+Logger wrote: 5
+Logger wrote: The total number of items bought by Daphne on day 30 is 2
+Logger wrote: 2

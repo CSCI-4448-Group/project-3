@@ -3,7 +3,40 @@
   <component name="ChangeListManager">
     <list default="true" id="5f765cd4-fc02-4032-9bec-1fe204966877" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-11.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-12.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-13.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-14.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-15.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-16.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-17.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-18.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-18.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-19.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-19.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-20.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-21.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-21.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-22.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-22.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-23.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-24.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-24.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-25.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-26.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-26.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-27.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-27.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-28.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-28.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-29.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-30.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-30.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-31.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-31.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/Logger-9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/Logger-9.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Clerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Clerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tracker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_class.java" afterDir="false" />
     </list>
@@ -40,6 +73,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

@@ -6,6 +6,9 @@ import java.io.IOException;  // Import the IOException class to handle errors
 
 public class Logger extends Employee implements Observer {
     private String announcement_;
+    private String numItemsSold_;
+    private String numItemsPurchased_;
+    private String numItemsDamaged_;
 
     public Logger(String name, Store s, Subject clerk)
     {
@@ -34,6 +37,10 @@ public class Logger extends Employee implements Observer {
     public void update(String announcement) {
         this.announcement_ = announcement;
         log(get_store().get_calendar().get_current_day());
+    }
+
+    public void update(String nameOfEmployee_, String numItemsSold, String numItemsPurchased, String numItemsDamaged) {
+       throw new IllegalArgumentException("Error: Wrong update method");
     }
 
     public void close() {

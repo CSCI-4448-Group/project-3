@@ -5,6 +5,10 @@ public class Clerk extends Employee implements Subject {
     private TuneBehavior tuneBehavior_;
     private ArrayList<Observer> observersList_ = new ArrayList<Observer>();
     public String announcement_;
+    public String numItemsSold_;
+    public String numItemsPurchased_;
+    public String numItemsDamaged_;
+    public String nameOfEmployee_;
 
     public Clerk(String name, Store s, TuneBehavior tuneBehavior) {
         super(name,s);
@@ -59,6 +63,9 @@ public class Clerk extends Employee implements Subject {
         announcement_ = get_name() + " arrives at the store on Day " + currDay;
         notifyObservers(announcement_);
         announcement_ = "";
+
+        nameOfEmployee_ = get_name();
+        notifyObservers(nameOfEmployee_);
 
         if(get_store().get_ordered().containsKey(currDay)){ //If there are ordered items that arrive today
             process_incoming_items(currDay);
@@ -224,9 +231,15 @@ public class Clerk extends Employee implements Subject {
         notifyObservers(announcement_);
         announcement_ = "";
 
+        numItemsSold_ = Integer.toString(soldItemsCounter);
+        notifyObservers(numItemsSold_);
+
         announcement_ = "The total number of items bought by "+ get_name() + " on day " + get_store().get_calendar().get_current_day() + " is " + boughtItemsCounter;
         notifyObservers(announcement_);
         announcement_ = "";
+
+        numItemsPurchased_ = Integer.toString(boughtItemsCounter);
+        notifyObservers(numItemsPurchased_);
     }
 
     private boolean attempt_sale(buyingCustomer buyer, Item toSellItem){
@@ -353,6 +366,9 @@ public class Clerk extends Employee implements Subject {
         announcement_ = "The total number of items damaged in cleaning is " + damagedCounter;
         notifyObservers(announcement_);
         announcement_ = "";
+
+        numItemsDamaged_ = Integer.toString(damagedCounter);
+        notifyObservers(numItemsDamaged_);
     }
 
     // Pack up the store for the day. Increase days worked and increment current day. Announce that the store is closed

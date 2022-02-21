@@ -5,6 +5,8 @@ class main_class {
     public static void begin_day(Store fnms, Clerk current_clerk) throws Exception
     {
         Logger loggerGuy = new Logger("Logger Guy", fnms, current_clerk);
+        Tracker trackerGuy = new Tracker("Tracker Guy", fnms, current_clerk);
+
         loggerGuy.arrive(fnms.get_calendar().get_current_day());
 
         // Clerk arrives at store
@@ -119,7 +121,6 @@ class main_class {
         // Initialize store and two clerk objects
         Store FNMS = new Store();
 
-        //Tracker trackerGuy = new Tracker("Tracker Guy", FNMS, FNMS.get_clerks());
         // Run the store simulation
         runFnmsSimulation(FNMS);
 
