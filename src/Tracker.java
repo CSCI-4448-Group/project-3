@@ -36,6 +36,11 @@ public class Tracker extends Employee implements Observer {
         }
         else
         {
+            System.out.println("Looking for " + nameOfEmployee);
+            for (String name : trackerMap_.keySet()) {
+                System.out.println("XXXXXXX " + name);
+            }
+            
             int updateSoldItems = trackerMap_.get(nameOfEmployee).get(0) + Integer.parseInt(numItemsSold);
             int updatePurchasedItems = trackerMap_.get(nameOfEmployee).get(1) + Integer.parseInt(numItemsPurchased);
             int updateDamagedItems = trackerMap_.get(nameOfEmployee).get(2) + Integer.parseInt(numItemsDamaged);
