@@ -50,12 +50,13 @@ class Mandolin extends Stringed
 
 abstract class StringedDecorator extends Stringed {
     StringedDecorator(Stringed item) {
-        super(item.get_name(), item.get_purch_price(), item.get_list_price(), item.get_is_new(), item.get_day_arrived(), item.get_condition(), item.get_sale_price(), item.get_brand(), item.get_electric());
+        super(item.get_name(), item.get_purch_price(), item.get_list_price(), 
+        item.get_is_new(), item.get_day_arrived(), item.get_condition(), 
+        item.get_sale_price(), item.get_brand(), item.get_electric());
     }
-    Stringed component;
-    String name;
 }
 
+// Returns the item in a decorator fashion, and sells the corresponding addon item
 class GigBag_addon extends StringedDecorator {
     GigBag_addon(Stringed component, Clerk clerk) {
         super(component);
@@ -65,6 +66,7 @@ class GigBag_addon extends StringedDecorator {
     }
 }
 
+// Returns the item in a decorator fashion, and sells the corresponding addon item
 class Strings_addon extends StringedDecorator {
     Strings_addon(Stringed component, Clerk clerk) {
         super(component);
@@ -73,6 +75,7 @@ class Strings_addon extends StringedDecorator {
     }
 }
 
+// Returns the item in a decorator fashion, and sells the corresponding addon item
 class Practice_amp_addon extends StringedDecorator {
     Practice_amp_addon(Stringed component, Clerk clerk) {
         super(component);
@@ -81,6 +84,7 @@ class Practice_amp_addon extends StringedDecorator {
     }
 }
 
+// Returns the item in a decorator fashion, and sells the corresponding addon item
 class Cable_addon extends StringedDecorator {
     Cable_addon(Stringed component, Clerk clerk) {
         super(component);

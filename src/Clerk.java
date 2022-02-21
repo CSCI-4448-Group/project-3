@@ -167,6 +167,8 @@ public class Clerk extends Employee{
         if(buyer.haggle_roll(50)){ //If we roll 50% chance and win, sell full price
             sell_item(toSellItem, toSellItem.get_list_price());
             System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + toSellItem.get_sale_price());
+            
+            // If the item is a subclass of 'Stringed' we want to decorate it with addons
             if (Stringed.class.isAssignableFrom(toSellItem.getClass())) {
                 toSellItem = decorate_sale(toSellItem);
             }
@@ -174,6 +176,8 @@ public class Clerk extends Employee{
         else if(buyer.haggle_roll(75)){ //else if we roll 75% chance and win, sell 90% full price
             sell_item(toSellItem, toSellItem.get_list_price()*.9);
             System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + toSellItem.get_sale_price() + " after a 10% discount.");
+                        
+            // If the item is a subclass of 'Stringed' we want to decorate it with addons
             if (Stringed.class.isAssignableFrom(toSellItem.getClass())) {
                 toSellItem = decorate_sale(toSellItem);
             }
@@ -202,6 +206,8 @@ public class Clerk extends Employee{
         }
     }
 
+    // Only applies to stringed items right now, but can be modified later to others. 
+    // Sells addon items depending on random chances, using decorator pattern
     private Item decorate_sale(Item soldItem) {
         Store s = get_store();
         if (Stringed.class.isAssignableFrom(soldItem.getClass())) {
