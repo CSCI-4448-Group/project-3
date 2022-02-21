@@ -167,10 +167,17 @@ public class Clerk extends Employee{
         if(buyer.haggle_roll(50)){ //If we roll 50% chance and win, sell full price
             sell_item(toSellItem, toSellItem.get_list_price());
             System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + toSellItem.get_sale_price());
+            if (Stringed.class.isAssignableFrom(toSellItem.getClass())) {
+                toSellItem = decorate_sale(toSellItem);
+            }
         }
         else if(buyer.haggle_roll(75)){ //else if we roll 75% chance and win, sell 90% full price
             sell_item(toSellItem, toSellItem.get_list_price()*.9);
             System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + toSellItem.get_sale_price() + " after a 10% discount.");
+            if (Stringed.class.isAssignableFrom(toSellItem.getClass())) {
+                toSellItem = decorate_sale(toSellItem);
+            }
+            
         }
         else{
             System.out.println(get_name() + " tried selling a " + toSellItem.get_condition().get_condition() + " condition " + toSellItem.get_new_or_used() + " " + toSellItem.get_name() + " to " + toSellItem.get_name() + " for $" + toSellItem.get_list_price() + " but customer refused.");
@@ -196,20 +203,22 @@ public class Clerk extends Employee{
         }
     }
 
-    private void sell_item(Item soldItem, double soldPrice){
+    private Item decorate_sale(Item soldItem) {
         Store s = get_store();
         if (Stringed.class.isAssignableFrom(soldItem.getClass())) {
-            System.out.println("XXX Decorator");
             Decorator dec = new Decorator();
-            soldItem = dec.run((Stringed)soldItem, s);
+            soldItem = dec.run((Stringed)soldItem, s, this);
         }
+        return soldItem;
+    }
+
+    protected void sell_item(Item soldItem, double soldPrice){
+        Store s = get_store();
         s.add_to_sold(soldItem);
         s.remove_from_inventory(soldItem);
         s.get_register().set_amount(s.get_register().get_amount() + soldPrice); //Set register amount
         soldItem.set_day_sold(s.get_calendar().get_current_day()); //Set items sold date to current day
         soldItem.set_sale_price(soldPrice); //Set items sold price
-        System.out.println(soldItem.get_name());
-        
     }
 
     private void purch_item(Item purchItem, double purchPrice){

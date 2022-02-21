@@ -49,36 +49,42 @@ class Mandolin extends Stringed
 }
 
 abstract class StringedDecorator extends Stringed {
+    StringedDecorator(Stringed item) {
+        super(item.get_name(), item.get_purch_price(), item.get_list_price(), item.get_is_new(), item.get_day_arrived(), item.get_condition(), item.get_sale_price(), item.get_brand(), item.get_electric());
+    }
     Stringed component;
     String name;
 }
 
 class GigBag_addon extends StringedDecorator {
-    GigBag_addon() { super(); }
-    GigBag_addon(Stringed component) {
-        this.component = component;
-        name = component.get_name() + " and GigBag";    }
+    GigBag_addon(Stringed component, Clerk clerk) {
+        super(component);
+
+        Item item = clerk.get_store().get_inventory().get_items_of_type("Gigbag").get(0);
+        clerk.sell_item(item, item.get_list_price());
+    }
 }
 
 class Strings_addon extends StringedDecorator {
-    Strings_addon() { super(); }
-    Strings_addon(Stringed component) {
-        this.component = component;
-        name = component.get_name() + " and Strings";
+    Strings_addon(Stringed component, Clerk clerk) {
+        super(component);
+        Item item = clerk.get_store().get_inventory().get_items_of_type("Strings").get(0);
+        clerk.sell_item(item, item.get_list_price());
     }
 }
 
 class Practice_amp_addon extends StringedDecorator {
-    Practice_amp_addon() { super(); }
-    Practice_amp_addon(Stringed component) {
-        this.component = component;
-        name = component.get_name() + " and Practice Amp";    }
+    Practice_amp_addon(Stringed component, Clerk clerk) {
+        super(component);
+        Item item = clerk.get_store().get_inventory().get_items_of_type("Practice Amp").get(0);
+        clerk.sell_item(item, item.get_list_price()); 
+    }
 }
 
 class Cable_addon extends StringedDecorator {
-    Cable_addon() { super(); }
-    Cable_addon(Stringed component) {
-        this.component = component;
-        name = component.get_name() + " and 1 Cable";
+    Cable_addon(Stringed component, Clerk clerk) {
+        super(component);
+        Item item = clerk.get_store().get_inventory().get_items_of_type("Cable").get(0);
+        clerk.sell_item(item, item.get_list_price());
     }
 }
