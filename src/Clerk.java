@@ -68,7 +68,6 @@ public class Clerk extends Employee{
         }
         for(Item item : inv.flatten_inventory()){
             if(item instanceof Instrument || item instanceof Players) {
-                System.out.println(get_name() + " is attempting to tune " + item.get_name());
                 boolean prev_tune_state = item.get_tuned();
                 perform_tune(item);
                 boolean post_tune_state = item.get_tuned();
