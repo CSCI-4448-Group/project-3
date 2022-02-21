@@ -31,6 +31,7 @@ abstract public class Item{
     public void set_condition(Condition cond){condition_ = cond;}
     public void set_sale_price(double price){salePrice_ = price;}
     public void set_day_sold(int soldint){daySold_ = soldint;}
+    public void set_tuned(boolean bool){return;}
 
     public String get_name(){return name_;}
     public double get_purch_price(){return purchasePrice_;}
@@ -42,6 +43,7 @@ abstract public class Item{
     public int get_day_sold(){return daySold_;}
     public String get_item_type(){return toString().split(":")[0];}
     public String get_new_or_used() {if (new_ == true) {return "new";} else {return "used";}}
+    public boolean get_tuned(){return false;}
 
     //Builds an item of type passed if there is template available in itemBuilder, throws exception if invalid type
     public static Item generate_item(String type) throws Exception {

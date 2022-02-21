@@ -66,7 +66,39 @@ public class Clerk extends Employee{
                 place_order(entry.getKey()); //Order that item
             }
         }
+        for(Item item : inv.flatten_inventory()){
+            if(item instanceof Instrument || item instanceof Players) {
+                boolean prev_tune_state = item.get_tuned();
+                perform_tune(item);
+                boolean post_tune_state = item.get_tuned();
+                check_tune_damage(prev_tune_state, post_tune_state, item);
+            }
+        }
+
         System.out.println("The sum of todays inventory is " + inv.get_list_price_sum()); //Display the list price sum of all items in inventory
+    }
+    private void check_tune_damage(boolean old_state, boolean new_state, Item item){
+
+        Random rand = new Random();
+        //if (the item was tuned and now it isnt) and (we win the damage roll)
+        if((old_state && !new_state) && (rand.nextInt(100) < 10)){
+            System.out.println(get_name() + " damaged " + item.get_name() + " when attempting to tune");
+            damage_item(item); //damage the item
+        }
+    }
+
+    private void damage_item(Item item){
+        if(item.get_condition().get_condition() == "poor"){ //If the item breaks
+            System.out.println(get_name() + " damaged " + item.toString() + " and broke it.");
+            get_store().get_inventory().remove_item(item);
+        }
+        else{ //Reduce the items condition by one level, reduce the items listPrice by 20%
+            item.get_condition().decreaseCondition(); //Decrease the items condition
+            System.out.println(get_name() + " damaged " + item.toString() + " and its condition is now " + item.get_condition().get_condition());
+            System.out.println("The price of the item will be reduced from " + item.get_list_price() + " to " + item.get_list_price() * .8);
+            item.set_list_price(item.get_list_price() * .8);
+            System.out.println("The new price of the item is: " + item.get_list_price());
+        }
     }
 
     //Adds 3 items of type passed to orderedItems_ map in form of <Day Arriving, List Of Items>
@@ -283,17 +315,7 @@ public class Clerk extends Employee{
 
         //Otherwise proceed with damaging an item
         Item damagedItem = inv.flatten_inventory().get(rand.nextInt(inv.flatten_inventory().size()));//Flatten the inventory into a list of items and pick a random item to damage
-        if(damagedItem.get_condition().get_condition() == "poor"){ //If the item breaks
-            System.out.println(name + " damaged " + damagedItem.toString() + " and broke it.");
-            inv.remove_item(damagedItem);
-        }
-        else{ //Reduce the items condition by one level, reduce the items listPrice by 20%
-            damagedItem.get_condition().decreaseCondition(); //Decrease the items condition
-            System.out.println(name + " damaged " + damagedItem.toString() + " and its condition is now " + damagedItem.get_condition().get_condition());
-            System.out.println("The price of the item will be reduced from " + damagedItem.get_list_price() + " to " + damagedItem.get_list_price() * .8);
-            damagedItem.set_list_price(damagedItem.get_list_price() * .8);
-            System.out.println("The new price of the item is: " + damagedItem.get_list_price());
-        }
+        damage_item(damagedItem);
         System.out.println(name + " finished cleaning the store.");
     }
 

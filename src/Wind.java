@@ -6,8 +6,8 @@ public abstract class Wind extends Instrument
         super(name, purchPrice, listPrice, isNew, dayArriv, condition, salePrice, brand);
     }
 
-    public boolean get_adjusted(){return adjusted_;}
-    public void set_adjusted(boolean adjusted){adjusted_ = adjusted;}
+    public boolean get_tuned(){return adjusted_;}
+    public void set_tuned(boolean adjusted){adjusted_ = adjusted;}
 }
 
 class Flute extends Wind
