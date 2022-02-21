@@ -198,11 +198,18 @@ public class Clerk extends Employee{
 
     private void sell_item(Item soldItem, double soldPrice){
         Store s = get_store();
+        if (Stringed.class.isAssignableFrom(soldItem.getClass())) {
+            System.out.println("XXX Decorator");
+            Decorator dec = new Decorator();
+            soldItem = dec.run((Stringed)soldItem, s);
+        }
         s.add_to_sold(soldItem);
         s.remove_from_inventory(soldItem);
         s.get_register().set_amount(s.get_register().get_amount() + soldPrice); //Set register amount
         soldItem.set_day_sold(s.get_calendar().get_current_day()); //Set items sold date to current day
         soldItem.set_sale_price(soldPrice); //Set items sold price
+        System.out.println(soldItem.get_name());
+        
     }
 
     private void purch_item(Item purchItem, double purchPrice){

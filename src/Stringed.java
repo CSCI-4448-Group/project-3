@@ -8,9 +8,11 @@ public abstract class Stringed extends Instrument
         super(name, purchPrice, listPrice, isNew, dayArriv, condition, salePrice, brand);
         electric_ = electric;
     }
+    Stringed() {super();}
 
     boolean get_tuned(){return tuned_;}
     void set_tuned(boolean tuned){tuned_ = tuned;}
+    boolean get_electric() {return electric_;}
 }
 
 class Guitar extends Stringed
@@ -43,5 +45,25 @@ class Mandolin extends Stringed
     }
     public String toString(){
         return new String("Mandolin: " + get_brand());
+    }
+}
+
+abstract class StringedDecorator extends Stringed {
+    Stringed component;
+    String name;
+}
+
+class GigBag_addon extends StringedDecorator {
+    GigBag_addon() { super(); }
+    GigBag_addon(Stringed component) {
+        this.component = component;
+        name = component.get_name() + " and GigBag";    }
+}
+
+class Strings_addon extends StringedDecorator {
+    Strings_addon() { super(); }
+    Strings_addon(Stringed component) {
+        this.component = component;
+        name = component.get_name() + " and Strings";
     }
 }

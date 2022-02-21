@@ -7,6 +7,7 @@ public abstract class Accessories extends Item
         super(name, purchPrice, listPrice, isNew, dayArriv, condition, salePrice);
         brand_ = brand;
     }
+    Accessories() {super();}
 
     public String get_brand() {return brand_;}
 
@@ -23,6 +24,7 @@ class PracticeAmp extends Accessories
         super(name, purchPrice, listPrice, isNew, dayArriv, condition, salePrice, brand);
         wattage_ = wattage;
     }
+    PracticeAmp() {super();}
 
     public int get_wattage() {return wattage_;}
 
@@ -85,5 +87,20 @@ class GigBag extends Accessories
 
     public String toString(){
         return "GigBag: " + get_brand();
+    }
+}
+
+class Practice_amp_addon extends StringedDecorator {
+    Practice_amp_addon() { super(); }
+    Practice_amp_addon(Stringed component) {
+        this.component = component;
+        name = component.get_name() + " and Practice Amp";    }
+}
+
+class Cable_addon extends StringedDecorator {
+    Cable_addon() { super(); }
+    Cable_addon(Stringed component) {
+        this.component = component;
+        name = component.get_name() + " and 1 Cable";
     }
 }

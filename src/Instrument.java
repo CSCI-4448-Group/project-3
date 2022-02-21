@@ -9,6 +9,8 @@ public abstract class Instrument extends Item {
         brand_ = brand;
     }
 
+    Instrument() {super();}
+
     // Getters and setters
     public String get_brand() {return brand_;}
 
