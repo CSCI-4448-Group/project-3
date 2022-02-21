@@ -1,56 +1,8 @@
 Logger wrote: Daphne arrives at the store on Day 29
-Logger wrote: Daphne arrives at the store on Day 29
-Logger wrote: Daphne arrives at the store on Day 29
-Logger wrote: Daphne arrives at the store on Day 29
-Logger wrote: Daphne arrives at the store on Day 29
-Logger wrote: Daphne arrives at the store on Day 29
-Logger wrote: Daphne arrives at the store on Day 29
-Logger wrote: Daphne is checking the register and there is 3198.3200000000006
-Logger wrote: Daphne is checking the register and there is 3198.3200000000006
-Logger wrote: Daphne is checking the register and there is 3198.3200000000006
-Logger wrote: Daphne is checking the register and there is 3198.3200000000006
-Logger wrote: Daphne is checking the register and there is 3198.3200000000006
-Logger wrote: Daphne is checking the register and there is 3198.3200000000006
-Logger wrote: Daphne is checking the register and there is 3198.3200000000006
+Logger wrote: 3 number of items arrived at the store on Day 29
+Logger wrote: Daphne is checking the register and there is 2902.9399999999996
 Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items in the inventory is 34
-Logger wrote: The total number of items in the inventory is 34
-Logger wrote: The total number of items in the inventory is 34
-Logger wrote: The total number of items in the inventory is 34
-Logger wrote: The total number of items in the inventory is 34
-Logger wrote: The total number of items in the inventory is 34
-Logger wrote: The total number of items in the inventory is 34
-Logger wrote: The sum of today's inventory is 806.8000000000002
-Logger wrote: The sum of today's inventory is 806.8000000000002
-Logger wrote: The sum of today's inventory is 806.8000000000002
-Logger wrote: The sum of today's inventory is 806.8000000000002
-Logger wrote: The sum of today's inventory is 806.8000000000002
-Logger wrote: The sum of today's inventory is 806.8000000000002
-Logger wrote: The sum of today's inventory is 806.8000000000002
-Logger wrote: The total number of items damaged in tuning is 34
-Logger wrote: The total number of items damaged in tuning is 34
-Logger wrote: The total number of items damaged in tuning is 34
-Logger wrote: The total number of items damaged in tuning is 34
-Logger wrote: The total number of items damaged in tuning is 34
-Logger wrote: The total number of items damaged in tuning is 34
-Logger wrote: The total number of items damaged in tuning is 34
-Logger wrote: The total number of items damaged in cleaning is 1
-Logger wrote: The total number of items damaged in cleaning is 1
-Logger wrote: The total number of items damaged in cleaning is 1
-Logger wrote: The total number of items damaged in cleaning is 1
-Logger wrote: The total number of items damaged in cleaning is 1
-Logger wrote: The total number of items damaged in cleaning is 1
+Logger wrote: The total number of items in the inventory is 47
+Logger wrote: The sum of today's inventory is 1104.9
+Logger wrote: The total number of items damaged in tuning is 47
 Logger wrote: The total number of items damaged in cleaning is 1

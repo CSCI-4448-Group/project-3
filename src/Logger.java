@@ -19,7 +19,8 @@ public class Logger extends Employee implements Observer {
 
     //https://www.w3schools.com/java/java_files_create.asp
     public void log(int day) {
-        try (FileWriter myWriter = new FileWriter("../logger/Logger-" + day + ".txt", true)) {
+        try {
+            FileWriter myWriter = new FileWriter("../logger/Logger-" + day + ".txt", true);
             myWriter.write("Logger wrote: " + announcement_ + "\n");
             myWriter.close();
             //System.out.println("Successfully wrote to the file.");

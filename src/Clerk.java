@@ -46,6 +46,7 @@ public class Clerk extends Employee implements Subject {
 
         announcement_ = incoming.size() + " number of items arrived at the store on Day " + currDay;
         notifyObservers(announcement_);
+        announcement_ = "";
 
         s.get_inventory().put_items(incoming); //Add all the items to the inventory
         s.get_ordered().remove(currDay); //Remove items from orderedItems_
@@ -57,6 +58,7 @@ public class Clerk extends Employee implements Subject {
         System.out.println(get_name() + " arrives at the store on Day " + currDay);
         announcement_ = get_name() + " arrives at the store on Day " + currDay;
         notifyObservers(announcement_);
+        announcement_ = "";
 
         if(get_store().get_ordered().containsKey(currDay)){ //If there are ordered items that arrive today
             process_incoming_items(currDay);
@@ -70,6 +72,7 @@ public class Clerk extends Employee implements Subject {
         System.out.println(get_name() + " is checking the register and there is " + currentAmount);
         announcement_ = get_name() + " is checking the register and there is " + currentAmount;
         notifyObservers(announcement_);
+        announcement_ = "";
 
         if(currentAmount < 75) {
             go_to_bank();
@@ -84,6 +87,7 @@ public class Clerk extends Employee implements Subject {
         System.out.println(get_name() + " withdrew 1000 dollars from the bank and the new balance in the register is " + reg.get_amount() + " dollars");
         announcement_ = get_name() + " withdrew 1000 dollars from the bank and the new balance in the register is " + reg.get_amount() + " dollars";
         notifyObservers(announcement_);
+        announcement_ = "";
     }
 
     //Scan the current inventory, if we have 0 count of any type of item, order 3 of them
@@ -99,10 +103,15 @@ public class Clerk extends Employee implements Subject {
 
         announcement_ = "The total number of items in the inventory is " + inv.flatten_inventory().size();
         notifyObservers(announcement_);
+        announcement_ = "";
+
         announcement_ = "The sum of today's inventory is " + inv.get_purch_price_sum();
         notifyObservers(announcement_);
+        announcement_ = "";
+
         announcement_ = "The total number of items damaged in tuning is " + inv.flatten_inventory().size(); // THIS NEEDS TO BE FIXED BY BRIAN WHEN HE ADDS TUNING BEHAVIOR TO CLERKS WHO RUN DO INVENTORY!!!!!!!!!!!!
         notifyObservers(announcement_);
+        announcement_ = "";
     }
 
     //Adds 3 items of type passed to orderedItems_ map in form of <Day Arriving, List Of Items>
@@ -115,6 +124,7 @@ public class Clerk extends Employee implements Subject {
 
         announcement_ = "The total number of items ordered is " + items.size();
         notifyObservers(announcement_);
+        announcement_ = "";
 
         // Updates the register with the 
         for (Item item : items) {
@@ -320,6 +330,7 @@ public class Clerk extends Employee implements Subject {
 
         announcement_ = "The total number of items damaged in cleaning is " + damagedCounter;
         notifyObservers(announcement_);
+        announcement_ = "";
     }
 
     // Pack up the store for the day. Increase days worked and increment current day. Announce that the store is closed
@@ -329,5 +340,7 @@ public class Clerk extends Employee implements Subject {
         System.out.println(get_name() + " locked up the store and went home for the day");
         announcement_ = get_name() + " locked up the store and went home for the day";
         notifyObservers(announcement_);
+        announcement_ = "";
+        removeObserver();
     }
 }
