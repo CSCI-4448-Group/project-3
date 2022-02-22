@@ -1,8 +1,9 @@
-Logger wrote: Shaggy arrives at the store on Day 15
-Logger wrote: 9 number of items arrived at the store on Day 15
-Logger wrote: Shaggy is checking the register and there is 1188.3
-Logger wrote: The total number of items in the inventory is 67
-Logger wrote: The sum of today's inventory is 1862.0000000000002
-Logger wrote: The total number of items damaged in tuning is 67
-Logger wrote: The total number of items sold by Shaggy on day 15 is 4
-Logger wrote: The total number of items bought by Shaggy on day 15 is 2
+Logger wrote: Daphne arrives at the store on Day 15
+Logger wrote: 3 number of items arrived at the store on Day 15
+Logger wrote: Daphne is checking the register and there is 2285.5000000000005
+Logger wrote: The total number of items in the inventory is 53
+Logger wrote: The sum of today's inventory is 1194.1999999999998
+Logger wrote: The total number of items damaged in tuning is 53
+Logger wrote: The total number of items sold by Daphne on day 15 is 3
+Logger wrote: The total number of items bought by Daphne on day 15 is 0
+Logger wrote: Daphne locked up the store and went home for the day

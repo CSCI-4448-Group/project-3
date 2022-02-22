@@ -1,10 +1,11 @@
-Logger wrote: Daphne locked up the store and went home for the day
 Logger wrote: Daphne arrives at the store on Day 5
 Logger wrote: 3 number of items arrived at the store on Day 5
-Logger wrote: Daphne is checking the register and there is 1268.9000000000003
-Logger wrote: The total number of items in the inventory is 50
-Logger wrote: The sum of today's inventory is 1152.7
-Logger wrote: The total number of items damaged in tuning is 50
-Logger wrote: The total number of items sold by Daphne on day 5 is 4
+Logger wrote: Daphne is checking the register and there is 1507.0000000000002
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 46
+Logger wrote: The sum of today's inventory is 929.0000000000001
+Logger wrote: The total number of items damaged in tuning is 46
+Logger wrote: The total number of items sold by Daphne on day 5 is 3
 Logger wrote: The total number of items bought by Daphne on day 5 is 3
-Logger wrote: The total number of items damaged in cleaning is 3
+Logger wrote: Daphne locked up the store and went home for the day

@@ -3,29 +3,33 @@ import java.util.*;
 public class Clerk extends Employee implements Subject {
 
     private TuneBehavior tuneBehavior_;
-    private ArrayList<Observer> observersList_ = new ArrayList<Observer>();
-    public String announcement_;
-    public String numItemsSold_;
-    public String numItemsPurchased_;
-    public String numItemsDamaged_;
-    public String nameOfEmployee_;
-    private int damagedCounter = 0;
+    private ArrayList<Observer> observersList_ = new ArrayList<Observer>(); // Track an observers list of event consumers who are tracking publishes by the Clerk
+    public String announcement_; // Define an announcement to hold the announcements from the Clerk which are sent to notifyObservers
+//    public String numItemsSold_;
+//    public String numItemsPurchased_;
+//    public String numItemsDamaged_;
+//    public String nameOfEmployee_;
+    private int damagedCounter = 0; // Track the number of items damaged by the clerk
 
+    // Construct clerk with name, store, TuneBehavior (Strategy Pattern)
     public Clerk(String name, Store s, TuneBehavior tuneBehavior) {
         super(name,s);
         tuneBehavior_ = tuneBehavior;
     }
 
+    // Implement register observers which just appends the observer to the observer list
     @Override
     public void registerObserver(Observer o) {
         observersList_.add(o);
     }
 
+    // Remove observers by clearing observers list
     @Override
     public void removeObserver() {
         observersList_.clear();
     }
 
+    // Go through each observer in observers list and call update function which will notify event consumers
     @Override
     public void notifyObservers(String announcement) {
         for (Observer o : observersList_) {
@@ -39,6 +43,7 @@ public class Clerk extends Employee implements Subject {
         return (int) ((Math.random() * (max - min)) + min);
     }
 
+    // Strategy pattern setter
     public void set_tune_behavior(TuneBehavior tuneBehavior){
         tuneBehavior_ = tuneBehavior;
     }
@@ -46,12 +51,14 @@ public class Clerk extends Employee implements Subject {
     public void perform_tune(Item item){
         tuneBehavior_.tune(item);
     }
+
     //Set all items arriving today to have currDay arrival date, add all items to inventory
     private void process_incoming_items(int currDay) {
         Store s = get_store();
         ArrayList<Item> incoming = s.get_ordered().get(currDay); //Get all the items from the map
         incoming.forEach((item)->item.set_day_arrived(currDay));  //Set all their arrival dates to current day
 
+        // Observer pattern for logger
         announcement_ = incoming.size() + " number of items arrived at the store on Day " + currDay;
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
@@ -64,6 +71,8 @@ public class Clerk extends Employee implements Subject {
     public void arrive_at_store(){
         int currDay = get_store().get_calendar().get_current_day();
         System.out.println(get_name() + " arrives at the store on Day " + currDay);
+
+        // Observer pattern for logger
         announcement_ = get_name() + " arrives at the store on Day " + currDay;
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
@@ -81,6 +90,8 @@ public class Clerk extends Employee implements Subject {
     public void check_register(){
         double currentAmount = get_store().get_register().get_amount();
         System.out.println(get_name() + " is checking the register and there is " + currentAmount);
+
+        // Observer pattern for logger
         announcement_ = get_name() + " is checking the register and there is " + currentAmount;
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
@@ -96,6 +107,8 @@ public class Clerk extends Employee implements Subject {
         reg.set_amount(reg.get_amount() + 1000);
         reg.set_bank_withdrawal(reg.get_bank_withdrawals() + 1000);
         System.out.println(get_name() + " withdrew 1000 dollars from the bank and the new balance in the register is " + reg.get_amount() + " dollars");
+
+        // Observer pattern for logger
         announcement_ = get_name() + " withdrew 1000 dollars from the bank and the new balance in the register is " + reg.get_amount() + " dollars";
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
@@ -122,14 +135,17 @@ public class Clerk extends Employee implements Subject {
 
         System.out.println("The sum of today's inventory is " + inv.get_purch_price_sum()); //Display the list price sum of all items in inventory
 
+        // Observer pattern for logger
         announcement_ = "The total number of items in the inventory is " + inv.flatten_inventory().size();
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
+        // Observer pattern for logger
         announcement_ = "The sum of today's inventory is " + inv.get_purch_price_sum();
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
+        // Observer pattern for logger
         announcement_ = "The total number of items damaged in tuning is " + inv.flatten_inventory().size(); // THIS NEEDS TO BE FIXED BY BRIAN WHEN HE ADDS TUNING BEHAVIOR TO CLERKS WHO RUN DO INVENTORY!!!!!!!!!!!!
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
@@ -157,6 +173,7 @@ public class Clerk extends Employee implements Subject {
             item.set_list_price(item.get_list_price() * .8);
             System.out.println("The new price of the item is: " + item.get_list_price());
         }
+        // Observer pattern for tracker for name of employee with new item damaged
         notifyObservers("tracker: " + get_name() + ",0,0,1");
     }
 
@@ -168,8 +185,10 @@ public class Clerk extends Employee implements Subject {
         double total_spent_on_order = 0;
         ArrayList<Item> items = generate_items(type.toLowerCase(), 3); //Generate 3 of the type of items asked for
 
+        // Observer pattern for logger
         announcement_ = "The total number of items ordered is " + items.size();
         notifyObservers("logger: " + announcement_);
+        // Observer pattern for tracker with three items purchased
         notifyObservers("tracker: " + get_name() + ",0,3,0");
         announcement_ = "";
 
@@ -202,6 +221,7 @@ public class Clerk extends Employee implements Subject {
     }
 
     // https://stackoverflow.com/questions/9832919/generate-poisson-arrival-in-java
+    // This function generates a poisson distribution around the parameter mean and returns a value for the number of buying customers
     private static int getPoissonRandom(double mean)
     {
         Random r = new Random();
@@ -267,6 +287,8 @@ public class Clerk extends Employee implements Subject {
                 boughtItemsCounter += 1;
             }
         }
+
+        // Observer pattern for logger
         announcement_ = "The total number of items sold by " + get_name() + " on day " + get_store().get_calendar().get_current_day() + " is " + soldItemsCounter;
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
@@ -274,6 +296,7 @@ public class Clerk extends Employee implements Subject {
         // numItemsSold_ = Integer.toString(soldItemsCounter);
         // notifyObservers(numItemsSold_);
 
+        // Observer pattern for logger
         announcement_ = "The total number of items bought by "+ get_name() + " on day " + get_store().get_calendar().get_current_day() + " is " + boughtItemsCounter;
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
@@ -428,6 +451,7 @@ public class Clerk extends Employee implements Subject {
         damage_item(damagedItem);
         System.out.println(name + " finished cleaning the store.");
 
+        // Observer pattern for logger
         announcement_ = "The total number of items damaged in cleaning is " + damagedCounter;
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
@@ -443,10 +467,12 @@ public class Clerk extends Employee implements Subject {
         incr_days_worked();
         System.out.println(get_name() + " locked up the store and went home for the day");
 
+        // Observer pattern for logger
         announcement_ = get_name() + " locked up the store and went home for the day";
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
+        // Observer pattern for tracker (EOD print statement)
         notifyObservers("print:");
         removeObserver();
     }
