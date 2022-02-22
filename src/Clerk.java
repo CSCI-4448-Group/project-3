@@ -282,6 +282,7 @@ public class Clerk extends Employee implements Subject {
         // notifyObservers(numItemsPurchased_);
     }
 
+    //If the item is a tunable type, and it is tuned, return a bonus chance of sale
     int calc_bonus_chance(Item item){
         if(item instanceof Players && item.get_tuned()){
             return 10;
@@ -296,7 +297,7 @@ public class Clerk extends Employee implements Subject {
     }
 
     private boolean attempt_sale(buyingCustomer buyer, Item toSellItem){
-        int bonus_sell_chance = calc_bonus_chance(toSellItem);
+        int bonus_sell_chance = calc_bonus_chance(toSellItem); //Check if the item has a bonus_sell_chance
         if (buyer.haggle_roll(50 + bonus_sell_chance)){ //If we roll 50% chance and win, sell full price
             sell_item(toSellItem, toSellItem.get_list_price());
             System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + toSellItem.get_sale_price());
