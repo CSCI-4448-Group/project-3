@@ -33,16 +33,13 @@ public class Tracker extends Employee implements Observer {
         {
             setTrackerMap_(nameOfEmployee, new ArrayList<Integer>());
         }
-        else
-        {
-            int updateSoldItems = trackerMap_.get(nameOfEmployee).get(0) + numItemsSold;
-            int updatePurchasedItems = trackerMap_.get(nameOfEmployee).get(1) + numItemsPurchased;
-            int updateDamagedItems = trackerMap_.get(nameOfEmployee).get(2) + numItemsDamaged;
+        int updateSoldItems = trackerMap_.get(nameOfEmployee).get(0) + numItemsSold;
+        int updatePurchasedItems = trackerMap_.get(nameOfEmployee).get(1) + numItemsPurchased;
+        int updateDamagedItems = trackerMap_.get(nameOfEmployee).get(2) + numItemsDamaged;
 
-            trackerMap_.get(nameOfEmployee).set(0, updateSoldItems);
-            trackerMap_.get(nameOfEmployee).set(1, updatePurchasedItems);
-            trackerMap_.get(nameOfEmployee).set(2, updateDamagedItems);
-        }
+        trackerMap_.get(nameOfEmployee).set(0, updateSoldItems);
+        trackerMap_.get(nameOfEmployee).set(1, updatePurchasedItems);
+        trackerMap_.get(nameOfEmployee).set(2, updateDamagedItems);
     }
 
     public void print_daily_stats() {
