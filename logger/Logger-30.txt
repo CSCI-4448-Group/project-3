@@ -1,30 +1,11 @@
-Logger wrote: Shaggy locked up the store and went home for the day
-Logger wrote: Velma arrives at the store on Day 30
-Logger wrote: Velma
-Logger wrote: Velma is checking the register and there is 3301.5199999999995
-Logger wrote: The total number of items in the inventory is 42
-Logger wrote: The sum of today's inventory is 1299.6000000000001
-Logger wrote: The total number of items damaged in tuning is 42
-Logger wrote: The total number of items sold by Velma on day 30 is 3
-Logger wrote: 3
-Logger wrote: The total number of items bought by Velma on day 30 is 3
-Logger wrote: 3
 Logger wrote: Velma locked up the store and went home for the day
 Logger wrote: Daphne arrives at the store on Day 30
-Logger wrote: Daphne is checking the register and there is 3529.4599999999987
+Logger wrote: Daphne is checking the register and there is 3494.904000000001
 Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items in the inventory is 43
-Logger wrote: The sum of today's inventory is 1053.8
-Logger wrote: The total number of items damaged in tuning is 43
-Logger wrote: The total number of items sold by Daphne on day 30 is 3
-Logger wrote: The total number of items bought by Daphne on day 30 is 3
-Logger wrote: Shaggy locked up the store and went home for the day
-Logger wrote: Daphne arrives at the store on Day 30
-Logger wrote: Daphne is checking the register and there is 3403.688000000001
 Logger wrote: The total number of items ordered is 3
 Logger wrote: The total number of items in the inventory is 39
-Logger wrote: The sum of today's inventory is 956.7000000000002
+Logger wrote: The sum of today's inventory is 1083.8000000000002
 Logger wrote: The total number of items damaged in tuning is 39
-Logger wrote: The total number of items sold by Daphne on day 30 is 5
-Logger wrote: The total number of items bought by Daphne on day 30 is 1
-Logger wrote: The total number of items damaged in cleaning is 3
+Logger wrote: The total number of items sold by Daphne on day 30 is 4
+Logger wrote: The total number of items bought by Daphne on day 30 is 3
+Logger wrote: The total number of items damaged in cleaning is 2

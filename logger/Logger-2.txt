@@ -1,29 +1,8 @@
-Logger wrote: Daphne locked up the store and went home for the day
-Logger wrote: Daphne arrives at the store on Day 2
-Logger wrote: Daphne
-Logger wrote: Daphne is checking the register and there is 988.8
-Logger wrote: The total number of items in the inventory is 58
-Logger wrote: The sum of today's inventory is 1181.0
-Logger wrote: The total number of items damaged in tuning is 58
-Logger wrote: The total number of items sold by Daphne on day 2 is 4
-Logger wrote: 4
-Logger wrote: The total number of items bought by Daphne on day 2 is 3
-Logger wrote: 3
-Logger wrote: The total number of items damaged in cleaning is 2
-Logger wrote: 2
-Logger wrote: Daphne locked up the store and went home for the day
-Logger wrote: Velma arrives at the store on Day 2
-Logger wrote: Velma is checking the register and there is 1067.0
-Logger wrote: The total number of items in the inventory is 59
-Logger wrote: The sum of today's inventory is 1123.0
-Logger wrote: The total number of items damaged in tuning is 59
-Logger wrote: The total number of items sold by Velma on day 2 is 6
-Logger wrote: The total number of items bought by Velma on day 2 is 4
 Logger wrote: Shaggy locked up the store and went home for the day
 Logger wrote: Velma arrives at the store on Day 2
-Logger wrote: Velma is checking the register and there is 1051.0
-Logger wrote: The total number of items in the inventory is 58
-Logger wrote: The sum of today's inventory is 1141.0
-Logger wrote: The total number of items damaged in tuning is 58
-Logger wrote: The total number of items sold by Velma on day 2 is 4
-Logger wrote: The total number of items bought by Velma on day 2 is 3
+Logger wrote: Velma is checking the register and there is 1039.9999999999998
+Logger wrote: The total number of items in the inventory is 60
+Logger wrote: The sum of today's inventory is 1150.0
+Logger wrote: The total number of items damaged in tuning is 60
+Logger wrote: The total number of items sold by Velma on day 2 is 2
+Logger wrote: The total number of items bought by Velma on day 2 is 1

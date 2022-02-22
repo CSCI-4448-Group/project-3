@@ -1,27 +1,3 @@
-Logger wrote: Daphne arrives at the store on Day 1
-Logger wrote: Daphne
-Logger wrote: Daphne is checking the register and there is 0.0
-Logger wrote: Daphne withdrew 1000 dollars from the bank and the new balance in the register is 1000.0 dollars
-Logger wrote: The total number of items in the inventory is 60
-Logger wrote: The sum of today's inventory is 1156.0
-Logger wrote: The total number of items damaged in tuning is 60
-Logger wrote: The total number of items sold by Daphne on day 1 is 3
-Logger wrote: 3
-Logger wrote: The total number of items bought by Daphne on day 1 is 1
-Logger wrote: 1
-Logger wrote: The total number of items damaged in cleaning is 1
-Logger wrote: 1
-Logger wrote: Velma arrives at the store on Day 1
-Logger wrote: Velma
-Logger wrote: Daphne arrives at the store on Day 1
-Logger wrote: Daphne is checking the register and there is 0.0
-Logger wrote: Daphne withdrew 1000 dollars from the bank and the new balance in the register is 1000.0 dollars
-Logger wrote: The total number of items in the inventory is 60
-Logger wrote: The sum of today's inventory is 1156.0
-Logger wrote: The total number of items damaged in tuning is 60
-Logger wrote: The total number of items sold by Daphne on day 1 is 2
-Logger wrote: The total number of items bought by Daphne on day 1 is 1
-Logger wrote: The total number of items damaged in cleaning is 1
 Logger wrote: Shaggy arrives at the store on Day 1
 Logger wrote: Shaggy is checking the register and there is 0.0
 Logger wrote: Shaggy withdrew 1000 dollars from the bank and the new balance in the register is 1000.0 dollars
@@ -29,4 +5,4 @@ Logger wrote: The total number of items in the inventory is 60
 Logger wrote: The sum of today's inventory is 1156.0
 Logger wrote: The total number of items damaged in tuning is 60
 Logger wrote: The total number of items sold by Shaggy on day 1 is 3
-Logger wrote: The total number of items bought by Shaggy on day 1 is 1
+Logger wrote: The total number of items bought by Shaggy on day 1 is 3
