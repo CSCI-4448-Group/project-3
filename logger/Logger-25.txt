@@ -1,31 +1,11 @@
-Logger wrote: Daphne locked up the store and went home for the day
-Logger wrote: Velma arrives at the store on Day 25
-Logger wrote: 3 number of items arrived at the store on Day 25
-Logger wrote: Velma is checking the register and there is 2284.000000000001
-Logger wrote: The total number of items in the inventory is 46
-Logger wrote: The sum of today's inventory is 1055.0
-Logger wrote: The total number of items damaged in tuning is 46
-Logger wrote: The total number of items sold by Velma on day 25 is 5
-Logger wrote: The total number of items bought by Velma on day 25 is 1
 Logger wrote: Shaggy locked up the store and went home for the day
 Logger wrote: Shaggy arrives at the store on Day 25
-Logger wrote: 3 number of items arrived at the store on Day 25
-Logger wrote: Shaggy is checking the register and there is 2637.059999999999
-Logger wrote: The total number of items in the inventory is 50
-Logger wrote: The sum of today's inventory is 1336.9
-Logger wrote: The total number of items damaged in tuning is 50
-Logger wrote: The total number of items sold by Shaggy on day 25 is 3
+Logger wrote: Shaggy
+Logger wrote: Shaggy is checking the register and there is 3150.6999999999994
+Logger wrote: The total number of items in the inventory is 42
+Logger wrote: The sum of today's inventory is 1156.5
+Logger wrote: The total number of items damaged in tuning is 42
+Logger wrote: The total number of items sold by Shaggy on day 25 is 6
+Logger wrote: 6
 Logger wrote: The total number of items bought by Shaggy on day 25 is 1
-Logger wrote: Daphne locked up the store and went home for the day
-Logger wrote: Daphne arrives at the store on Day 25
-Logger wrote: Daphne
-Logger wrote: 6 number of items arrived at the store on Day 25
-Logger wrote: Daphne is checking the register and there is 2658.6000000000004
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items in the inventory is 43
-Logger wrote: The sum of today's inventory is 1087.0
-Logger wrote: The total number of items damaged in tuning is 43
-Logger wrote: The total number of items sold by Daphne on day 25 is 4
-Logger wrote: 4
-Logger wrote: The total number of items bought by Daphne on day 25 is 1
 Logger wrote: 1

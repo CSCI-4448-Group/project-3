@@ -9,9 +9,9 @@ public abstract class Stringed extends Instrument
         electric_ = electric;
     }
 
-    boolean get_tuned(){return tuned_;}
-    void set_tuned(boolean tuned){tuned_ = tuned;}
     boolean get_electric() {return electric_;}
+    public boolean get_tuned(){return tuned_;}
+    public void set_tuned(boolean tuned){tuned_ = tuned;}
 }
 
 class Guitar extends Stringed
