@@ -1,20 +1,45 @@
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.Map;
-public class Clerk extends Employee{
+import java.util.*;
+
+public class Clerk extends Employee implements Subject {
 
     private TuneBehavior tuneBehavior_;
+    private ArrayList<Observer> observersList_ = new ArrayList<Observer>();
+    public String announcement_;
+    public String numItemsSold_;
+    public String numItemsPurchased_;
+    public String numItemsDamaged_;
+    public String nameOfEmployee_;
+    private int damagedCounter = 0;
 
     public Clerk(String name, Store s, TuneBehavior tuneBehavior) {
         super(name,s);
         tuneBehavior_ = tuneBehavior;
     }
+
+    @Override
+    public void registerObserver(Observer o) {
+        observersList_.add(o);
+    }
+
+    @Override
+    public void removeObserver() {
+        observersList_.clear();
+    }
+
+    @Override
+    public void notifyObservers(String announcement) {
+        for (Observer o : observersList_) {
+            o.update(announcement);
+        }
+        // observersList_.forEach(o -> o.update(announcement));
+    }
+
     public int getRandomNumber(int min, int max) //https://www.baeldung.com/java-generating-random-numbers-in-range
     {
         return (int) ((Math.random() * (max - min)) + min);
     }
 
-    public void set_tune_behvaior(TuneBehavior tuneBehavior){
+    public void set_tune_behavior(TuneBehavior tuneBehavior){
         tuneBehavior_ = tuneBehavior;
     }
 
@@ -22,10 +47,15 @@ public class Clerk extends Employee{
         tuneBehavior_.tune(item);
     }
     //Set all items arriving today to have currDay arrival date, add all items to inventory
-    private void process_incoming_items(int currDay){
+    private void process_incoming_items(int currDay) {
         Store s = get_store();
         ArrayList<Item> incoming = s.get_ordered().get(currDay); //Get all the items from the map
         incoming.forEach((item)->item.set_day_arrived(currDay));  //Set all their arrival dates to current day
+
+        announcement_ = incoming.size() + " number of items arrived at the store on Day " + currDay;
+        notifyObservers("logger: " + announcement_);
+        announcement_ = "";
+
         s.get_inventory().put_items(incoming); //Add all the items to the inventory
         s.get_ordered().remove(currDay); //Remove items from orderedItems_
     }
@@ -34,6 +64,13 @@ public class Clerk extends Employee{
     public void arrive_at_store(){
         int currDay = get_store().get_calendar().get_current_day();
         System.out.println(get_name() + " arrives at the store on Day " + currDay);
+        announcement_ = get_name() + " arrives at the store on Day " + currDay;
+        notifyObservers("logger: " + announcement_);
+        announcement_ = "";
+
+        // nameOfEmployee_ = get_name();
+        // notifyObservers(nameOfEmployee_);
+
         if(get_store().get_ordered().containsKey(currDay)){ //If there are ordered items that arrive today
             process_incoming_items(currDay);
         }
@@ -44,6 +81,10 @@ public class Clerk extends Employee{
     public void check_register(){
         double currentAmount = get_store().get_register().get_amount();
         System.out.println(get_name() + " is checking the register and there is " + currentAmount);
+        announcement_ = get_name() + " is checking the register and there is " + currentAmount;
+        notifyObservers("logger: " + announcement_);
+        announcement_ = "";
+
         if(currentAmount < 75) {
             go_to_bank();
         }
@@ -55,6 +96,9 @@ public class Clerk extends Employee{
         reg.set_amount(reg.get_amount() + 1000);
         reg.set_bank_withdrawal(reg.get_bank_withdrawals() + 1000);
         System.out.println(get_name() + " withdrew 1000 dollars from the bank and the new balance in the register is " + reg.get_amount() + " dollars");
+        announcement_ = get_name() + " withdrew 1000 dollars from the bank and the new balance in the register is " + reg.get_amount() + " dollars";
+        notifyObservers("logger: " + announcement_);
+        announcement_ = "";
     }
 
     //Scan the current inventory, if we have 0 count of any type of item, order 3 of them
@@ -66,6 +110,7 @@ public class Clerk extends Employee{
                 place_order(entry.getKey()); //Order that item
             }
         }
+
         for(Item item : inv.flatten_inventory()){
             if(item instanceof Instrument || item instanceof Players) {
                 boolean prev_tune_state = item.get_tuned();
@@ -75,8 +120,21 @@ public class Clerk extends Employee{
             }
         }
 
-        System.out.println("The sum of todays inventory is " + inv.get_list_price_sum()); //Display the list price sum of all items in inventory
+        System.out.println("The sum of today's inventory is " + inv.get_purch_price_sum()); //Display the list price sum of all items in inventory
+
+        announcement_ = "The total number of items in the inventory is " + inv.flatten_inventory().size();
+        notifyObservers("logger: " + announcement_);
+        announcement_ = "";
+
+        announcement_ = "The sum of today's inventory is " + inv.get_purch_price_sum();
+        notifyObservers("logger: " + announcement_);
+        announcement_ = "";
+
+        announcement_ = "The total number of items damaged in tuning is " + inv.flatten_inventory().size(); // THIS NEEDS TO BE FIXED BY BRIAN WHEN HE ADDS TUNING BEHAVIOR TO CLERKS WHO RUN DO INVENTORY!!!!!!!!!!!!
+        notifyObservers("logger: " + announcement_);
+        announcement_ = "";
     }
+
     private void check_tune_damage(boolean old_state, boolean new_state, Item item){
 
         Random rand = new Random();
@@ -99,6 +157,7 @@ public class Clerk extends Employee{
             item.set_list_price(item.get_list_price() * .8);
             System.out.println("The new price of the item is: " + item.get_list_price());
         }
+        notifyObservers("tracker: " + get_name() + ",0,0,1");
     }
 
     //Adds 3 items of type passed to orderedItems_ map in form of <Day Arriving, List Of Items>
@@ -108,6 +167,12 @@ public class Clerk extends Employee{
         CashRegister reg = s.get_register();
         double total_spent_on_order = 0;
         ArrayList<Item> items = generate_items(type.toLowerCase(), 3); //Generate 3 of the type of items asked for
+
+        announcement_ = "The total number of items ordered is " + items.size();
+        notifyObservers("logger: " + announcement_);
+        notifyObservers("tracker: " + get_name() + ",0,3,0");
+        announcement_ = "";
+
         // Updates the register with the 
         for (Item item : items) {
             reg.set_amount(reg.get_amount() - item.get_purch_price());
@@ -180,30 +245,53 @@ public class Clerk extends Employee{
 
 
     public void open_store() throws Exception{
+        int soldItemsCounter = 0;
+        int boughtItemsCounter = 0;
+
         ArrayList<buyingCustomer> buyCustomers = generateBuyingCustomers();
         for(buyingCustomer buyer : buyCustomers){ //For each buying customer
             if(get_store().get_inventory().get_items_of_type(buyer.get_wanted_type()).isEmpty()){ //If there are no items of type that customer wants
                 System.out.println(buyer.get_name() + " tried to buy a " + buyer.get_wanted_type() + " but none were available");
                 continue;
             }
-            attempt_sale(buyer,get_store().get_inventory().get_items_of_type(buyer.get_wanted_type()).get(0)); //Attempt to sell the first item of appropriate type
+            boolean didSell = attempt_sale(buyer,get_store().get_inventory().get_items_of_type(buyer.get_wanted_type()).get(0)); //Attempt to sell the first item of appropriate type
+            if (didSell) {
+                soldItemsCounter += 1;
+            }
         }
 
         ArrayList<sellingCustomer> sellCustomers = generateSellingCustomers();
         for(sellingCustomer seller : sellCustomers){ //For each selling customer
-            attempt_purchase(seller, seller.get_item()); //Attempt to buy their item
+            boolean didBuy = attempt_purchase(seller, seller.get_item()); //Attempt to buy their item
+            if (didBuy) {
+                boughtItemsCounter += 1;
+            }
         }
+        announcement_ = "The total number of items sold by " + get_name() + " on day " + get_store().get_calendar().get_current_day() + " is " + soldItemsCounter;
+        notifyObservers("logger: " + announcement_);
+        announcement_ = "";
+
+        // numItemsSold_ = Integer.toString(soldItemsCounter);
+        // notifyObservers(numItemsSold_);
+
+        announcement_ = "The total number of items bought by "+ get_name() + " on day " + get_store().get_calendar().get_current_day() + " is " + boughtItemsCounter;
+        notifyObservers("logger: " + announcement_);
+        announcement_ = "";
+
+        // numItemsPurchased_ = Integer.toString(boughtItemsCounter);
+        // notifyObservers(numItemsPurchased_);
     }
 
-    private void attempt_sale(buyingCustomer buyer, Item toSellItem){
-        if(buyer.haggle_roll(50)){ //If we roll 50% chance and win, sell full price
+    private boolean attempt_sale(buyingCustomer buyer, Item toSellItem){
+        if (buyer.haggle_roll(50)){ //If we roll 50% chance and win, sell full price
             sell_item(toSellItem, toSellItem.get_list_price());
             System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + toSellItem.get_sale_price());
-            
+
             // If the item is a subclass of 'Stringed' we want to decorate it with addons
             if (Stringed.class.isAssignableFrom(toSellItem.getClass())) {
                 toSellItem = decorate_sale(toSellItem);
             }
+            return true;
         }
         else if(buyer.haggle_roll(75)){ //else if we roll 75% chance and win, sell 90% full price
             sell_item(toSellItem, toSellItem.get_list_price()*.9);
@@ -213,28 +301,33 @@ public class Clerk extends Employee{
             if (Stringed.class.isAssignableFrom(toSellItem.getClass())) {
                 toSellItem = decorate_sale(toSellItem);
             }
+            return true;
         }
         else{
             System.out.println(get_name() + " tried selling a " + toSellItem.get_condition().get_condition() + " condition " + toSellItem.get_new_or_used() + " " + toSellItem.get_name() + " to " + toSellItem.get_name() + " for $" + toSellItem.get_list_price() + " but customer refused.");
+            return false;
         }
     }
 
-    private void attempt_purchase(sellingCustomer seller, Item toBuyItem){
+    private boolean attempt_purchase(sellingCustomer seller, Item toBuyItem) {
         double purchPrice = evaluate_item(toBuyItem);
         if(get_store().is_discontinued(toBuyItem.get_item_type())){
             System.out.println(seller.get_name() + " tried to sell a " + toBuyItem.get_name() + " but the store no longer purchases these");
-            return;
+            return false;
         }
         if(seller.haggle_roll(50)){
             purch_item(toBuyItem,purchPrice);
             System.out.println(get_name() + " bought a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + purchPrice);
+            return true;
         }
         else if(seller.haggle_roll(75)){
             purch_item(toBuyItem, purchPrice*1.1);
             System.out.println(get_name() + " bought a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + purchPrice + " after a 10% offer increase.");
+            return true;
         }
         else{
             System.out.println(get_name() + " tried buying a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + purchPrice + " but customer refused.");
+            return false;
         }
     }
 
@@ -256,6 +349,7 @@ public class Clerk extends Employee{
         s.get_register().set_amount(s.get_register().get_amount() + soldPrice); //Set register amount
         soldItem.set_day_sold(s.get_calendar().get_current_day()); //Set items sold date to current day
         soldItem.set_sale_price(soldPrice); //Set items sold price
+        notifyObservers("tracker: " + get_name() + ",1,0,0");
     }
 
     private void purch_item(Item purchItem, double purchPrice){
@@ -263,6 +357,7 @@ public class Clerk extends Employee{
         s.add_to_inventory(purchItem);
         purchItem.set_purch_price(purchPrice);
         s.get_register().set_amount(s.get_register().get_amount() - purchPrice); //Set register amount
+        notifyObservers("tracker: " + get_name() + ",0,1,0");
     }
 
     private double evaluate_item(Item item){
@@ -291,38 +386,53 @@ public class Clerk extends Employee{
         }
     }
 
-    public void clean_store(){ //The size of this function needs to be reduced!
+    public void clean_store() { //The size of this function needs to be reduced!
         Random rand = new Random();
         String name = get_name();
         Inventory inv = get_store().get_inventory();
         double damage_chance;
+
         if (name == "Shaggy") {
             damage_chance = 20;
-        }
-        else if (name == "Velma") {
+        } else if (name == "Velma") {
             damage_chance = 5;
-        }
-        else {
+        } else {
             damage_chance = 50;
         }
-         //Increment calendar day
+        //Increment calendar day
 
         //If the roll for a damaging an item fails, finish cleaning the store and return from fxn
-        if(rand.nextInt(100) > damage_chance) {
+        if (rand.nextInt(100) > damage_chance) {
             System.out.println(name + " finished cleaning the store.");
             return;
         }
 
         //Otherwise proceed with damaging an item
         Item damagedItem = inv.flatten_inventory().get(rand.nextInt(inv.flatten_inventory().size()));//Flatten the inventory into a list of items and pick a random item to damage
+        damagedCounter += 1;
         damage_item(damagedItem);
         System.out.println(name + " finished cleaning the store.");
+
+        announcement_ = "The total number of items damaged in cleaning is " + damagedCounter;
+        notifyObservers("logger: " + announcement_);
+        announcement_ = "";
+
+        // numItemsDamaged_ = Integer.toString(damagedCounter);
+        // notifyObservers(numItemsDamaged_);
     }
+
 
     // Pack up the store for the day. Increase days worked and increment current day. Announce that the store is closed
     public void leave_store(){
         get_store().get_calendar().incr_current_day();
         incr_days_worked();
         System.out.println(get_name() + " locked up the store and went home for the day");
+
+        announcement_ = get_name() + " locked up the store and went home for the day";
+        notifyObservers("logger: " + announcement_);
+        announcement_ = "";
+
+        notifyObservers("print:");
+        removeObserver();
     }
 }

@@ -2,9 +2,14 @@ import java.util.Random;
 import java.util.ArrayList;
 class main_class {
 
-    public static void begin_day(Store fnms, Clerk current_clerk) throws Exception
+    public static void begin_day(Store fnms, Clerk current_clerk, Tracker tracker) throws Exception
     {
-        
+        Logger loggerGuy = new Logger("Logger Guy", fnms, current_clerk);
+
+        tracker.registerClerk(current_clerk);
+
+        loggerGuy.arrive(fnms.get_calendar().get_current_day());
+
         // Clerk arrives at store
         current_clerk.arrive_at_store();
 
@@ -22,6 +27,9 @@ class main_class {
 
         // Clerk announces he leaves the store
         current_clerk.leave_store();
+
+        // Logger leaves for the day
+        loggerGuy.close();
     }
 
     // Possible way to handle announcements, may make it easier?
@@ -80,7 +88,7 @@ class main_class {
          System.out.println("\n");
      }
 
-    public static void runFnmsSimulation(Store FNMS) throws Exception {
+    public static void runFnmsSimulation(Store FNMS, Tracker tracker) throws Exception {
         // Main program loop
         // Run loop for 30 days, calling begin_day each time, and print out a delineator between each day.
 
@@ -96,7 +104,7 @@ class main_class {
                 FNMS.get_calendar().incr_current_day();
             } else {
                 Clerk current_clerk = FNMS.get_clerk_of_the_day();
-                begin_day(FNMS, current_clerk);
+                begin_day(FNMS, current_clerk, tracker);
             }
 
             if ((i+1) % 7 == 0) {
@@ -114,9 +122,10 @@ class main_class {
         // Initialize store and two clerk objects
         Store FNMS = new Store();
 
+        Tracker tracker = new Tracker("Tracker Guy", FNMS);
 
         // Run the store simulation
-        runFnmsSimulation(FNMS);
+        runFnmsSimulation(FNMS, tracker);
 
         // Prints the summary / final messages
         print_final_messages(FNMS);

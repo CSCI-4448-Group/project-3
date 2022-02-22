@@ -1,0 +1,65 @@
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Daphne arrives at the store on Day 26
+Logger wrote: 3 number of items arrived at the store on Day 26
+Logger wrote: Daphne is checking the register and there is 2668.660000000001
+Logger wrote: The total number of items in the inventory is 46
+Logger wrote: The sum of today's inventory is 1274.0
+Logger wrote: The total number of items damaged in tuning is 46
+Logger wrote: The total number of items sold by Daphne on day 26 is 4
+Logger wrote: The total number of items bought by Daphne on day 26 is 2
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 26
+Logger wrote: Velma is checking the register and there is 3084.9999999999995
+Logger wrote: The total number of items in the inventory is 42
+Logger wrote: The sum of today's inventory is 961.5999999999999
+Logger wrote: The total number of items damaged in tuning is 42
+Logger wrote: The total number of items sold by Velma on day 26 is 3
+Logger wrote: The total number of items bought by Velma on day 26 is 1
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Shaggy arrives at the store on Day 26
+Logger wrote: Shaggy is checking the register and there is 2590.24
+Logger wrote: The total number of items in the inventory is 47
+Logger wrote: The sum of today's inventory is 1180.7
+Logger wrote: The total number of items damaged in tuning is 47
+Logger wrote: The total number of items sold by Shaggy on day 26 is 5
+Logger wrote: The total number of items bought by Shaggy on day 26 is 1
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Daphne arrives at the store on Day 26
+Logger wrote: 3 number of items arrived at the store on Day 26
+Logger wrote: Daphne is checking the register and there is 2909.1
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 39
+Logger wrote: The sum of today's inventory is 975.5
+Logger wrote: The total number of items damaged in tuning is 39
+Logger wrote: The total number of items sold by Daphne on day 26 is 1
+Logger wrote: The total number of items bought by Daphne on day 26 is 1
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 26
+Logger wrote: Velma is checking the register and there is 2590.8400000000015
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 47
+Logger wrote: The sum of today's inventory is 1233.6999999999998
+Logger wrote: The total number of items damaged in tuning is 47
+Logger wrote: The total number of items sold by Velma on day 26 is 3
+Logger wrote: The total number of items bought by Velma on day 26 is 3
+Logger wrote: Daphne locked up the store and went home for the day
+Logger wrote: Shaggy arrives at the store on Day 26
+Logger wrote: 3 number of items arrived at the store on Day 26
+Logger wrote: Shaggy is checking the register and there is 3224.3599999999988
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 46
+Logger wrote: The sum of today's inventory is 1171.1
+Logger wrote: The total number of items damaged in tuning is 46
+Logger wrote: The total number of items sold by Shaggy on day 26 is 2
+Logger wrote: The total number of items bought by Shaggy on day 26 is 2
+Logger wrote: The total number of items damaged in cleaning is 3
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 26
+Logger wrote: Velma is checking the register and there is 2795.48
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 36
+Logger wrote: The sum of today's inventory is 1041.2
+Logger wrote: The total number of items damaged in tuning is 36
+Logger wrote: The total number of items sold by Velma on day 26 is 2
+Logger wrote: The total number of items bought by Velma on day 26 is 1

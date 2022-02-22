@@ -1,0 +1,69 @@
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Daphne arrives at the store on Day 20
+Logger wrote: 3 number of items arrived at the store on Day 20
+Logger wrote: Daphne is checking the register and there is 2753.7600000000007
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 33
+Logger wrote: The sum of today's inventory is 833.5
+Logger wrote: The total number of items damaged in tuning is 33
+Logger wrote: The total number of items sold by Daphne on day 20 is 3
+Logger wrote: The total number of items bought by Daphne on day 20 is 4
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Shaggy arrives at the store on Day 20
+Logger wrote: Shaggy is checking the register and there is 2615.2000000000003
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 39
+Logger wrote: The sum of today's inventory is 937.3000000000001
+Logger wrote: The total number of items damaged in tuning is 39
+Logger wrote: The total number of items sold by Shaggy on day 20 is 3
+Logger wrote: The total number of items bought by Shaggy on day 20 is 2
+Logger wrote: Daphne locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 20
+Logger wrote: Velma is checking the register and there is 2321.18
+Logger wrote: The total number of items in the inventory is 39
+Logger wrote: The sum of today's inventory is 992.4000000000001
+Logger wrote: The total number of items damaged in tuning is 39
+Logger wrote: The total number of items sold by Velma on day 20 is 3
+Logger wrote: The total number of items bought by Velma on day 20 is 2
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 20
+Logger wrote: Velma is checking the register and there is 2134.7599999999998
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 40
+Logger wrote: The sum of today's inventory is 1057.4
+Logger wrote: The total number of items damaged in tuning is 40
+Logger wrote: The total number of items sold by Velma on day 20 is 3
+Logger wrote: The total number of items bought by Velma on day 20 is 2
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 20
+Logger wrote: 6 number of items arrived at the store on Day 20
+Logger wrote: Velma is checking the register and there is 2402.7000000000007
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 40
+Logger wrote: The sum of today's inventory is 1000.4
+Logger wrote: The total number of items damaged in tuning is 40
+Logger wrote: The total number of items sold by Velma on day 20 is 2
+Logger wrote: The total number of items bought by Velma on day 20 is 1
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Shaggy arrives at the store on Day 20
+Logger wrote: Shaggy is checking the register and there is 3184.959999999999
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 34
+Logger wrote: The sum of today's inventory is 751.0
+Logger wrote: The total number of items damaged in tuning is 34
+Logger wrote: The total number of items sold by Shaggy on day 20 is 0
+Logger wrote: The total number of items bought by Shaggy on day 20 is 2
+Logger wrote: The total number of items damaged in cleaning is 2
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 20
+Logger wrote: 3 number of items arrived at the store on Day 20
+Logger wrote: Velma is checking the register and there is 2347.2799999999997
+Logger wrote: The total number of items in the inventory is 50
+Logger wrote: The sum of today's inventory is 1310.1
+Logger wrote: The total number of items damaged in tuning is 50
+Logger wrote: The total number of items sold by Velma on day 20 is 4
+Logger wrote: The total number of items bought by Velma on day 20 is 1

@@ -1,0 +1,65 @@
+Logger wrote: Daphne locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 23
+Logger wrote: Velma is checking the register and there is 2489.8600000000006
+Logger wrote: The total number of items in the inventory is 47
+Logger wrote: The sum of today's inventory is 1165.0
+Logger wrote: The total number of items damaged in tuning is 47
+Logger wrote: The total number of items sold by Velma on day 23 is 5
+Logger wrote: The total number of items bought by Velma on day 23 is 0
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Daphne arrives at the store on Day 23
+Logger wrote: 3 number of items arrived at the store on Day 23
+Logger wrote: Daphne is checking the register and there is 2828.4
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 41
+Logger wrote: The sum of today's inventory is 939.6999999999999
+Logger wrote: The total number of items damaged in tuning is 41
+Logger wrote: The total number of items sold by Daphne on day 23 is 5
+Logger wrote: The total number of items bought by Daphne on day 23 is 1
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Shaggy arrives at the store on Day 23
+Logger wrote: Shaggy is checking the register and there is 2552.2799999999997
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 41
+Logger wrote: The sum of today's inventory is 1008.5999999999999
+Logger wrote: The total number of items damaged in tuning is 41
+Logger wrote: The total number of items sold by Shaggy on day 23 is 2
+Logger wrote: The total number of items bought by Shaggy on day 23 is 3
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Daphne arrives at the store on Day 23
+Logger wrote: Daphne is checking the register and there is 2366.8599999999997
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 44
+Logger wrote: The sum of today's inventory is 1162.3
+Logger wrote: The total number of items damaged in tuning is 44
+Logger wrote: The total number of items sold by Daphne on day 23 is 5
+Logger wrote: The total number of items bought by Daphne on day 23 is 2
+Logger wrote: The total number of items damaged in cleaning is 3
+Logger wrote: Daphne locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 23
+Logger wrote: 3 number of items arrived at the store on Day 23
+Logger wrote: Velma is checking the register and there is 2596.540000000001
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 41
+Logger wrote: The sum of today's inventory is 1004.2
+Logger wrote: The total number of items damaged in tuning is 41
+Logger wrote: The total number of items sold by Velma on day 23 is 3
+Logger wrote: The total number of items bought by Velma on day 23 is 4
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 23
+Logger wrote: 3 number of items arrived at the store on Day 23
+Logger wrote: Velma is checking the register and there is 3014.959999999999
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 49
+Logger wrote: The sum of today's inventory is 1146.7
+Logger wrote: The total number of items damaged in tuning is 49
+Logger wrote: The total number of items sold by Velma on day 23 is 4
+Logger wrote: The total number of items bought by Velma on day 23 is 1
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 23
+Logger wrote: Velma is checking the register and there is 2553.68
+Logger wrote: The total number of items in the inventory is 46
+Logger wrote: The sum of today's inventory is 1195.6999999999998
+Logger wrote: The total number of items damaged in tuning is 46
+Logger wrote: The total number of items sold by Velma on day 23 is 3
+Logger wrote: The total number of items bought by Velma on day 23 is 0
