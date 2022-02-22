@@ -31,16 +31,10 @@ public class Tracker extends Employee implements Observer {
     public void track(int day, String nameOfEmployee, int numItemsSold, int numItemsPurchased, int numItemsDamaged) {
         if (!trackerMap_.containsKey(nameOfEmployee))
         {
-            ArrayList<Integer> emptyClerkList = new ArrayList<Integer>();
-            setTrackerMap_(nameOfEmployee, emptyClerkList);
+            setTrackerMap_(nameOfEmployee, new ArrayList<Integer>());
         }
         else
         {
-            // System.out.println("Looking for " + nameOfEmployee);
-            // for (String name : trackerMap_.keySet()) {
-            //     System.out.println("XXXXXXX " + name);
-            // }
-            
             int updateSoldItems = trackerMap_.get(nameOfEmployee).get(0) + numItemsSold;
             int updatePurchasedItems = trackerMap_.get(nameOfEmployee).get(1) + numItemsPurchased;
             int updateDamagedItems = trackerMap_.get(nameOfEmployee).get(2) + numItemsDamaged;
@@ -52,7 +46,7 @@ public class Tracker extends Employee implements Observer {
     }
 
     public void print_daily_stats() {
-        System.out.println("Tracker: Day " + get_store().get_calendar().get_current_day());
+        System.out.println("Tracker: Day " + (get_store().get_calendar().get_current_day() - 1));
         System.out.println("==============================");
         System.out.println("Clerk       Items Sold      Items Purchased     Items Damaged");
 
