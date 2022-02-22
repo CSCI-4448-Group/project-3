@@ -29,15 +29,7 @@ public class Clerk extends Employee implements Subject {
     @Override
     public void notifyObservers(String announcement) {
         for (Observer o : observersList_) {
-            // if (o instanceof Tracker) {
-            //     o.update(get_name(), numItemsSold_, numItemsPurchased_, numItemsDamaged_);
-            // }
-            // else if (o instanceof Logger) {
             o.update(announcement);
-            // }
-//            else {
-//                throw new IllegalArgumentException("Balls");
-//            }
         }
         // observersList_.forEach(o -> o.update(announcement));
     }
