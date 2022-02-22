@@ -4,12 +4,10 @@ import java.io.FileWriter;  // Import the File class
 import java.io.IOException;  // Import the IOException class to handle errors
 
 
-public class Logger extends Employee implements Observer {
+public class Logger implements Observer {
     private String announcement_;
-    // private String numItemsSold_;
-    // private String numItemsPurchased_;
-    // private String numItemsDamaged_;
     private String name = "Logger";
+    private int currDay;
 
     public String get_name() {
         return name;
@@ -17,12 +15,8 @@ public class Logger extends Employee implements Observer {
 
     public Logger(String name, Store s, Subject clerk)
     {
-        super(name, s);
         clerk.registerObserver(this);
-    }
-
-    public void arrive(int day) {
-        System.out.println(get_name() + " arrived on day " + day);
+        currDay = s.get_calendar().get_current_day();
     }
 
     //https://www.w3schools.com/java/java_files_create.asp
@@ -44,10 +38,6 @@ public class Logger extends Employee implements Observer {
             return;
         }
         this.announcement_ = announcement.split("logger: ")[1];
-        log(get_store().get_calendar().get_current_day());
-    }
-
-    public void close() {
-        System.out.println(get_name() + " is leaving the store.");
+        log(currDay);
     }
 }
