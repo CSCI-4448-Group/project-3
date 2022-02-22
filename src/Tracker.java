@@ -5,7 +5,7 @@ import java.io.IOException;  // Import the IOException class to handle errors
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Tracker extends Employee implements Observer {
+public class Tracker implements Observer {
     private HashMap<String, ArrayList<Integer>> trackerMap_ = new HashMap<>();
     // private ArrayList<Integer> clerkList;
     // private String numItemsSold_;
@@ -14,6 +14,7 @@ public class Tracker extends Employee implements Observer {
     // private String nameOfEmployee_;
     // private String announcement_;
     private String name = "Tracker";
+    private Calendar calendar;
 
     public String get_name() {
         return name;
@@ -21,14 +22,14 @@ public class Tracker extends Employee implements Observer {
 
     public Tracker(String name, Store s)
     {
-        super(name, s);
+        calendar = s.get_calendar();
     }
 
     public void registerClerk(Subject clerk) {
         clerk.registerObserver(this);
     }
 
-    public void track(int day, String nameOfEmployee, int numItemsSold, int numItemsPurchased, int numItemsDamaged) {
+    public void track(String nameOfEmployee, int numItemsSold, int numItemsPurchased, int numItemsDamaged) {
         if (!trackerMap_.containsKey(nameOfEmployee))
         {
             setTrackerMap_(nameOfEmployee, new ArrayList<Integer>());
@@ -43,7 +44,7 @@ public class Tracker extends Employee implements Observer {
     }
 
     public void print_daily_stats() {
-        System.out.println("Tracker: Day " + (get_store().get_calendar().get_current_day() - 1));
+        System.out.println("Tracker: Day " + (calendar.get_current_day() - 1));
         System.out.println("==============================");
         System.out.println("Clerk       Items Sold      Items Purchased     Items Damaged");
 
@@ -60,23 +61,13 @@ public class Tracker extends Employee implements Observer {
             int numItemsSold_ = Integer.valueOf(vars[1]);
             int numItemsPurchased_ = Integer.valueOf(vars[2]);
             int numItemsDamaged_ = Integer.valueOf(vars[3]);
-            track(get_store().get_calendar().get_current_day(), nameOfEmployee_, numItemsSold_, numItemsPurchased_, numItemsDamaged_);
+            track(nameOfEmployee_, numItemsSold_, numItemsPurchased_, numItemsDamaged_);
         } else if (announcement.split(":")[0].equals("print")) {
             print_daily_stats();
         } else {
             return;
         }
     }
-
-    // public void update(String nameOfEmployee, String numItemsSold, String numItemsPurchased, String numItemsDamaged) {
-    //     nameOfEmployee_ = nameOfEmployee;
-    //     numItemsSold_ = numItemsSold;
-    //     numItemsPurchased_ = numItemsPurchased;
-    //     numItemsDamaged_ = numItemsDamaged;
-    //     track(get_store().get_calendar().get_current_day(), nameOfEmployee_, numItemsSold_, numItemsPurchased_, numItemsDamaged_);
-    // }
-
-    
 
     public HashMap<String, ArrayList<Integer>> getTrackerMap_() {return trackerMap_;}
 
