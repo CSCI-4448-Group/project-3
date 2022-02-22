@@ -1,65 +1,10 @@
-Logger wrote: Daphne locked up the store and went home for the day
-Logger wrote: Velma arrives at the store on Day 27
-Logger wrote: Velma is checking the register and there is 2938.0600000000013
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items in the inventory is 42
-Logger wrote: The sum of today's inventory is 1164.0
-Logger wrote: The total number of items damaged in tuning is 42
-Logger wrote: The total number of items sold by Velma on day 27 is 1
-Logger wrote: The total number of items bought by Velma on day 27 is 3
-Logger wrote: Velma locked up the store and went home for the day
-Logger wrote: Shaggy arrives at the store on Day 27
-Logger wrote: 3 number of items arrived at the store on Day 27
-Logger wrote: Shaggy is checking the register and there is 3221.0999999999995
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items in the inventory is 41
-Logger wrote: The sum of today's inventory is 914.2999999999998
-Logger wrote: The total number of items damaged in tuning is 41
-Logger wrote: The total number of items sold by Shaggy on day 27 is 2
-Logger wrote: The total number of items bought by Shaggy on day 27 is 2
 Logger wrote: Shaggy locked up the store and went home for the day
-Logger wrote: Velma arrives at the store on Day 27
-Logger wrote: Velma is checking the register and there is 2718.64
-Logger wrote: The total number of items in the inventory is 42
-Logger wrote: The sum of today's inventory is 1107.5
-Logger wrote: The total number of items damaged in tuning is 42
-Logger wrote: The total number of items sold by Velma on day 27 is 4
-Logger wrote: The total number of items bought by Velma on day 27 is 0
-Logger wrote: Daphne locked up the store and went home for the day
-Logger wrote: Daphne arrives at the store on Day 27
-Logger wrote: 3 number of items arrived at the store on Day 27
-Logger wrote: Daphne is checking the register and there is 2814.1
-Logger wrote: The total number of items in the inventory is 42
-Logger wrote: The sum of today's inventory is 1073.7000000000003
-Logger wrote: The total number of items damaged in tuning is 42
-Logger wrote: The total number of items sold by Daphne on day 27 is 1
-Logger wrote: The total number of items bought by Daphne on day 27 is 2
-Logger wrote: The total number of items damaged in cleaning is 5
-Logger wrote: Velma locked up the store and went home for the day
 Logger wrote: Shaggy arrives at the store on Day 27
-Logger wrote: Shaggy is checking the register and there is 2640.7200000000016
-Logger wrote: The total number of items in the inventory is 45
-Logger wrote: The sum of today's inventory is 1125.5
-Logger wrote: The total number of items damaged in tuning is 45
-Logger wrote: The total number of items sold by Shaggy on day 27 is 3
+Logger wrote: Shaggy is checking the register and there is 3127.6800000000003
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 44
+Logger wrote: The sum of today's inventory is 1117.4
+Logger wrote: The total number of items damaged in tuning is 44
+Logger wrote: The total number of items sold by Shaggy on day 27 is 4
 Logger wrote: The total number of items bought by Shaggy on day 27 is 1
-Logger wrote: Shaggy locked up the store and went home for the day
-Logger wrote: Velma arrives at the store on Day 27
-Logger wrote: 3 number of items arrived at the store on Day 27
-Logger wrote: Velma is checking the register and there is 3097.9599999999987
-Logger wrote: The total number of items in the inventory is 49
-Logger wrote: The sum of today's inventory is 1329.8000000000002
-Logger wrote: The total number of items damaged in tuning is 49
-Logger wrote: The total number of items sold by Velma on day 27 is 5
-Logger wrote: The total number of items bought by Velma on day 27 is 2
-Logger wrote: Velma locked up the store and went home for the day
-Logger wrote: Shaggy arrives at the store on Day 27
-Logger wrote: 3 number of items arrived at the store on Day 27
-Logger wrote: Shaggy is checking the register and there is 2853.48
-Logger wrote: The total number of items in the inventory is 37
-Logger wrote: The sum of today's inventory is 1094.2
-Logger wrote: The total number of items damaged in tuning is 37
-Logger wrote: The total number of items sold by Shaggy on day 27 is 7
-Logger wrote: The total number of items bought by Shaggy on day 27 is 3
-Logger wrote: The total number of items damaged in cleaning is 5
