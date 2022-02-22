@@ -29,12 +29,12 @@ public class Clerk extends Employee implements Subject {
     @Override
     public void notifyObservers(String announcement) {
         for (Observer o : observersList_) {
-            if (o instanceof Tracker) {
-                o.update(get_name(), numItemsSold_, numItemsPurchased_, numItemsDamaged_);
-            }
-            else if (o instanceof Logger) {
-                o.update(announcement);
-            }
+            // if (o instanceof Tracker) {
+            //     o.update(get_name(), numItemsSold_, numItemsPurchased_, numItemsDamaged_);
+            // }
+            // else if (o instanceof Logger) {
+            o.update(announcement);
+            // }
 //            else {
 //                throw new IllegalArgumentException("Balls");
 //            }
@@ -61,7 +61,7 @@ public class Clerk extends Employee implements Subject {
         incoming.forEach((item)->item.set_day_arrived(currDay));  //Set all their arrival dates to current day
 
         announcement_ = incoming.size() + " number of items arrived at the store on Day " + currDay;
-        notifyObservers(announcement_);
+        notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
         s.get_inventory().put_items(incoming); //Add all the items to the inventory
@@ -73,11 +73,11 @@ public class Clerk extends Employee implements Subject {
         int currDay = get_store().get_calendar().get_current_day();
         System.out.println(get_name() + " arrives at the store on Day " + currDay);
         announcement_ = get_name() + " arrives at the store on Day " + currDay;
-        notifyObservers(announcement_);
+        notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
-        nameOfEmployee_ = get_name();
-        notifyObservers(nameOfEmployee_);
+        // nameOfEmployee_ = get_name();
+        // notifyObservers(nameOfEmployee_);
 
         if(get_store().get_ordered().containsKey(currDay)){ //If there are ordered items that arrive today
             process_incoming_items(currDay);
@@ -90,7 +90,7 @@ public class Clerk extends Employee implements Subject {
         double currentAmount = get_store().get_register().get_amount();
         System.out.println(get_name() + " is checking the register and there is " + currentAmount);
         announcement_ = get_name() + " is checking the register and there is " + currentAmount;
-        notifyObservers(announcement_);
+        notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
         if(currentAmount < 75) {
@@ -105,7 +105,7 @@ public class Clerk extends Employee implements Subject {
         reg.set_bank_withdrawal(reg.get_bank_withdrawals() + 1000);
         System.out.println(get_name() + " withdrew 1000 dollars from the bank and the new balance in the register is " + reg.get_amount() + " dollars");
         announcement_ = get_name() + " withdrew 1000 dollars from the bank and the new balance in the register is " + reg.get_amount() + " dollars";
-        notifyObservers(announcement_);
+        notifyObservers("logger: " + announcement_);
         announcement_ = "";
     }
 
@@ -131,15 +131,15 @@ public class Clerk extends Employee implements Subject {
         System.out.println("The sum of today's inventory is " + inv.get_purch_price_sum()); //Display the list price sum of all items in inventory
 
         announcement_ = "The total number of items in the inventory is " + inv.flatten_inventory().size();
-        notifyObservers(announcement_);
+        notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
         announcement_ = "The sum of today's inventory is " + inv.get_purch_price_sum();
-        notifyObservers(announcement_);
+        notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
         announcement_ = "The total number of items damaged in tuning is " + inv.flatten_inventory().size(); // THIS NEEDS TO BE FIXED BY BRIAN WHEN HE ADDS TUNING BEHAVIOR TO CLERKS WHO RUN DO INVENTORY!!!!!!!!!!!!
-        notifyObservers(announcement_);
+        notifyObservers("logger: " + announcement_);
         announcement_ = "";
     }
 
@@ -165,6 +165,7 @@ public class Clerk extends Employee implements Subject {
             item.set_list_price(item.get_list_price() * .8);
             System.out.println("The new price of the item is: " + item.get_list_price());
         }
+        notifyObservers("tracker: " + get_name() + ",0,0,1");
     }
 
     //Adds 3 items of type passed to orderedItems_ map in form of <Day Arriving, List Of Items>
@@ -176,7 +177,8 @@ public class Clerk extends Employee implements Subject {
         ArrayList<Item> items = generate_items(type.toLowerCase(), 3); //Generate 3 of the type of items asked for
 
         announcement_ = "The total number of items ordered is " + items.size();
-        notifyObservers(announcement_);
+        notifyObservers("logger: " + announcement_);
+        notifyObservers("tracker: " + get_name() + ",0,3,0");
         announcement_ = "";
 
         // Updates the register with the 
@@ -274,18 +276,18 @@ public class Clerk extends Employee implements Subject {
             }
         }
         announcement_ = "The total number of items sold by " + get_name() + " on day " + get_store().get_calendar().get_current_day() + " is " + soldItemsCounter;
-        notifyObservers(announcement_);
+        notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
-        numItemsSold_ = Integer.toString(soldItemsCounter);
-        notifyObservers(numItemsSold_);
+        // numItemsSold_ = Integer.toString(soldItemsCounter);
+        // notifyObservers(numItemsSold_);
 
         announcement_ = "The total number of items bought by "+ get_name() + " on day " + get_store().get_calendar().get_current_day() + " is " + boughtItemsCounter;
-        notifyObservers(announcement_);
+        notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
-        numItemsPurchased_ = Integer.toString(boughtItemsCounter);
-        notifyObservers(numItemsPurchased_);
+        // numItemsPurchased_ = Integer.toString(boughtItemsCounter);
+        // notifyObservers(numItemsPurchased_);
     }
 
     private boolean attempt_sale(buyingCustomer buyer, Item toSellItem){
@@ -355,6 +357,7 @@ public class Clerk extends Employee implements Subject {
         s.get_register().set_amount(s.get_register().get_amount() + soldPrice); //Set register amount
         soldItem.set_day_sold(s.get_calendar().get_current_day()); //Set items sold date to current day
         soldItem.set_sale_price(soldPrice); //Set items sold price
+        notifyObservers("tracker: " + get_name() + ",1,0,0");
     }
 
     private void purch_item(Item purchItem, double purchPrice){
@@ -362,6 +365,7 @@ public class Clerk extends Employee implements Subject {
         s.add_to_inventory(purchItem);
         purchItem.set_purch_price(purchPrice);
         s.get_register().set_amount(s.get_register().get_amount() - purchPrice); //Set register amount
+        notifyObservers("tracker: " + get_name() + ",0,1,0");
     }
 
     private double evaluate_item(Item item){
@@ -418,11 +422,11 @@ public class Clerk extends Employee implements Subject {
         System.out.println(name + " finished cleaning the store.");
 
         announcement_ = "The total number of items damaged in cleaning is " + damagedCounter;
-        notifyObservers(announcement_);
+        notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
-        numItemsDamaged_ = Integer.toString(damagedCounter);
-        notifyObservers(numItemsDamaged_);
+        // numItemsDamaged_ = Integer.toString(damagedCounter);
+        // notifyObservers(numItemsDamaged_);
     }
 
 
@@ -433,8 +437,10 @@ public class Clerk extends Employee implements Subject {
         System.out.println(get_name() + " locked up the store and went home for the day");
 
         announcement_ = get_name() + " locked up the store and went home for the day";
-        notifyObservers(announcement_);
+        notifyObservers("logger: " + announcement_);
         announcement_ = "";
+
+        notifyObservers("print:");
         removeObserver();
     }
 }

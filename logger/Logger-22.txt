@@ -10,3 +10,21 @@ Logger wrote: The total number of items sold by Velma on day 22 is 5
 Logger wrote: 5
 Logger wrote: The total number of items bought by Velma on day 22 is 3
 Logger wrote: 3
+Logger wrote: Daphne arrives at the store on Day 22
+Logger wrote: 9 number of items arrived at the store on Day 22
+Logger wrote: Daphne is checking the register and there is 2536.3999999999983
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 46
+Logger wrote: The sum of today's inventory is 1136.8000000000002
+Logger wrote: The total number of items damaged in tuning is 46
+Logger wrote: The total number of items sold by Daphne on day 22 is 7
+Logger wrote: The total number of items bought by Daphne on day 22 is 2
+Logger wrote: The total number of items damaged in cleaning is 3
+Logger wrote: Daphne arrives at the store on Day 22
+Logger wrote: Daphne is checking the register and there is 2679.4
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 43
+Logger wrote: The sum of today's inventory is 1122.7
+Logger wrote: The total number of items damaged in tuning is 43
+Logger wrote: The total number of items sold by Daphne on day 22 is 4
+Logger wrote: The total number of items bought by Daphne on day 22 is 3

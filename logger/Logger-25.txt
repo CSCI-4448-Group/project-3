@@ -9,3 +9,20 @@ Logger wrote: The total number of items sold by Shaggy on day 25 is 6
 Logger wrote: 6
 Logger wrote: The total number of items bought by Shaggy on day 25 is 1
 Logger wrote: 1
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Daphne arrives at the store on Day 25
+Logger wrote: Daphne is checking the register and there is 2607.579999999998
+Logger wrote: The total number of items in the inventory is 44
+Logger wrote: The sum of today's inventory is 1233.5
+Logger wrote: The total number of items damaged in tuning is 44
+Logger wrote: The total number of items sold by Daphne on day 25 is 3
+Logger wrote: The total number of items bought by Daphne on day 25 is 1
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Daphne arrives at the store on Day 25
+Logger wrote: 6 number of items arrived at the store on Day 25
+Logger wrote: Daphne is checking the register and there is 2578.608
+Logger wrote: The total number of items in the inventory is 47
+Logger wrote: The sum of today's inventory is 1214.0
+Logger wrote: The total number of items damaged in tuning is 47
+Logger wrote: The total number of items sold by Daphne on day 25 is 3
+Logger wrote: The total number of items bought by Daphne on day 25 is 0

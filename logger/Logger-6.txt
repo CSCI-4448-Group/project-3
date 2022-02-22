@@ -12,3 +12,22 @@ Logger wrote: The total number of items bought by Daphne on day 6 is 2
 Logger wrote: 2
 Logger wrote: The total number of items damaged in cleaning is 3
 Logger wrote: 3
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Daphne arrives at the store on Day 6
+Logger wrote: Daphne is checking the register and there is 1602.1
+Logger wrote: The total number of items in the inventory is 47
+Logger wrote: The sum of today's inventory is 974.1
+Logger wrote: The total number of items damaged in tuning is 47
+Logger wrote: The total number of items sold by Daphne on day 6 is 5
+Logger wrote: The total number of items bought by Daphne on day 6 is 2
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Daphne arrives at the store on Day 6
+Logger wrote: 3 number of items arrived at the store on Day 6
+Logger wrote: Daphne is checking the register and there is 1509.9
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 51
+Logger wrote: The sum of today's inventory is 1033.8999999999999
+Logger wrote: The total number of items damaged in tuning is 51
+Logger wrote: The total number of items sold by Daphne on day 6 is 3
+Logger wrote: The total number of items bought by Daphne on day 6 is 2

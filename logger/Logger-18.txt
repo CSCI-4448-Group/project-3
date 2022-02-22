@@ -13,3 +13,21 @@ Logger wrote: The total number of items sold by Shaggy on day 18 is 4
 Logger wrote: 4
 Logger wrote: The total number of items bought by Shaggy on day 18 is 1
 Logger wrote: 1
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 18
+Logger wrote: 3 number of items arrived at the store on Day 18
+Logger wrote: Velma is checking the register and there is 2240.799999999999
+Logger wrote: The total number of items in the inventory is 48
+Logger wrote: The sum of today's inventory is 1052.1
+Logger wrote: The total number of items damaged in tuning is 48
+Logger wrote: The total number of items sold by Velma on day 18 is 6
+Logger wrote: The total number of items bought by Velma on day 18 is 3
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 18
+Logger wrote: 6 number of items arrived at the store on Day 18
+Logger wrote: Velma is checking the register and there is 2466.8
+Logger wrote: The total number of items in the inventory is 44
+Logger wrote: The sum of today's inventory is 1096.3999999999999
+Logger wrote: The total number of items damaged in tuning is 44
+Logger wrote: The total number of items sold by Velma on day 18 is 4
+Logger wrote: The total number of items bought by Velma on day 18 is 3

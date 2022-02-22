@@ -11,3 +11,23 @@ Logger wrote: The total number of items sold by Shaggy on day 9 is 4
 Logger wrote: 4
 Logger wrote: The total number of items bought by Shaggy on day 9 is 1
 Logger wrote: 1
+Logger wrote: Shaggy locked up the store and went home for the day
+Logger wrote: Velma arrives at the store on Day 9
+Logger wrote: Velma is checking the register and there is 1945.9999999999998
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 37
+Logger wrote: The sum of today's inventory is 763.4
+Logger wrote: The total number of items damaged in tuning is 37
+Logger wrote: The total number of items sold by Velma on day 9 is 3
+Logger wrote: The total number of items bought by Velma on day 9 is 3
+Logger wrote: Velma locked up the store and went home for the day
+Logger wrote: Daphne arrives at the store on Day 9
+Logger wrote: Daphne is checking the register and there is 1469.3000000000002
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 54
+Logger wrote: The sum of today's inventory is 1192.6
+Logger wrote: The total number of items damaged in tuning is 54
+Logger wrote: The total number of items sold by Daphne on day 9 is 3
+Logger wrote: The total number of items bought by Daphne on day 9 is 1
+Logger wrote: The total number of items damaged in cleaning is 2
