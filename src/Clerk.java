@@ -5,10 +5,6 @@ public class Clerk extends Employee implements Subject {
     private TuneBehavior tuneBehavior_;
     private ArrayList<Observer> observersList_ = new ArrayList<Observer>(); // Track an observers list of event consumers who are tracking publishes by the Clerk
     public String announcement_; // Define an announcement to hold the announcements from the Clerk which are sent to notifyObservers
-//    public String numItemsSold_;
-//    public String numItemsPurchased_;
-//    public String numItemsDamaged_;
-//    public String nameOfEmployee_;
     private int damagedCounter = 0; // Track the number of items damaged by the clerk
 
     // Construct clerk with name, store, TuneBehavior (Strategy Pattern)
@@ -35,7 +31,6 @@ public class Clerk extends Employee implements Subject {
         for (Observer o : observersList_) {
             o.update(announcement);
         }
-        // observersList_.forEach(o -> o.update(announcement));
     }
 
     public int getRandomNumber(int min, int max) //https://www.baeldung.com/java-generating-random-numbers-in-range
@@ -77,9 +72,6 @@ public class Clerk extends Employee implements Subject {
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
-        // nameOfEmployee_ = get_name();
-        // notifyObservers(nameOfEmployee_);
-
         if(get_store().get_ordered().containsKey(currDay)){ //If there are ordered items that arrive today
             process_incoming_items(currDay);
         }
@@ -89,10 +81,10 @@ public class Clerk extends Employee implements Subject {
     //Check amount in register, go_to_bank if less than 75 (REMOVE MAGIC NUMBERS)
     public void check_register(){
         double currentAmount = get_store().get_register().get_amount();
-        System.out.println(get_name() + " is checking the register and there is " + currentAmount);
+        System.out.println(get_name() + " is checking the register and there is $" + String.format("%.2f",currentAmount));
 
         // Observer pattern for logger
-        announcement_ = get_name() + " is checking the register and there is " + currentAmount;
+        announcement_ = get_name() + " is checking the register and there is $" + String.format("%.2f",currentAmount);
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
@@ -106,10 +98,10 @@ public class Clerk extends Employee implements Subject {
         CashRegister reg = get_store().get_register();
         reg.set_amount(reg.get_amount() + 1000);
         reg.set_bank_withdrawal(reg.get_bank_withdrawals() + 1000);
-        System.out.println(get_name() + " withdrew 1000 dollars from the bank and the new balance in the register is " + reg.get_amount() + " dollars");
+        System.out.println(get_name() + " withdrew 1000 dollars from the bank and the new balance in the register is " + String.format("%.2f",reg.get_amount()) + " dollars");
 
         // Observer pattern for logger
-        announcement_ = get_name() + " withdrew 1000 dollars from the bank and the new balance in the register is " + reg.get_amount() + " dollars";
+        announcement_ = get_name() + " withdrew 1000 dollars from the bank and the new balance in the register is " + String.format("%.2f",reg.get_amount()) + " dollars";
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
     }
@@ -137,7 +129,7 @@ public class Clerk extends Employee implements Subject {
             }
         }
 
-        System.out.println("The sum of today's inventory is " + inv.get_purch_price_sum()); //Display the list price sum of all items in inventory
+        System.out.println("The sum of today's inventory is $" + String.format("%.2f",inv.get_purch_price_sum())); //Display the list price sum of all items in inventory
 
         // Observer pattern for logger
         announcement_ = "The total number of items in the inventory is " + inv.flatten_inventory().size();
@@ -145,7 +137,7 @@ public class Clerk extends Employee implements Subject {
         announcement_ = "";
 
         // Observer pattern for logger
-        announcement_ = "The sum of today's inventory is " + inv.get_purch_price_sum();
+        announcement_ = "The sum of today's inventory is $" + String.format("%.2f",inv.get_purch_price_sum());
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
@@ -169,15 +161,14 @@ public class Clerk extends Employee implements Subject {
 
     private void damage_item(Item item){
         if(item.get_condition().get_condition() == "poor"){ //If the item breaks
-            System.out.println(get_name() + " damaged " + item.toString() + " and broke it.");
+            System.out.println(get_name() + " damaged " + item.get_name() + " and broke it.");
             get_store().get_inventory().remove_item(item);
         }
         else{ //Reduce the items condition by one level, reduce the items listPrice by 20%
             item.get_condition().decreaseCondition(); //Decrease the items condition
-            System.out.println(get_name() + " damaged " + item.toString() + " and its condition is now " + item.get_condition().get_condition());
-            System.out.println("The price of the item will be reduced from " + item.get_list_price() + " to " + item.get_list_price() * .8);
+            System.out.println(get_name() + " damaged " + item.get_name() + " and its condition is now " + item.get_condition().get_condition());
+            System.out.println("The price of the item will be reduced from $" + String.format("%.2f",item.get_list_price()) + " to $" + String.format("%.2f",item.get_list_price() * .8));
             item.set_list_price(item.get_list_price() * .8);
-            System.out.println("The new price of the item is: " + item.get_list_price());
         }
         // Observer pattern for tracker for name of employee with new item damaged
         notifyObservers("tracker: " + get_name() + ",0,0,1");
@@ -214,7 +205,7 @@ public class Clerk extends Employee implements Subject {
         else{
             s.get_ordered().put(arrivalDay, items); //map the ordered items from (day Arriving) -> (the items created)
         }
-        System.out.println(get_name() + " spent $" + Double.toString(total_spent_on_order) + " to place an order for 3 " + type + ", arriving on day " + Integer.toString(arrivalDay) + ".");
+        System.out.println(get_name() + " spent $" + String.format("%.2f",total_spent_on_order) + " to place an order for 3 " + type + ", arriving on day " + Integer.toString(arrivalDay) + ".");
     }
 
     //Generate numItems items of type provided, return generated ArrayList
@@ -299,16 +290,10 @@ public class Clerk extends Employee implements Subject {
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
 
-        // numItemsSold_ = Integer.toString(soldItemsCounter);
-        // notifyObservers(numItemsSold_);
-
         // Observer pattern for logger
         announcement_ = "The total number of items bought by "+ get_name() + " on day " + get_store().get_calendar().get_current_day() + " is " + boughtItemsCounter;
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
-
-        // numItemsPurchased_ = Integer.toString(boughtItemsCounter);
-        // notifyObservers(numItemsPurchased_);
     }
 
     //If the item is a tunable type, and it is tuned, return a bonus chance of sale
@@ -329,7 +314,7 @@ public class Clerk extends Employee implements Subject {
         int bonus_sell_chance = calc_bonus_chance(toSellItem); //Check if the item has a bonus_sell_chance
         if (buyer.haggle_roll(50 + bonus_sell_chance)){ //If we roll 50% chance and win, sell full price
             sell_item(toSellItem, toSellItem.get_list_price());
-            System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + toSellItem.get_sale_price());
+            System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + String.format("%.2f",toSellItem.get_sale_price()));
 
             // If the item is a subclass of 'Stringed' we want to decorate it with addons
             if (Stringed.class.isAssignableFrom(toSellItem.getClass())) {
@@ -339,7 +324,7 @@ public class Clerk extends Employee implements Subject {
         }
         else if(buyer.haggle_roll(75 + bonus_sell_chance)){ //else if we roll 75% chance and win, sell 90% full price
             sell_item(toSellItem, toSellItem.get_list_price()*.9);
-            System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + toSellItem.get_sale_price() + " after a 10% discount.");
+            System.out.println(get_name() + " sold a " + toSellItem.get_name() + " to " + buyer.get_name() + " for $" + String.format("%.2f",toSellItem.get_sale_price()) + " after a 10% discount.");
                         
             // If the item is a subclass of 'Stringed' we want to decorate it with addons
             if (Stringed.class.isAssignableFrom(toSellItem.getClass())) {
@@ -348,7 +333,7 @@ public class Clerk extends Employee implements Subject {
             return true;
         }
         else{
-            System.out.println(get_name() + " tried selling a " + toSellItem.get_condition().get_condition() + " condition " + toSellItem.get_new_or_used() + " " + toSellItem.get_name() + " to " + toSellItem.get_name() + " for $" + toSellItem.get_list_price() + " but customer refused.");
+            System.out.println(get_name() + " tried selling a " + toSellItem.get_condition().get_condition() + " condition " + toSellItem.get_new_or_used() + " " + toSellItem.get_name() + " to " + toSellItem.get_name() + " for $" + String.format("%.2f",toSellItem.get_list_price()) + " but customer refused.");
             return false;
         }
     }
@@ -360,17 +345,17 @@ public class Clerk extends Employee implements Subject {
             return false;
         }
         if(seller.haggle_roll(50)){
+            System.out.println(get_name() + " bought a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + String.format("%.2f",purchPrice));
             purch_item(toBuyItem,purchPrice);
-            System.out.println(get_name() + " bought a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + purchPrice);
             return true;
         }
         else if(seller.haggle_roll(75)){
+            System.out.println(get_name() + " bought a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + String.format("%.2f",purchPrice) + " after a 10% offer increase.");
             purch_item(toBuyItem, purchPrice*1.1);
-            System.out.println(get_name() + " bought a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + purchPrice + " after a 10% offer increase.");
             return true;
         }
         else{
-            System.out.println(get_name() + " tried buying a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + purchPrice + " but customer refused.");
+            System.out.println(get_name() + " tried buying a " + toBuyItem.get_condition().get_condition() + " condition " + toBuyItem.get_new_or_used() + " " + toBuyItem.get_name() + " from " + seller.get_name() + " for $" + String.format("%.2f",purchPrice) + " but customer refused.");
             return false;
         }
     }
@@ -461,9 +446,6 @@ public class Clerk extends Employee implements Subject {
         announcement_ = "The total number of items damaged in cleaning is " + damagedCounter;
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
-
-        // numItemsDamaged_ = Integer.toString(damagedCounter);
-        // notifyObservers(numItemsDamaged_);
     }
 
 

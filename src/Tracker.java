@@ -5,21 +5,10 @@ import java.util.HashMap;
 
 public class Tracker implements Observer {
     private HashMap<String, ArrayList<Integer>> trackerMap_ = new HashMap<>(); // Define data structure to store relevant clerk information
-    // private ArrayList<Integer> clerkList;
-    // private String numItemsSold_;
-    // private String numItemsPurchased_;
-    // private String numItemsDamaged_;
-    // private String nameOfEmployee_;
-    // private String announcement_;
-    private String name = "Tracker"; // Give a name to tracker
     private Calendar calendar; // Calendar attribute for tracking
 
-    public String get_name() {
-        return name;
-    }
-
     // Constructor for Tracker
-    public Tracker(String name, Store s)
+    public Tracker(Store s)
     {
         calendar = s.get_calendar();
     }
@@ -51,8 +40,8 @@ public class Tracker implements Observer {
     // Print out relevant data in table format
     public void print_daily_stats() {
         // Divide print statements
+        System.out.println("===========================================");
         System.out.println("Tracker: Day " + (calendar.get_current_day() - 1));
-        System.out.println("==============================");
         System.out.println("Clerk       Items Sold      Items Purchased     Items Damaged");
 
         // Go through trackerMap data structure and print out clerk name, items sold, items purchased, items damaged for clerk
