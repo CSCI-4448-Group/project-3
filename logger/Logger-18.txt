@@ -1,9 +1,9 @@
-Logger wrote: Shaggy locked up the store and went home for the day
-Logger wrote: Shaggy arrives at the store on Day 18
-Logger wrote: Shaggy is checking the register and there is 1935.8999999999999
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items in the inventory is 57
-Logger wrote: The sum of today's inventory is 1528.5000000000002
-Logger wrote: The total number of items damaged in tuning is 57
-Logger wrote: The total number of items sold by Shaggy on day 18 is 5
-Logger wrote: The total number of items bought by Shaggy on day 18 is 2
+Logger wrote: Velma arrives at the store on Day 18
+Logger wrote: 3 number of items arrived at the store on Day 18
+Logger wrote: Velma is checking the register and there is 2499.9600000000005
+Logger wrote: The total number of items in the inventory is 52
+Logger wrote: The sum of today's inventory is 1124.8999999999999
+Logger wrote: The total number of items damaged in tuning is 0
+Logger wrote: The total number of items sold by Velma on day 18 is 2
+Logger wrote: The total number of items bought by Velma on day 18 is 2
+Logger wrote: Velma locked up the store and went home for the day

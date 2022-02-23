@@ -1,8 +1,9 @@
-Logger wrote: Shaggy locked up the store and went home for the day
-Logger wrote: Velma arrives at the store on Day 16
-Logger wrote: Velma is checking the register and there is 1301.1999999999998
-Logger wrote: The total number of items in the inventory is 65
-Logger wrote: The sum of today's inventory is 1825.2
-Logger wrote: The total number of items damaged in tuning is 65
-Logger wrote: The total number of items sold by Velma on day 16 is 5
-Logger wrote: The total number of items bought by Velma on day 16 is 3
+Logger wrote: Daphne arrives at the store on Day 16
+Logger wrote: Daphne is checking the register and there is 2315.2600000000007
+Logger wrote: The total number of items ordered is 3
+Logger wrote: The total number of items in the inventory is 49
+Logger wrote: The sum of today's inventory is 1060.6
+Logger wrote: The total number of items damaged in tuning is 0
+Logger wrote: The total number of items sold by Daphne on day 16 is 4
+Logger wrote: The total number of items bought by Daphne on day 16 is 2
+Logger wrote: Daphne locked up the store and went home for the day
