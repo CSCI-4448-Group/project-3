@@ -61,7 +61,7 @@ public class Inventory{
 
     //Add the item to its corresponding map entry list
     public void put_item(Item item){
-        System.out.println("Adding item to inventory " + item.toString());
+        System.out.println("Adding item to inventory " + item.get_name());
         String type = item.get_item_type();
         if(inventory_.containsKey(type)){ //If the Item type is already a key in the map
             inventory_.get(type).add(item);

@@ -6,16 +6,10 @@ import java.io.IOException;  // Import the IOException class to handle errors
 
 public class Logger implements Observer {
     private String announcement_; // Logger has an announcement String attribute (used to store incoming announcement
-    private String name = "Logger"; // Name the Logger event consumer "Logger"
     private int currDay; // Track the current day
 
-    // Gets the name of the logger
-    public String get_name() {
-        return name;
-    }
-
     // Construct the Logger by registering it as an observer of clerk and getting the current day
-    public Logger(String name, Store s, Subject clerk)
+    public Logger(Store s, Subject clerk)
     {
         clerk.registerObserver(this);
         currDay = s.get_calendar().get_current_day();

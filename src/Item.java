@@ -88,7 +88,7 @@ abstract public class Item{
             String[] brands = {"Roland", "Bugera", "Laney", "Line 6"};
             String name = brands[rand.nextInt(brands.length)];
             int purchPrice = rand.nextInt(50) + 1;
-            return new PracticeAmp(name + " PracticeAmp",purchPrice,purchPrice*2,rand.nextBoolean(),
+            return new PracticeAmp(name + " Practice Amp",purchPrice,purchPrice*2,rand.nextBoolean(),
                     -1,new Condition("good"),0,name,rand.nextInt(1000));
         });
         put("cable", () -> {
