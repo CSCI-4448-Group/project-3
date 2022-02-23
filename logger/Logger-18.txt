@@ -1,10 +1,9 @@
-Logger wrote: Daphne arrives at the store on Day 18
+Logger wrote: Velma arrives at the store on Day 18
 Logger wrote: 3 number of items arrived at the store on Day 18
-Logger wrote: Daphne is checking the register and there is 2427.0000000000005
+Logger wrote: Velma is checking the register and there is 2499.9600000000005
 Logger wrote: The total number of items in the inventory is 52
-Logger wrote: The sum of today's inventory is 1174.3
-Logger wrote: The total number of items damaged in tuning is 52
-Logger wrote: The total number of items sold by Daphne on day 18 is 5
-Logger wrote: The total number of items bought by Daphne on day 18 is 2
-Logger wrote: The total number of items damaged in cleaning is 1
-Logger wrote: Daphne locked up the store and went home for the day
+Logger wrote: The sum of today's inventory is 1124.8999999999999
+Logger wrote: The total number of items damaged in tuning is 0
+Logger wrote: The total number of items sold by Velma on day 18 is 2
+Logger wrote: The total number of items bought by Velma on day 18 is 2
+Logger wrote: Velma locked up the store and went home for the day

@@ -1,9 +1,9 @@
 Logger wrote: Daphne arrives at the store on Day 30
-Logger wrote: Daphne is checking the register and there is 3705.900000000001
-Logger wrote: The total number of items ordered is 3
-Logger wrote: The total number of items in the inventory is 39
-Logger wrote: The sum of today's inventory is 966.3000000000001
-Logger wrote: The total number of items damaged in tuning is 39
-Logger wrote: The total number of items sold by Daphne on day 30 is 3
-Logger wrote: The total number of items bought by Daphne on day 30 is 0
+Logger wrote: 3 number of items arrived at the store on Day 30
+Logger wrote: Daphne is checking the register and there is 3213.52
+Logger wrote: The total number of items in the inventory is 49
+Logger wrote: The sum of today's inventory is 1285.6000000000001
+Logger wrote: The total number of items damaged in tuning is 0
+Logger wrote: The total number of items sold by Daphne on day 30 is 5
+Logger wrote: The total number of items bought by Daphne on day 30 is 2
 Logger wrote: Daphne locked up the store and went home for the day

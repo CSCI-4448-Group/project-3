@@ -116,6 +116,7 @@ public class Clerk extends Employee implements Subject {
 
     //Scan the current inventory, if we have 0 count of any type of item, order 3 of them
     public void do_inventory() throws Exception{
+        int tuneDamagedItems = 0;
         Store s = get_store();
         Inventory inv = s.get_inventory();
         for(Map.Entry<String, ArrayList<Item>> entry : inv.get_mapping().entrySet()) { //For each entry in our inventory map
@@ -129,7 +130,10 @@ public class Clerk extends Employee implements Subject {
                 boolean prev_tune_state = item.get_tuned();
                 perform_tune(item);
                 boolean post_tune_state = item.get_tuned();
-                check_tune_damage(prev_tune_state, post_tune_state, item);
+                boolean tuneDamage = check_tune_damage(prev_tune_state, post_tune_state, item);
+                if (tuneDamage) {
+                    tuneDamagedItems += 1;
+                }
             }
         }
 
@@ -146,19 +150,21 @@ public class Clerk extends Employee implements Subject {
         announcement_ = "";
 
         // Observer pattern for logger
-        announcement_ = "The total number of items damaged in tuning is " + inv.flatten_inventory().size(); // THIS NEEDS TO BE FIXED BY BRIAN WHEN HE ADDS TUNING BEHAVIOR TO CLERKS WHO RUN DO INVENTORY!!!!!!!!!!!!
+        announcement_ = "The total number of items damaged in tuning is " + tuneDamagedItems;
         notifyObservers("logger: " + announcement_);
         announcement_ = "";
     }
 
-    private void check_tune_damage(boolean old_state, boolean new_state, Item item){
-
+    private boolean check_tune_damage(boolean old_state, boolean new_state, Item item){
+        boolean isDamaged = false;
         Random rand = new Random();
-        //if (the item was tuned and now it isnt) and (we win the damage roll)
+        //if (the item was tuned and now it isn't) and (we win the damage roll)
         if((old_state && !new_state) && (rand.nextInt(100) < 10)){
             System.out.println(get_name() + " damaged " + item.get_name() + " when attempting to tune");
+            isDamaged = true;
             damage_item(item); //damage the item
         }
+        return isDamaged;
     }
 
     private void damage_item(Item item){
